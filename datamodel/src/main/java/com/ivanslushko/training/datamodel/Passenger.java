@@ -2,7 +2,7 @@ package com.ivanslushko.training.datamodel;
 
 import java.sql.Date;
 
-public class passengers extends AbstractModel {
+public class Passenger extends AbstractModel {
 
 	private String fullName;
 	private Date birthday;

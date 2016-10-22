@@ -1,17 +1,17 @@
 package com.ivanslushko.training.datamodel;
 
-public class plane extends AbstractModel {
+public class Plane extends AbstractModel {
 
-	private String bort_number;
+	private String bortNumber;
 	private String model;
-	private String resource;
+	private String passengerCount;
 
 	public String getBort_number() {
-		return bort_number;
+		return bortNumber;
 	}
 
 	public void setBort_number(String bort_number) {
-		this.bort_number = bort_number;
+		this.bortNumber = bort_number;
 	}
 
 	public String getModel() {
@@ -23,11 +23,11 @@ public class plane extends AbstractModel {
 	}
 
 	public String getResource() {
-		return resource;
+		return passengerCount;
 	}
 
 	public void setResource(String resource) {
-		this.resource = resource;
+		this.passengerCount = resource;
 	}
 
 }

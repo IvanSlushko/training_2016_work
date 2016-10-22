@@ -2,7 +2,7 @@ package com.ivanslushko.training.datamodel;
 
 import java.sql.Date;
 
-public class flight extends AbstractModel {
+public class Flight extends AbstractModel {
 
 	private Integer num;
 	private String plane;

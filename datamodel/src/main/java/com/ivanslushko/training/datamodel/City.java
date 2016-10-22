@@ -1,6 +1,6 @@
 package com.ivanslushko.training.datamodel;
 
-public class cities extends AbstractModel{
+public class City extends AbstractModel{
 
 	private String city;
 
