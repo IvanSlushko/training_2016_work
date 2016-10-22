@@ -4,19 +4,13 @@ import java.sql.Date;
 
 public class Flight extends AbstractModel {
 
-	private Integer num;
+
 	private String plane;
 	private Integer from;
 	private Date dAndT;
 	private Integer to;
 
-	public Integer getNum() {
-		return num;
-	}
 
-	public void setNum(Integer num) {
-		this.num = num;
-	}
 
 	public String getPlane() {
 		return plane;

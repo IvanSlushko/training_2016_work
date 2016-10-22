@@ -4,7 +4,7 @@ public class Plane extends AbstractModel {
 
 	private String bortNumber;
 	private String model;
-	private String passengerCount;
+	private Integer passengerCount;
 
 	public String getBort_number() {
 		return bortNumber;
@@ -22,12 +22,14 @@ public class Plane extends AbstractModel {
 		this.model = model;
 	}
 
-	public String getResource() {
+	public Integer getPassengerCount() {
 		return passengerCount;
 	}
 
-	public void setResource(String resource) {
-		this.passengerCount = resource;
+	public void setPassengerCount(Integer passengerCount) {
+		this.passengerCount = passengerCount;
 	}
+
+
 
 }
