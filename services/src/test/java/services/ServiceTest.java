@@ -21,7 +21,5 @@ public class ServiceTest {
 
 		Assert.assertNotNull("city 1 should not be null", city);
 		Assert.assertEquals(new Long(1), city.getId());
-
 	}
-
 }

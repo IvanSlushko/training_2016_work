@@ -13,34 +13,23 @@
 	    http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
 	    http://www.springframework.org/schema/task
 	    http://www.springframework.org/schema/task/spring-task-3.0.xsd">
-
 	<context:annotation-config />
-	
 	<context:component-scan base-package="com.ivanslushko.training.daodb.impl" />
 	<context:component-scan base-package="com.ivanslushko.training.services.impl" />
-	
-	
 	<context:property-placeholder
 		ignore-unresolvable="true" location="classpath:db.properties" />
-
-
 
 	<!-- Initialization for data source -->
 	<bean id="dataSource"
 		class="com.ivanslushko.training.daodb.util.SchemaNameAwareBasicDataSource"
 		destroy-method="close">
-
 		<property name="driverClassName" value="org.postgresql.Driver" />
 		<property name="url" value="${jdbc.url}" />
 		<property name="username" value="${jdbc.username}" />
 		<property name="password" value="${jdbc.password}" />
 		<property name="schema" value="${db.schema}" />
 	</bean>
-
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<constructor-arg ref="dataSource" />
 	</bean>
-
-
-
 </beans>
