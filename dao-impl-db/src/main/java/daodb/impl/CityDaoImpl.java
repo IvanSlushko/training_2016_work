@@ -2,24 +2,31 @@ package daodb.impl;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.datamodel.City;
-
 import daodb.CityDao;
-
-
 
 
 @Repository
 public class CityDaoImpl implements CityDao{
 
-	@Override
-	public City get(Long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
+    @Inject
+    private JdbcTemplate jdbcTemplate;
+	
+    @Override
+    public City get (Long id) {
+        return jdbcTemplate.queryForObject(
+                "select * from book where id = ?",
+                new Object[] { id }, new BeanPropertyRowMapper<City>(
+                		City.class));
+    }
+    
 	@Override
 	public void save(City entity) {
 		// TODO Auto-generated method stub
