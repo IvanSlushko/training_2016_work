@@ -22,7 +22,7 @@ public class CityDaoImpl implements CityDao{
     @Override
     public City get (Long id) {
         return jdbcTemplate.queryForObject(
-                "select * from book where id = ?",
+                "select * from city where id = ?",
                 new Object[] { id }, new BeanPropertyRowMapper<City>(
                 		City.class));
     }

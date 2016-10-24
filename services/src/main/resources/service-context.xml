@@ -16,6 +16,7 @@
 	<context:annotation-config />
 	<context:component-scan base-package="com.ivanslushko.training.daodb.impl" />
 	<context:component-scan base-package="com.ivanslushko.training.services.impl" />
+	
 	<context:property-placeholder
 		ignore-unresolvable="true" location="classpath:db.properties" />
 
@@ -29,7 +30,13 @@
 		<property name="password" value="${jdbc.password}" />
 		<property name="schema" value="${db.schema}" />
 	</bean>
+	
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<constructor-arg ref="dataSource" />
 	</bean>
+	
+	
+	
+	
+	
 </beans>

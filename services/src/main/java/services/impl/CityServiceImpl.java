@@ -15,17 +15,18 @@ public class CityServiceImpl implements CityService {
 	private CityDao cityDao;
 
 	@Override
+	public City get(Long id) {
+		return cityDao.get(id);
+
+	}
+	
+	@Override
 	public void saveAll(List<City> cities) {
 		for (City city : cities) {
 			save(city);
 		}
 	}
 
-	@Override
-	public City get(Long id) {
-		return cityDao.get(id);
-
-	}
 
 	@Override
 	public void save(City city) {
