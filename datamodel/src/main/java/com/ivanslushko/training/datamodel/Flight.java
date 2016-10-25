@@ -44,4 +44,11 @@ public class Flight extends AbstractModel {
 		this.to = to;
 	}
 
+    @Override
+    public String toString() {
+        return "Reys [plane=" + plane + ", getId()=" + getId() + " from " + from +" datd "+dAndT+"to"+to+"]";
+    }
+	
+	
+	
 }
