@@ -1,10 +1,9 @@
-package daodb.impl;
-
+package com.ivanslushko.training.daodb.impl;
 import java.util.List;
 
 import com.ivanslushko.training.datamodel.Passenger;
 
-import daodb.PassengerDao;
+import com.ivanslushko.training.daodb.PassengerDao;
 
 public class PassengerDaoImpl implements PassengerDao{
 

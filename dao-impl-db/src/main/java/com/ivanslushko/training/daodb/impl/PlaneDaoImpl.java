@@ -1,10 +1,10 @@
-package daodb.impl;
+package com.ivanslushko.training.daodb.impl;
 
 import java.util.List;
 
 import com.ivanslushko.training.datamodel.Plane;
 
-import daodb.PlaneDao;
+import com.ivanslushko.training.daodb.PlaneDao;
 
 public class PlaneDaoImpl implements PlaneDao{
 

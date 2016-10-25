@@ -1,4 +1,4 @@
-package daodb.util;
+package com.ivanslushko.training.daodb.util;
 
 import java.sql.Connection;
 import java.sql.SQLException;

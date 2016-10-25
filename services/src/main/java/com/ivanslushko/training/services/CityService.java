@@ -1,4 +1,4 @@
-package services;
+package com.ivanslushko.training.services;
 
 import java.util.List;
 import com.ivanslushko.training.datamodel.City;

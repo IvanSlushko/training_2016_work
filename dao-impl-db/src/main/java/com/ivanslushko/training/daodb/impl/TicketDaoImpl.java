@@ -1,10 +1,10 @@
-package daodb.impl;
+package com.ivanslushko.training.daodb.impl;
 
 import java.util.List;
 
 import com.ivanslushko.training.datamodel.Ticket;
 
-import daodb.TicketDao;
+import com.ivanslushko.training.daodb.TicketDao;
 
 public class TicketDaoImpl implements TicketDao{
 

@@ -1,10 +1,10 @@
-package daodb.impl;
+package com.ivanslushko.training.daodb.impl;
 
 import java.util.List;
 
 import com.ivanslushko.training.datamodel.Flight;
 
-import daodb.FlightDao;
+import com.ivanslushko.training.daodb.FlightDao;
 
 public class FlightDoaImpl implements FlightDao {
 

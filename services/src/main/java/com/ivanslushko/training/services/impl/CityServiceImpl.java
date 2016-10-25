@@ -1,12 +1,15 @@
-package services.impl;
+package com.ivanslushko.training.services.impl;
 
 import java.util.List;
+
 import javax.inject.Inject;
+
 import org.springframework.stereotype.Service;
 
 import com.ivanslushko.training.datamodel.City;
-import daodb.CityDao;
-import services.CityService;
+import com.ivanslushko.training.services.CityService;
+
+import com.ivanslushko.training.daodb.CityDao;
 
 @Service
 public class CityServiceImpl implements CityService {
@@ -19,14 +22,13 @@ public class CityServiceImpl implements CityService {
 		return cityDao.get(id);
 
 	}
-	
+
 	@Override
 	public void saveAll(List<City> cities) {
 		for (City city : cities) {
 			save(city);
 		}
 	}
-
 
 	@Override
 	public void save(City city) {

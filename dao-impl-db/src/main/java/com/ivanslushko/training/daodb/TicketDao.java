@@ -1,4 +1,4 @@
-package daodb;
+package com.ivanslushko.training.daodb;
 
 import java.util.List;
 

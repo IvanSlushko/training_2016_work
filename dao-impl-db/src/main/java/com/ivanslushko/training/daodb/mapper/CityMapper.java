@@ -1,4 +1,4 @@
-package daodb.mapper;
+package com.ivanslushko.training.daodb.mapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
