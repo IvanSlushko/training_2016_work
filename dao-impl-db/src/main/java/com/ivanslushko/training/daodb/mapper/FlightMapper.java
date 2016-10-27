@@ -24,5 +24,4 @@ public final class FlightMapper implements RowMapper<Flight> {
 		entity.setTo(to);
 		return entity;
 	}
-
 }

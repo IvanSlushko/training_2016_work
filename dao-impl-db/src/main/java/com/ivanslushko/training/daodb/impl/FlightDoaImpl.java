@@ -1,13 +1,14 @@
 package com.ivanslushko.training.daodb.impl;
-
 import java.util.List;
-
 import javax.inject.Inject;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
 import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.daodb.FlightDao;
 
+@Repository
 public class FlightDoaImpl implements FlightDao {
 
 	@Inject

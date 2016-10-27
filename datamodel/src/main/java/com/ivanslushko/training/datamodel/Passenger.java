@@ -31,5 +31,8 @@ public class Passenger extends AbstractModel {
 	public void setPassport(String passport) {
 		this.passport = passport;
 	}
-
+	   @Override
+	    public String toString() {
+	        return getId() + "Passenger: " + fullName + ", birthday= " + birthday + " passport " + passport ;
+	    }
 }

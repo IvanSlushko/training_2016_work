@@ -6,12 +6,12 @@ public class Plane extends AbstractModel {
 	private String model;
 	private Integer passengerCount;
 
-	public String getBort_number() {
+	public String getBortNumber() {
 		return bortNumber;
 	}
 
-	public void setBort_number(String bort_number) {
-		this.bortNumber = bort_number;
+	public void setBortNumber(String bortNumber) {
+		this.bortNumber = bortNumber;
 	}
 
 	public String getModel() {
@@ -30,6 +30,8 @@ public class Plane extends AbstractModel {
 		this.passengerCount = passengerCount;
 	}
 
-
-
+	   @Override
+	    public String toString() {
+	        return getId() + "Plane with bort_num: " + bortNumber + ", have model " + model + ", capacity: " + passengerCount ;
+	    }
 }

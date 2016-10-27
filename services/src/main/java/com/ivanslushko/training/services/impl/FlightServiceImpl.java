@@ -2,10 +2,12 @@ package com.ivanslushko.training.services.impl;
 
 import java.util.List;
 import javax.inject.Inject;
+import org.springframework.stereotype.Service;
 import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.services.FlightService;
 import com.ivanslushko.training.daodb.FlightDao;
 
+@Service
 public class FlightServiceImpl implements FlightService {
 
 	@Inject
@@ -13,14 +15,14 @@ public class FlightServiceImpl implements FlightService {
 
 	@Override
 	public Flight get(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return flightDao.get(id);
 	}
 
 	@Override
 	public void saveAll(List<Flight> flights) {
-		// TODO Auto-generated method stub
-
+		for (Flight flight : flights) {
+			save(flight);
+		}
 	}
 
 	@Override
@@ -30,7 +32,5 @@ public class FlightServiceImpl implements FlightService {
 		} else {
 			flightDao.update(flight);
 		}
-
 	}
-
 }
