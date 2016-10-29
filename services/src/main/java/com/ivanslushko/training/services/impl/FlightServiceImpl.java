@@ -1,11 +1,15 @@
 package com.ivanslushko.training.services.impl;
 
 import java.util.List;
+
 import javax.inject.Inject;
+
 import org.springframework.stereotype.Service;
+
+import com.ivanslushko.training.daodb.FlightDao;
+import com.ivanslushko.training.daodb.customentity.FlightFromCity;
 import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.services.FlightService;
-import com.ivanslushko.training.daodb.FlightDao;
 
 @Service
 public class FlightServiceImpl implements FlightService {
@@ -26,11 +30,22 @@ public class FlightServiceImpl implements FlightService {
 	}
 
 	@Override
-	public void save(Flight flight) {
+	public Long save(Flight flight) {
+		
 		if (flight.getId() == null) {
-			flightDao.insert(flight);
+			return flightDao.insert(flight);
 		} else {
 			flightDao.update(flight);
+			 return flight.getId();
 		}
 	}
+
+	@Inject
+	private FlightDao dao;
+
+	@Override
+	public FlightFromCity getFromCity(Long id) {
+		return dao.getFromCity(id);
+	}
+
 }

@@ -1,18 +1,22 @@
 package com.ivanslushko.training.daodb;
 
 import java.util.List;
+
+import com.ivanslushko.training.daodb.customentity.FlightFromCity;
 import com.ivanslushko.training.datamodel.Flight;
 
 public interface FlightDao {
 
 	Flight get(Long id);
 
-	void insert(Flight entity);
+	Long insert(Flight entity);
 
 	void update(Flight entity);
 
 	void delete(Long id);
 
 	List<Flight> getAll();
+
+	FlightFromCity getFromCity(Long id);
 
 }

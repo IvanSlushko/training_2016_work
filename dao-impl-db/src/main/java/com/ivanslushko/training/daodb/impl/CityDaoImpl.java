@@ -3,11 +3,13 @@ package com.ivanslushko.training.daodb.impl;
 import java.util.List;
 
 import javax.inject.Inject;
+
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import com.ivanslushko.training.datamodel.City;
+
 import com.ivanslushko.training.daodb.CityDao;
+import com.ivanslushko.training.datamodel.City;
 
 @Repository
 public class CityDaoImpl implements CityDao {
@@ -38,17 +40,38 @@ public class CityDaoImpl implements CityDao {
 		// TODO Auto-generated method stub
 
 	}
-
-	@Override
-	public void save(City entity) {
-		// TODO Auto-generated method stub
-
-	}
+	/*
+	 * @Override public Long insert(City entity) {
+	 * 
+	 * final String INSERT_SQL = "insert into city (city) values(?)";
+	 * 
+	 * KeyHolder keyHolder = new GeneratedKeyHolder(); jdbcTemplate.update(new
+	 * PreparedStatementCreator() {
+	 * 
+	 * @Override public PreparedStatement createPreparedStatement(Connection
+	 * connection) throws SQLException { PreparedStatement ps =
+	 * connection.prepareStatement(INSERT_SQL, new String[] { "id" });
+	 * ps.setString(1, entity.getCity()); return ps; } }, keyHolder);
+	 * 
+	 * entity.setId(keyHolder.getKey().longValue());
+	 * 
+	 * return entity.getId();
+	 * 
+	 * }
+	 */
 
 	@Override
 	public void update(City entity) {
 		// TODO Auto-generated method stub
 
 	}
+
+	@Override
+	public void save(City entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 
 }
