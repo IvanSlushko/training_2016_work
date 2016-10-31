@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.ivanslushko.training.daodb.CityDao;
@@ -13,6 +15,8 @@ import com.ivanslushko.training.services.CityService;
 
 @Service
 public class CityServiceImpl implements CityService {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(CityServiceImpl.class);
 
 	@Inject
 	private CityDao cityDao;
@@ -31,8 +35,15 @@ public class CityServiceImpl implements CityService {
 
 	@Override
 	public Long save(City city) {
-		// TODO Auto-generated method stub
-		return null;
+		if (city.getId() == null) {
+			Long id = cityDao.insert(city);
+			// LOGGER.info("City created:" + city.toString());
+			LOGGER.info("City created. id={}, city={}", city.getId(), city.getCity());
+			return id;
+		} else {
+			cityDao.update(city);
+			return city.getId();
+		}
 	}
 
 	@Override

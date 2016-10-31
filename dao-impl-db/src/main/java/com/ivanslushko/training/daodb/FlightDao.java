@@ -9,6 +9,8 @@ public interface FlightDao {
 
 	Flight get(Long id);
 
+	FlightFromCity getFromCity(Long id);
+
 	Long insert(Flight entity);
 
 	void update(Flight entity);
@@ -16,7 +18,5 @@ public interface FlightDao {
 	void delete(Long id);
 
 	List<Flight> getAll();
-
-	FlightFromCity getFromCity(Long id);
 
 }

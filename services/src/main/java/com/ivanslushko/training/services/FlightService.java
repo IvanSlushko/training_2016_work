@@ -9,15 +9,15 @@ import com.ivanslushko.training.datamodel.Flight;
 
 public interface FlightService {
 	
+	FlightFromCity getFromCity(Long id);
+
 	@Transactional
 	void saveAll(List<Flight> flights);
 
-	//void save(Flight flight);
+	// void save(Flight flight);
 
-    Long save(Flight flight);
-	
+	Long save(Flight flight);
+
 	Flight get(Long id);
-
-	FlightFromCity getFromCity(Long id);
 
 }

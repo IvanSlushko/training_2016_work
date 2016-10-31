@@ -14,7 +14,7 @@ public class City extends AbstractModel {
 
     @Override
     public String toString() {
-        return "Gorod [city=" + city + ", getId()=" + getId() + "]";
+        return "Gorod: " + city + ", Id= " + getId() + "]";
     }
 
 }

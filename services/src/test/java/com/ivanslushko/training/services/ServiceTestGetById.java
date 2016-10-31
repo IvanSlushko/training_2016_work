@@ -5,6 +5,8 @@ import javax.inject.Inject;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -13,11 +15,14 @@ import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.datamodel.Passenger;
 import com.ivanslushko.training.datamodel.Plane;
 import com.ivanslushko.training.datamodel.Ticket;
+import com.ivanslushko.training.services.impl.CityServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
 
 public class ServiceTestGetById {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(CityServiceImpl.class);
 
 	@Inject
 	private CityService cityService;
@@ -25,9 +30,11 @@ public class ServiceTestGetById {
 	@Test
 	public void getByIdtestCity() {
 		City city = cityService.get(3L);
-		Assert.assertNotNull("city 2 should not be null", city);
+		Assert.assertNotNull("city 3 should not be null", city);
 		Assert.assertEquals(new Long(3), city.getId());
-		System.out.println("City: "+city.getCity() + " have ID " + city.getId());
+		// System.out.println("City: " + city.getCity() + " have ID " +
+		// city.getId());
+		LOGGER.info("City read: . id={}, title={}", city.getId(), city.getCity());
 	}
 
 	@Inject
@@ -38,7 +45,8 @@ public class ServiceTestGetById {
 		Flight flight = flightService.get(3L);
 		Assert.assertNotNull("flight 1 should not be null", flight);
 		Assert.assertEquals(new Long(3l), flight.getId());
-		System.out.println("Flight (reys) :"+flight.getId()+", with plane : " + flight.getPlane() + ",  departs " + flight.getdAndT());
+		System.out.println("Flight (reys) :" + flight.getId() + ", with plane : " + flight.getPlane() + ",  departs "
+				+ flight.getdAndT());
 	}
 
 	@Inject
