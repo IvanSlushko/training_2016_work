@@ -1,3 +1,7 @@
 09:41:17.795 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=8, bortNUM=qwerty, model=boeingQQQQWW, passCount=93
 09:42:08.930 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=10, bortNUM=qwerty, model=boeingQQQQWW, passCount=93
 09:42:37.510 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=12, bortNUM=qwerty1, model=boeingQQQQWW, passCount=93
+21:12:32.708 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=13, bortNUM=8439720, model=Boeing 737, passCount=59
+22:08:16.358 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=4, full_name=Igor Nikolaev, birthday=2008-11-30T00:00:00.000+0300, passport=KH347565
+22:09:28.163 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=5, full_name=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3475995
+22:10:22.624 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=7, full_name=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361

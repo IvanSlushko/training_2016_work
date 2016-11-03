@@ -5,11 +5,14 @@ import java.util.List;
 import com.ivanslushko.training.datamodel.Passenger;
 
 public interface PassengerDao {
+
 	Passenger get(Long id);
 
-	void insert(Passenger entity);
+	Long insert(Passenger entity);
 
 	void update(Passenger entity);
+
+	void save(Passenger entity);
 
 	void delete(Long id);
 

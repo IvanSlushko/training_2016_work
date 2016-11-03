@@ -33,8 +33,6 @@ public class PlaneDaoImpl implements PlaneDao {
 	public Long insert(final Plane entity) {
 
 		final String INSERT_SQL = "insert into plane (bort_number,model,passenger_count) values(?,?,?)";
-		// final String INSERT_SQL = "INSERT INTO plane values
-		// ('7','6645657','Airbus A320','88')";
 
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		jdbcTemplate.update(new PreparedStatementCreator() {
