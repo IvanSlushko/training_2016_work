@@ -8,11 +8,13 @@ public interface PlaneDao {
 
 	Plane get(Long id);
 
-    void insert(Plane entity);
+	Long insert(Plane entity);
 
-    void update(Plane entity);
+	void update(Plane entity);
 
-    void delete(Long id);
+	void save(Plane entity);
 
-    List<Plane> getAll();
+	void delete(Long id);
+
+	List<Plane> getAll();
 }

@@ -17,23 +17,34 @@ import com.ivanslushko.training.datamodel.Flight;
 public class FlightDoaImpl implements FlightDao {
 
 	@Inject
-	private JdbcTemplate jdbcTemplate1;
-
-	@Override
-	public Flight get(Long id) {
-		return jdbcTemplate1.queryForObject("select * from flight where id = ?", new Object[] { id },
-				new BeanPropertyRowMapper<Flight>(Flight.class));
-	}
-
-	@Inject
 	private JdbcTemplate jdbcTemplate;
 
 	@Override
-	public FlightFromCity getFromCity(Long id) {
-		return jdbcTemplate.queryForObject("select * from flight f left join city c on f.from=c.id where c.id=?",
-				new Object[] { id }, new FlightFromCityMapper());
+	public Flight get(Long id) {
+		return jdbcTemplate.queryForObject("select * from flight where id = ?", new Object[] { id },
+				new BeanPropertyRowMapper<Flight>(Flight.class));
 	}
 
+	
+	
+	@Override
+	public FlightFromCity getFromCity(Long id) {
+		
+//		return jdbcTemplate.queryForObject("select * from flight f left join city c on f.from=c.id where c.id=?",
+//				new Object[] { id }, new FlightFromCityMapper());
+// Т.е. приводить там надо было к ArrayList<FlightFromCity>
+		
+		
+		 return (FlightFromCity) jdbcTemplate.query(
+		 "select * from flight f left join city c on f.from=c.id where c.id=?", new Object[] { id },
+		 new FlightFromCityMapper());
+		}
+
+
+	
+	
+	
+	
 	@Override
 	public Long insert(Flight entity) {
 		return null;

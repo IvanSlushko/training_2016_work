@@ -13,6 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ivanslushko.training.datamodel.City;
+import com.ivanslushko.training.datamodel.Plane;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
@@ -28,10 +29,10 @@ public class ServiceTestSave {
 //	@BeforeClass	
 	
 	@Test
-	//@Ignore
+	@Ignore
 	public void saveCityTest() {
 		City city = new City();
-		city.setCity("Test55CITY");
+		city.setCity("Test5CITY");
 		Long id = cityService.save(city);
 		Assert.assertNotNull(id);
 		City cityFromDb = cityService.get(id);
@@ -51,4 +52,24 @@ public class ServiceTestSave {
 		cityService.saveAll(allCityes);
 	}
 
+	@Inject
+	private PlaneService planeService;
+	
+	@Test
+	//@Ignore
+	public void savePlaneTest() {
+		Plane plane = new Plane();
+	
+		plane.setBortNumber("qwerty1");//unic
+		plane.setModel("boeingQQQQWW");	
+		plane.setPassengerCount(93);			
+		
+		Long id = planeService.save(plane);
+		
+		Assert.assertNotNull(id);
+		Plane planeFromDb = planeService.get(id);
+		Assert.assertEquals(plane.getBortNumber(), planeFromDb.getBortNumber());
+		
+	
+	}	
 }

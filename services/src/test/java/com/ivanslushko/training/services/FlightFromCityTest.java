@@ -18,15 +18,18 @@ public class FlightFromCityTest {
 	private FlightService flightService;
 
 	@Test
-	public void getByIdTest() {
+	public void flightFromCityTest() {
 
-		FlightFromCity flightFromCity = flightService.getFromCity(4l);
+		
+		FlightFromCity flightFromCity = flightService.getFromCity(2l);
 
-		Assert.assertNotNull(flightFromCity.getCity());
-		Assert.assertNotNull(flightFromCity.getFlight());
+//		Assert.assertNotNull(flightFromCity.getCity());
+//		Assert.assertNotNull(flightFromCity.getFlight());
 
-		System.out.println(flightFromCity.getFlight());
-		System.out.println(flightFromCity.getCity());
+//		System.out.println(flightFromCity.getFlight());
+//		System.out.println(flightFromCity.getCity());
+		Assert.assertNotNull(flightFromCity.hashCode());
+		
 	}
 
 	

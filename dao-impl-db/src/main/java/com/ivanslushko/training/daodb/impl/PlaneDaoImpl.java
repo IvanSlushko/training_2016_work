@@ -1,18 +1,28 @@
 package com.ivanslushko.training.daodb.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
+
 import javax.inject.Inject;
+
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
-import com.ivanslushko.training.datamodel.Plane;
+
 import com.ivanslushko.training.daodb.PlaneDao;
+import com.ivanslushko.training.datamodel.Plane;
 
 @Repository
-public class PlaneDaoImpl implements PlaneDao{
+public class PlaneDaoImpl implements PlaneDao {
 
 	@Inject
 	private JdbcTemplate jdbcTemplate;
-	
+
 	@Override
 	public Plane get(Long id) {
 		return jdbcTemplate.queryForObject("select * from plane where id = ?", new Object[] { id },
@@ -20,27 +30,51 @@ public class PlaneDaoImpl implements PlaneDao{
 	}
 
 	@Override
-	public void insert(Plane entity) {
-		// TODO Auto-generated method stub
-		
+	public Long insert(final Plane entity) {
+
+		final String INSERT_SQL = "insert into plane (bort_number,model,passenger_count) values(?,?,?)";
+		// final String INSERT_SQL = "INSERT INTO plane values
+		// ('7','6645657','Airbus A320','88')";
+
+		KeyHolder keyHolder = new GeneratedKeyHolder();
+		jdbcTemplate.update(new PreparedStatementCreator() {
+
+			@Override
+			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+				PreparedStatement ps = connection.prepareStatement(INSERT_SQL, new String[] { "id" });
+				ps.setString(1, entity.getBortNumber());
+				ps.setString(2, entity.getModel());
+				ps.setInt(3, entity.getPassengerCount());
+				return ps;
+			}
+		}, keyHolder);
+		entity.setId(keyHolder.getKey().longValue());
+		return entity.getId();
+
 	}
 
 	@Override
 	public void update(Plane entity) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void delete(Long id) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public List<Plane> getAll() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void save(Plane entity) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
