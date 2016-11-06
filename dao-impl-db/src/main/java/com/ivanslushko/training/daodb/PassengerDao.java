@@ -14,7 +14,7 @@ public interface PassengerDao {
 
 	void save(Passenger entity);
 
-	void delete(Long id);
+	Passenger delete(Long id);
 
 	List<Passenger> getAll();
 }

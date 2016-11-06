@@ -15,6 +15,7 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.daodb.PassengerDao;
+import com.ivanslushko.training.datamodel.City;
 import com.ivanslushko.training.datamodel.Passenger;
 
 @Repository
@@ -57,20 +58,20 @@ public class PassengerDaoImpl implements PassengerDao {
 	}
 
 	@Override
-	public void delete(Long id) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public List<Passenger> getAll() {
-		// TODO Auto-generated method stub
+	public Passenger delete(Long id) {
+		jdbcTemplate.update("delete from passenger where id = ?", new Object[] { id });
 		return null;
 	}
 
 	@Override
+	public List<Passenger> getAll() {
+		List<Passenger> rs = jdbcTemplate.query("select * from passenger ",
+				new BeanPropertyRowMapper<Passenger>(Passenger.class));
+		return rs;
+	}
+
+	@Override
 	public void save(Passenger entity) {
-		// TODO Auto-generated method stub
 
 	}
 

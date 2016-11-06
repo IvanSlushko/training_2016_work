@@ -14,7 +14,7 @@ public interface PlaneDao {
 
 	void save(Plane entity);
 
-	void delete(Long id);
+	Plane delete(Long id);
 
 	List<Plane> getAll();
 }

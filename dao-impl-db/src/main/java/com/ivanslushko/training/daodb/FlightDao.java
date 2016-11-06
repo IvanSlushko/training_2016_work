@@ -9,14 +9,16 @@ public interface FlightDao {
 
 	Flight get(Long id);
 
-	FlightFromCity getFromCity(Long id);
-
 	Long insert(Flight entity);
 
 	void update(Flight entity);
 
-	void delete(Long id);
+	void save(Flight entity);
+
+	Flight delete(Long id);
 
 	List<Flight> getAll();
+
+	List<FlightFromCity> getFromCity(Long id);
 
 }

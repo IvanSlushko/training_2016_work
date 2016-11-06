@@ -26,21 +26,17 @@ public class PassengerServiceImpl implements PassengerService {
 	}
 
 	@Override
+	public List<Passenger> getAll() {
+		return passengerDao.getAll();
+	}
+
+	@Override
 	public void saveAll(List<Passenger> passengers) {
 		for (Passenger passenger : passengers) {
 			save(passenger);
 		}
 
 	}
-
-	// @Override
-	// public void save(Passenger passenger) {
-	// if (passenger.getId() == null) {
-	// passengerDao.insert(passenger);
-	// } else {
-	// passengerDao.update(passenger);
-	// }
-	// }
 
 	@Override
 	public Long save(Passenger passenger) {
@@ -53,5 +49,13 @@ public class PassengerServiceImpl implements PassengerService {
 			passengerDao.update(passenger);
 			return passenger.getId();
 		}
+	}
+	
+	@Override
+	public Passenger delete(Long id) {
+		LOGGER.info("Passenger deleted! id={}", id);
+		return passengerDao.delete(id);
+		// TODO Auto-generated method stub
+		
 	}
 }

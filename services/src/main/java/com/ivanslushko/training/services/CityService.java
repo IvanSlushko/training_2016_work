@@ -15,6 +15,13 @@ public interface CityService {
 	Long save(City city);
 
 	City get(Long id);
+	
+	City delete(Long id);
 
-	FlightFromCity getFromCity(Long id);
+	List<City> getAll();
+
+	List<FlightFromCity> getFromCity(Long id);
+
+	//Long delete(long id);
+
 }

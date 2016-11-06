@@ -10,6 +10,7 @@ public final class PassengerMapper implements RowMapper<Passenger> {
 
 	@Override
 	public Passenger mapRow(ResultSet rs, int rowNum) throws SQLException {
+		
 		Long id = rs.getLong("id");
 		String fullName = rs.getString("full_name");
 		Date birthday = rs.getDate("birthday");

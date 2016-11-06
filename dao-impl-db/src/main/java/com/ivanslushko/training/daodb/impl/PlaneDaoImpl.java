@@ -15,6 +15,7 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.daodb.PlaneDao;
+import com.ivanslushko.training.datamodel.City;
 import com.ivanslushko.training.datamodel.Plane;
 
 @Repository
@@ -58,15 +59,15 @@ public class PlaneDaoImpl implements PlaneDao {
 	}
 
 	@Override
-	public void delete(Long id) {
-		// TODO Auto-generated method stub
-
+	public Plane delete(Long id) {
+		jdbcTemplate.update("delete from plane where id = ?", new Object[] { id });
+		return null;
 	}
 
 	@Override
 	public List<Plane> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Plane> rs = jdbcTemplate.query("select * from plane ", new BeanPropertyRowMapper<Plane>(Plane.class));
+		return rs;
 	}
 
 	@Override

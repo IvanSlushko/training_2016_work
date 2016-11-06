@@ -5,13 +5,16 @@ import java.util.List;
 import com.ivanslushko.training.datamodel.Ticket;
 
 public interface TicketDao {
+
 	Ticket get(Long id);
 
-    void insert(Ticket entity);
+	Long insert(Ticket entity);
 
-    void update(Ticket entity);
+	void update(Ticket entity);
 
-    void delete(Long id);
+	Ticket delete(Long id);
 
-    List<Ticket> getAll();
+	void save(Ticket entity);
+
+	List<Ticket> getAll();
 }

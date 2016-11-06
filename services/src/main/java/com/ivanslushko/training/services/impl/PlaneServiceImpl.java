@@ -53,4 +53,18 @@ public class PlaneServiceImpl implements PlaneService {
 			return plane.getId();
 		}
 	}
+
+	@Override
+	public List<Plane> getAll() {
+		return planeDao.getAll();
+	}
+
+	@Override
+	public Plane delete(Long id) {
+		LOGGER.info("Plane deleted! id={}", id);
+		return planeDao.delete(id);
+		// TODO Auto-generated method stub
+
+	}
+
 }

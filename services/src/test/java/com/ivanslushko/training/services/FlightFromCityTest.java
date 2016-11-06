@@ -20,22 +20,19 @@ public class FlightFromCityTest {
 	@Test
 	public void flightFromCityTest() {
 
-		
-		FlightFromCity flightFromCity = flightService.getFromCity(2l);
+//		List flightFromCityes = (List) flightService.getFromCity(2L);
+//	//	FlightFromCity flightFromCityes = flightService.getFromCity(2L);
+//		Assert.assertNotNull("flight from city 3 should not be null", flightFromCityes);
+//	//	Assert.assertEquals(new Long(2l), flightFromCityes.getId());
+//
+//		//for (int i = 0; i < flightFromCityes.size(); i++) {
+//			System.out.println(flightFromCityes.getHeight());
+//		//}
+		FlightFromCity flightFromCity = (FlightFromCity) flightService.getFromCity(2l);
 
-//		Assert.assertNotNull(flightFromCity.getCity());
-//		Assert.assertNotNull(flightFromCity.getFlight());
-
-//		System.out.println(flightFromCity.getFlight());
-//		System.out.println(flightFromCity.getCity());
-		Assert.assertNotNull(flightFromCity.hashCode());
-		
+	   //     Assert.assertNotNull(flightFromCity.getCity());
+	     //   Assert.assertNotNull(flightFromCity.getFlight());
+	        Assert.assertNotNull(flightFromCity.getFlightFC());
 	}
 
-	
-	
-/*	@Test(expected = IllegalArgumentException.class)
-	public void getByInvalidIdTest() {
-		flightService.get(-1l);
-	}*/
 }

@@ -46,16 +46,25 @@ public class CityServiceImpl implements CityService {
 		}
 	}
 
-	
-	
 	@Override
-	public FlightFromCity getFromCity(Long id) {
+	public List<City> getAll() {
+		return cityDao.getAll();
+	}
+
+	@Override
+	public List<FlightFromCity> getFromCity(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	/*
-	 * @Override public void save(City city) { if (city.getId() == null) {
-	 * cityDao.insert(city); } else { cityDao.update(city); } }
-	 */
+	@Override
+	public City delete(Long id) {
+		LOGGER.info("City deleted!!! id={}", id);
+		return cityDao.delete(id);
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
 }

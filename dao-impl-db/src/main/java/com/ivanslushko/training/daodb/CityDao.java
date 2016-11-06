@@ -14,7 +14,7 @@ public interface CityDao {
 
 	void save(City entity);
 
-	void delete(Long id);
+	City delete(Long id);
 
 	List<City> getAll();
 

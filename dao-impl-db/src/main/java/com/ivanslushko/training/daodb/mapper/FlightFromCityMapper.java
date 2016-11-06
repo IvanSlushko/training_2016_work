@@ -16,18 +16,16 @@ public final class FlightFromCityMapper implements RowMapper<FlightFromCity> {
 
 		Flight flight = new Flight();
 		flight.setId(rs.getLong("id"));
-		flight.setPlane(rs.getString("plane"));
-		flight.setFrom(rs.getInt("from"));
+		flight.setPlane(rs.getInt("plane"));
+		flight.setFromm(rs.getInt("fromm"));
 
 		City city = new City();
-		// city.setId = (rs.getLong("id"));
+		// city.setId = (rs.get("id"));
 		city.setCity((rs.getString("city")));
 
 		FlightFromCity flightFromCity = new FlightFromCity();
 		flightFromCity.setFlight(flight);
 		flightFromCity.setCity(city);
-
 		return flightFromCity;
 	}
-
 }

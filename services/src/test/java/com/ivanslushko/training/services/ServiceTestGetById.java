@@ -32,9 +32,7 @@ public class ServiceTestGetById {
 		City city = cityService.get(3L);
 		Assert.assertNotNull("city 3 should not be null", city);
 		Assert.assertEquals(new Long(3), city.getId());
-		// System.out.println("City: " + city.getCity() + " have ID " +
-		// city.getId());
-		LOGGER.info("City read: . id={}, title={}", city.getId(), city.getCity());
+		LOGGER.info("City get: id={}, title={}", city.getId(), city.getCity());
 	}
 
 	@Inject
@@ -42,11 +40,12 @@ public class ServiceTestGetById {
 
 	@Test
 	public void getByIdtestFlight() {
-		Flight flight = flightService.get(3L);
+		Flight flight = flightService.get(2L);
 		Assert.assertNotNull("flight 1 should not be null", flight);
-		Assert.assertEquals(new Long(3l), flight.getId());
-		System.out.println("Flight (reys) :" + flight.getId() + ", with plane : " + flight.getPlane() + ",  departs "
-				+ flight.getdAndT());
+		Assert.assertEquals(new Long(2l), flight.getId());
+		LOGGER.info("Flight get: . id={}, plane={}, from={}, date={},to={}", flight.getId(), flight.getPlane(),
+				flight.getFromm(), flight.getdAndT(), flight.getToo());
+
 	}
 
 	@Inject
@@ -57,8 +56,8 @@ public class ServiceTestGetById {
 		Passenger passenger = passengerService.get(1L);
 		Assert.assertNotNull(" 1 should not be null", passenger);
 		Assert.assertEquals(new Long(1l), passenger.getId());
-		System.out.println(
-				"Passenger with passport " + passenger.getPassport() + " have name " + passenger.getFullName());
+		LOGGER.info("Passenger get: id={}, fullName={}, birthday={}, passport={}", passenger.getId(),
+				passenger.getFullName(), passenger.getBirthday(), passenger.getPassport());
 	}
 
 	@Inject
@@ -69,8 +68,8 @@ public class ServiceTestGetById {
 		Plane plane = planeService.get(1L);
 		Assert.assertNotNull("plane 1 should not be null", plane);
 		Assert.assertEquals(new Long(1l), plane.getId());
-		System.out.println("Plane bort № :" + plane.getBortNumber() + " have model " + plane.getModel() + " capacity : "
-				+ plane.getPassengerCount());
+		LOGGER.info("Plane get: id={}, bortNumber={}, model={}, passengerCount={}", plane.getId(),
+				plane.getBortNumber(), plane.getModel(), plane.getPassengerCount());
 	}
 
 	@Inject
@@ -78,11 +77,11 @@ public class ServiceTestGetById {
 
 	@Test
 	public void getByIdtestTicket() {
-		Ticket ticket = ticketService.get(2L);
-		Assert.assertNotNull("ticket 2 should not be null", ticket);
-		Assert.assertEquals(new Long(2l), ticket.getId());
-		System.out.println("Ticket  № :" + ticket.getId() + " with passenger " + ticket.getPassenger()
-				+ ", have class: " + ticket.getClas() + ", cost: " + ticket.getPrice() + ", bag: " + ticket.getBag());
+		Ticket ticket = ticketService.get(4L);
+		Assert.assertNotNull("ticket 1 should not be null", ticket);
+		Assert.assertEquals(new Long(4l), ticket.getId());
+		LOGGER.info("Ticket get: id={}, flightNumber={}, passenger={}, clas={},price={}, bag={}", ticket.getId(),
+				ticket.getFlNum(), ticket.getPassenger(), ticket.getClas(), ticket.getPrice(), ticket.getBag());
 
 	}
 

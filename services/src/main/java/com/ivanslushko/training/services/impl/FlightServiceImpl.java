@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.ivanslushko.training.daodb.FlightDao;
@@ -13,6 +15,8 @@ import com.ivanslushko.training.services.FlightService;
 
 @Service
 public class FlightServiceImpl implements FlightService {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(FlightServiceImpl.class);
 
 	@Inject
 	private FlightDao flightDao;
@@ -31,21 +35,33 @@ public class FlightServiceImpl implements FlightService {
 
 	@Override
 	public Long save(Flight flight) {
-		
 		if (flight.getId() == null) {
-			return flightDao.insert(flight);
+			Long id = flightDao.insert(flight);
+			LOGGER.info("Flight created. id={}, plane={}, from={}, dateAndTime={}, to={}", flight.getId(),
+					flight.getPlane(), flight.getFromm(), flight.getdAndT(), flight.getToo());
+			return id;
 		} else {
 			flightDao.update(flight);
-			 return flight.getId();
+			return flight.getId();
 		}
 	}
 
-	@Inject
-	private FlightDao dao;
 
 	@Override
-	public FlightFromCity getFromCity(Long id) {
-		return dao.getFromCity(id);
+	public List<FlightFromCity> getFromCity(Long id) {
+		return flightDao.getFromCity(id);
 	}
 
+	@Override
+	public List<Flight> getAll() {
+		return flightDao.getAll();
+	}
+
+	@Override
+	public Flight delete(Long id) {
+		LOGGER.info("Flight deleted! id={}", id);
+		return flightDao.delete(id);
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -4,28 +4,25 @@ import java.sql.Date;
 
 public class Flight extends AbstractModel {
 
-
-	private String plane;
-	private Integer from;
+	private Integer plane;
+	private Integer fromm;
 	private Date dAndT;
-	private Integer to;
+	private Integer too;
 
-
-
-	public String getPlane() {
+	public Integer getPlane() {
 		return plane;
 	}
 
-	public void setPlane(String plane) {
+	public void setPlane(Integer plane) {
 		this.plane = plane;
 	}
 
-	public Integer getFrom() {
-		return from;
+	public Integer getFromm() {
+		return fromm;
 	}
 
-	public void setFrom(Integer from) {
-		this.from = from;
+	public void setFromm(Integer fromm) {
+		this.fromm = fromm;
 	}
 
 	public Date getdAndT() {
@@ -36,19 +33,18 @@ public class Flight extends AbstractModel {
 		this.dAndT = dAndT;
 	}
 
-	public Integer getTo() {
-		return to;
+	public Integer getToo() {
+		return too;
 	}
 
-	public void setTo(Integer to) {
-		this.to = to;
+	public void setToo(Integer too) {
+		this.too = too;
 	}
 
-    @Override
-    public String toString() {
-        return "Reys [plane=" + plane + ", getId()=" + getId() + " from " + from +" date "+dAndT+"to"+to+"]";
-    }
-	
-	
-	
+	@Override
+	public String toString() {
+		return "Reys " + getId() + ", plane= " + plane + ", from " + fromm + " city at date " + dAndT + " to " + too
+				+ " city. ";
+	}
+
 }
