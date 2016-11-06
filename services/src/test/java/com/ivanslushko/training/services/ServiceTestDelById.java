@@ -57,5 +57,4 @@ public class ServiceTestDelById {
 	public void delTicketTest() {
 		ticketService.delete(10L);
 	}
-
 }
