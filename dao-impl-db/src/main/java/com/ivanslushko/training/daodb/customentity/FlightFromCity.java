@@ -1,7 +1,5 @@
 package com.ivanslushko.training.daodb.customentity;
 
-import java.util.ArrayList;
-
 import com.ivanslushko.training.datamodel.City;
 import com.ivanslushko.training.datamodel.Flight;
 
@@ -9,8 +7,8 @@ public class FlightFromCity {
 	private City city;
 	private Flight flight;
 
-	private ArrayList<FlightFromCity> flightFC = 
-			new ArrayList<FlightFromCity>();
+//	private ArrayList<FlightFromCity> flightFC = 
+//			new ArrayList<FlightFromCity>();
 
 	public City getCity() {
 		return city;
@@ -28,12 +26,12 @@ public class FlightFromCity {
 		this.flight = flight;
 	}
 
-	public ArrayList<FlightFromCity> getFlightFC() {
-		return flightFC;
-	}
-
-	public void setFlightFC(ArrayList<FlightFromCity> flightFC) {
-		this.flightFC = flightFC;
-	}
+//	public ArrayList<FlightFromCity> getFlightFC() {
+//		return flightFC;
+//	}
+//
+//	public void setFlightFC(ArrayList<FlightFromCity> flightFC) {
+//		this.flightFC = flightFC;
+//	}
 
 }

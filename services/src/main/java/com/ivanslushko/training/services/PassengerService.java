@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ivanslushko.training.datamodel.City;
 import com.ivanslushko.training.datamodel.Passenger;
 
 public interface PassengerService {

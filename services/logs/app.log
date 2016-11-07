@@ -1,40 +1,23 @@
-13:21:24.673 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
-13:21:24.690 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, fromm=1, date=2016-01-11T00:00:00.000+0300,too=3
-13:21:24.717 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=City1
-13:21:24.730 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
-13:21:49.025 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
-13:21:49.033 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, from=1, date=2016-01-11T00:00:00.000+0300,to=3
-13:21:49.044 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=City1
-13:21:49.049 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
-13:25:53.137 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
-13:25:53.143 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, from=1, date=2016-01-11T00:00:00.000+0300,to=3
-13:25:53.156 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=City1
-13:25:53.161 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
-13:27:52.436 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=4, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
-13:28:47.114 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
-13:28:47.121 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, from=1, date=2016-01-11T00:00:00.000+0300,to=3
-13:28:47.132 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=City1
-13:28:47.138 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
-13:29:37.990 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
-13:29:37.997 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, from=1, date=2016-01-11T00:00:00.000+0300,to=3
-13:29:38.009 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=City1
-13:29:38.014 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
-13:34:00.958 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
-13:34:00.971 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, from=1, date=2016-01-11T00:00:00.000+0300,to=3
-13:34:00.977 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=1, passenger=1, clas=1,price=6, bag=true
-13:34:00.984 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=City1
-13:34:00.993 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
-13:36:06.660 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=2, full_name=Ivanov Anton, birthday=1988-08-11T00:00:00.000+0400, passport=KH7843209
-13:36:45.844 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=3, full_name=Petr Goriev, birthday=1977-05-11T00:00:00.000+0300, passport=KH7824109
-13:37:28.390 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=4, full_name=Masha Rasptina, birthday=1969-05-10T00:00:00.000+0300, passport=KH3332109
-13:38:10.098 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=5, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-13:38:26.765 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=6, flight_num=2, passenger=2, clas=1, price=4, bag=true
-13:39:14.804 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=7, flight_num=1, passenger=3, clas=2, price=7, bag=false
-13:42:56.435 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=8, flight_num=1, passenger=3, clas=2, price=2, bag=false
-13:46:32.715 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=9, flight_num=1, passenger=5, clas=2, price=3, bag=false
-17:58:39.423 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=8
-18:03:40.149 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=8
-18:17:51.446 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=5
-18:18:56.292 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=6
-18:24:02.827 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=4
-18:24:52.732 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=10
+00:27:35.016 [main] INFO  com.ivanslushko.training.services.log4jExample - Info
+00:29:11.986 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
+00:29:11.993 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, from=5, date=2016-01-11T00:00:00.000+0300,to=3
+00:29:12.005 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=1, passenger=1, clas=1,price=6, bag=true
+00:29:12.014 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Alupka
+00:29:12.028 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
+00:31:27.598 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
+00:31:27.604 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, from=5, date=2016-01-11T00:00:00.000+0300,to=3
+00:31:27.609 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=1, passenger=1, clas=1,price=6, bag=true
+00:31:27.614 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Alupka
+00:31:27.614 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City
+00:31:27.619 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
+00:35:38.015 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Igor Malcev, birthday=1990-10-30T00:00:00.000+0300, passport=KH3477361
+00:35:38.022 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=2, plane=2, from=5, date=2016-01-11T00:00:00.000+0300,to=3
+00:35:38.028 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=1, passenger=1, clas=1,price=6, bag=true
+00:35:38.033 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Alupka
+00:35:38.034 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City
+00:35:38.039 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=8439720, model=Boeing 737, passengerCount=59
+00:37:32.749 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info
+00:37:32.751 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
+00:37:32.751 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error
+00:38:30.136 [main] INFO  com.ivanslushko.training.services.log4jExample - Info
+00:38:57.107 [main] INFO  com.ivanslushko.training.services.log4jExample - Info

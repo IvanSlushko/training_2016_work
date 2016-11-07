@@ -1,14 +1,13 @@
 package com.ivanslushko.training.services;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import com.ivanslushko.training.daodb.customentity.FlightFromCity;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
@@ -20,19 +19,16 @@ public class FlightFromCityTest {
 	@Test
 	public void flightFromCityTest() {
 
-//		List flightFromCityes = (List) flightService.getFromCity(2L);
-//	//	FlightFromCity flightFromCityes = flightService.getFromCity(2L);
-//		Assert.assertNotNull("flight from city 3 should not be null", flightFromCityes);
-//	//	Assert.assertEquals(new Long(2l), flightFromCityes.getId());
-//
-//		//for (int i = 0; i < flightFromCityes.size(); i++) {
-//			System.out.println(flightFromCityes.getHeight());
-//		//}
-		FlightFromCity flightFromCity = (FlightFromCity) flightService.getFromCity(2l);
+		List<?> flightFromCity = (List<?>) flightService.getFromCity(5L);
+		// Assert.assertNotNull(flightFromCity);
+		System.out.println();
+		System.out.println("From this city flies " + flightFromCity.size() + " Aircraft.");
 
-	   //     Assert.assertNotNull(flightFromCity.getCity());
-	     //   Assert.assertNotNull(flightFromCity.getFlight());
-	        Assert.assertNotNull(flightFromCity.getFlightFC());
+		for (int i = 0; i < flightFromCity.size(); i++) {
+			System.out.println(flightFromCity.get(i));
+		}
+
+		System.out.println();
 	}
 
 }

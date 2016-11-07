@@ -15,7 +15,6 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.daodb.PassengerDao;
-import com.ivanslushko.training.datamodel.City;
 import com.ivanslushko.training.datamodel.Passenger;
 
 @Repository

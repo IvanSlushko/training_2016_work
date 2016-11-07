@@ -17,7 +17,6 @@ import org.springframework.stereotype.Repository;
 import com.ivanslushko.training.daodb.FlightDao;
 import com.ivanslushko.training.daodb.customentity.FlightFromCity;
 import com.ivanslushko.training.daodb.mapper.FlightFromCityMapper;
-import com.ivanslushko.training.datamodel.City;
 import com.ivanslushko.training.datamodel.Flight;
 
 @Repository
@@ -83,16 +82,6 @@ public class FlightDoaImpl implements FlightDao {
 				new Object[] { id },
 				new FlightFromCityMapper());
 		return rs;
-		
-		// return (FlightFromCity) jdbcTemplate.query("select * from flight f
-		// left join city c on f.fromm=c.id where c.id=?",new Object[] { id },
-		// new FlightFromCityMapper());
-
-		// public AuthorWithCountry getWithCountry(Long id) {
-		// return jdbcTemplate.queryForObject("select * from author a "
-		// + "left join country c on a.country_code=c.code "
-		// + "where id = ?", new Object[] { id },
-		// new AuthorWithCountryMapper());
 
 	}
 }
