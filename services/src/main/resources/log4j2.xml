@@ -15,9 +15,24 @@
 			</Policies>
 		</RollingFile>
 
+		<JDBC name="databaseAppender" tableName="public.log_info">
+			<ConnectionFactory
+				class="com.ivanslushko.training.services.ConnectionFactory" method="getDatabaseConnection" />
+			<Column name="USER_ID" pattern="%userid" />
+			<Column name="DATE" isEventTimestamp="true" />
+			<Column name="LEVEL" pattern="%level" />
+			<Column name="LOGGER" pattern="%logger" />
+			<Column name="MESSAGE" pattern="%message" />
+		</JDBC>
+
 	</Appenders>
 
 	<Loggers>
+
+		<Root level="warn">
+			<AppenderRef ref="databaseAppender" />
+		</Root>
+
 		<Root level="info">
 			<AppenderRef ref="Console" />
 		</Root>
@@ -28,7 +43,7 @@
 			<AppenderRef ref="RollingFile" />
 		</Logger>
 
-	</Loggers>
 
+	</Loggers>
 
 </Configuration>

@@ -7,6 +7,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.junit.Assert;
+import org.junit.FixMethodOrder;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,7 +22,7 @@ import com.ivanslushko.training.datamodel.Ticket;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
-
+@FixMethodOrder
 public class ServiceTestSave {
 
 	@Inject
@@ -36,10 +37,11 @@ public class ServiceTestSave {
 	@Ignore
 	public void saveCityTest() {
 		City city = new City();
-		city.setCity("Test5C3TY");
+		city.setCity("TestCITY");
 		Long id = cityService.save(city);
 		Assert.assertNotNull(id);
 		City cityFromDb = cityService.get(id);
+		System.out.println(id);
 		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
 	}
 
@@ -48,7 +50,7 @@ public class ServiceTestSave {
 	public void saveCityMultipleTest() {
 		List<City> allCityes = new ArrayList<>();
 
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 3; i++) {
 			City city = new City();
 			city.setCity("City" + i);
 			allCityes.add(city);
@@ -100,7 +102,7 @@ public class ServiceTestSave {
 	private TicketService ticketService;
 
 	@Test
-	//@Ignore
+	@Ignore
 	public void saveTicketTest() {
 		Ticket ticket = new Ticket();
 

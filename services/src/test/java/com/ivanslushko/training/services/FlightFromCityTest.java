@@ -19,7 +19,7 @@ public class FlightFromCityTest {
 	@Test
 	public void flightFromCityTest() {
 
-		List<?> flightFromCity = (List<?>) flightService.getFromCity(5L);
+		List<?> flightFromCity = (List<?>) flightService.getFromCity(1L);
 		// Assert.assertNotNull(flightFromCity);
 		System.out.println();
 		System.out.println("From this city flies " + flightFromCity.size() + " Aircraft.");

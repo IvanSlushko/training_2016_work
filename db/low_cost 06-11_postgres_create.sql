@@ -11,7 +11,7 @@ CREATE TABLE "plane" (
 
 
 CREATE TABLE "flight" (
-	"num" serial NOT NULL,
+	"id" serial NOT NULL,
 	"plane" bigint NOT NULL,
 	"fromm" bigint NOT NULL,
 	"d_and_t" DATE NOT NULL,

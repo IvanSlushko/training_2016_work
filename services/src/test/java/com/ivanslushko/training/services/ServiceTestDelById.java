@@ -53,8 +53,8 @@ public class ServiceTestDelById {
 	private TicketService ticketService;
 
 	@Test
-	@Ignore
+	//@Ignore
 	public void delTicketTest() {
-		ticketService.delete(10L);
+		ticketService.delete(9L);
 	}
 }

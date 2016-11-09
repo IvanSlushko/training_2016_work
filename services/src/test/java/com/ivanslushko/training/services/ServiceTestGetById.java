@@ -40,9 +40,9 @@ public class ServiceTestGetById {
 
 	@Test
 	public void getByIdtestFlight() {
-		Flight flight = flightService.get(2L);
+		Flight flight = flightService.get(3L);
 		Assert.assertNotNull("flight 1 should not be null", flight);
-		Assert.assertEquals(new Long(2l), flight.getId());
+		Assert.assertEquals(new Long(3l), flight.getId());
 		LOGGER.info("Flight get: . id={}, plane={}, from={}, date={},to={}", flight.getId(), flight.getPlane(),
 				flight.getFromm(), flight.getdAndT(), flight.getToo());
 
