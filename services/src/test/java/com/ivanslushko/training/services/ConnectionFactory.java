@@ -28,7 +28,7 @@ public class ConnectionFactory {
 		GenericObjectPool pool = new GenericObjectPool();
 		DriverManagerConnectionFactory connectionFactory = new DriverManagerConnectionFactory(
 				"jdbc:postgresql://localhost:5432/LowCostAir", properties);
-		new PoolableConnectionFactory(connectionFactory, pool, null, "SELECT 1", 3, false, false,
+		new PoolableConnectionFactory(connectionFactory, pool, null, "SELECT 1", 3, false, true,
 				Connection.TRANSACTION_READ_COMMITTED);
 
 		this.dataSource = new PoolingDataSource(pool);

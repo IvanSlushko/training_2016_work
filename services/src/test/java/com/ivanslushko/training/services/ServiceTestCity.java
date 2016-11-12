@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.ivanslushko.training.daodb.CityDao;
 import com.ivanslushko.training.datamodel.City;
 
 @RunWith(SpringJUnit4ClassRunner.class)

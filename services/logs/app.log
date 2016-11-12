@@ -1,34 +1,6 @@
-00:04:38.761 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=11, city=TestCITY
-00:04:57.112 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Anton Pushkarev, birthday=1985-12-11T00:00:00.000+0300, passport=KH5634125
-00:04:57.193 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=5, passenger=4, clas=2,price=3, bag=false
-00:04:57.199 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Barcelona
-00:04:57.211 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=3356, model=Airbus A320, passengerCount=88
-00:06:01.545 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Anton Pushkarev, birthday=1985-12-11T00:00:00.000+0300, passport=KH5634125
-00:06:01.613 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=5, passenger=4, clas=2,price=3, bag=false
-00:06:01.617 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Barcelona
-00:06:01.622 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=3356, model=Airbus A320, passengerCount=88
-00:06:13.547 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Anton Pushkarev, birthday=1985-12-11T00:00:00.000+0300, passport=KH5634125
-00:06:13.630 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=5, passenger=4, clas=2,price=3, bag=false
-00:06:13.638 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Barcelona
-00:06:13.643 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=3356, model=Airbus A320, passengerCount=88
-00:09:41.043 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Anton Pushkarev, birthday=1985-12-11T00:00:00.000+0300, passport=KH5634125
-00:09:41.057 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=5, passenger=4, clas=2,price=3, bag=false
-00:09:41.066 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Barcelona
-00:09:41.071 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=3356, model=Airbus A320, passengerCount=88
-00:10:43.225 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger get: id=1, fullName=Anton Pushkarev, birthday=1985-12-11T00:00:00.000+0300, passport=KH5634125
-00:10:43.231 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight get: . id=3, plane=3, from=5, date=2016-02-11T00:00:00.000+0300,to=10
-00:10:43.237 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket get: id=4, flightNumber=5, passenger=4, clas=2,price=3, bag=false
-00:10:43.241 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Barcelona
-00:10:43.246 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane get: id=1, bortNumber=3356, model=Airbus A320, passengerCount=88
-00:10:55.132 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12, city=TestCITY
-00:11:29.607 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=13, city=TestCITY
-00:12:09.780 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=14, city=TestCITY
-00:12:56.123 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=15, city=TestCITY
-00:14:13.879 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=16, city=TestCITY
-00:14:40.442 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=17, city=TestCITY
-00:39:18.534 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=18, city=TestCITY
-00:39:18.549 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=18
-00:39:36.162 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=19, city=TestCITY
-00:39:36.176 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=19
-00:41:22.977 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=20, city=TestCITY
-00:41:22.990 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=20
+15:52:50.406 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=21, city=TestCITY
+15:52:50.434 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=21
+15:53:07.120 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=22, city=TestCITY
+15:53:07.132 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=22
+15:53:56.677 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=23, city=TestCITY
+15:53:56.687 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=23
