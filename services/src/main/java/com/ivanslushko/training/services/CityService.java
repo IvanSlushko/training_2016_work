@@ -14,6 +14,8 @@ public interface CityService {
 
 	Long save(City city);
 
+	Long update(City city);
+
 	City get(Long id);
 
 	City delete(Long id);

@@ -20,13 +20,13 @@ import com.ivanslushko.training.datamodel.Ticket;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
 
-public class ServiceTestGetAll {
+public class ServiceGetAll {
 
 	@Inject
 	private FlightService flightService;
 
-	@Test
-	@Ignore
+
+
 	public void getAllFlight() {
 
 		List<Flight> flights = flightService.getAll();
@@ -39,8 +39,8 @@ public class ServiceTestGetAll {
 	@Inject
 	private CityService cityService;
 
-	@Test
-	@Ignore
+
+
 	public void getAllCity() {
 
 		List<City> cityes = cityService.getAll();
@@ -53,8 +53,7 @@ public class ServiceTestGetAll {
 	@Inject
 	private PassengerService passengerService;
 
-	@Test
-	@Ignore
+
 	public void getAllPassenger() {
 
 		List<Passenger> passengers = passengerService.getAll();
@@ -67,8 +66,7 @@ public class ServiceTestGetAll {
 	@Inject
 	private PlaneService planeService;
 
-	@Test
-	@Ignore
+
 	public void getAllPlane() {
 
 		List<Plane> planes = planeService.getAll();
@@ -81,8 +79,7 @@ public class ServiceTestGetAll {
 	@Inject
 	private TicketService ticketService;
 
-	@Test
-	@Ignore
+
 	public void getAllTicket() {
 
 		List<Ticket> tickets = ticketService.getAll();

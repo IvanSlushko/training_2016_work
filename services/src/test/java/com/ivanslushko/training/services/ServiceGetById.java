@@ -20,14 +20,13 @@ import com.ivanslushko.training.services.impl.CityServiceImpl;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
 
-public class ServiceTestGetById {
+public class ServiceGetById {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CityServiceImpl.class);
 
 	@Inject
 	private CityService cityService;
 
-	@Test
 	public void getByIdtestCity() {
 		City city = cityService.get(3L);
 		Assert.assertNotNull("city 3 should not be null", city);
@@ -38,7 +37,6 @@ public class ServiceTestGetById {
 	@Inject
 	private FlightService flightService;
 
-	@Test
 	public void getByIdtestFlight() {
 		Flight flight = flightService.get(3L);
 		Assert.assertNotNull("flight 1 should not be null", flight);
@@ -51,7 +49,6 @@ public class ServiceTestGetById {
 	@Inject
 	private PassengerService passengerService;
 
-	@Test
 	public void getByIdtestPassenger() {
 		Passenger passenger = passengerService.get(1L);
 		Assert.assertNotNull(" 1 should not be null", passenger);
@@ -63,7 +60,6 @@ public class ServiceTestGetById {
 	@Inject
 	private PlaneService planeService;
 
-	@Test
 	public void getByIdtestPlane() {
 		Plane plane = planeService.get(1L);
 		Assert.assertNotNull("plane 1 should not be null", plane);
@@ -75,7 +71,6 @@ public class ServiceTestGetById {
 	@Inject
 	private TicketService ticketService;
 
-	@Test
 	public void getByIdtestTicket() {
 		Ticket ticket = ticketService.get(4L);
 		Assert.assertNotNull("ticket 1 should not be null", ticket);

@@ -56,23 +56,19 @@ public class CityDaoImpl implements CityDao {
 				return ps;
 			}
 		}, keyHolder);
-
 		entity.setId(keyHolder.getKey().longValue());
-
 		return entity.getId();
 
 	}
-
+	
 	@Override
-	public void update(City entity) {
-		// TODO Auto-generated method stub
+	public Long update(final City entity) {
+		jdbcTemplate.update("update city set city = ? where id = ?",
+				entity.getCity(), entity.getId());
+		return entity.getId();
 
 	}
-
 	@Override
 	public void save(City entity) {
-		// TODO Auto-generated method stub
-
 	}
-
 }

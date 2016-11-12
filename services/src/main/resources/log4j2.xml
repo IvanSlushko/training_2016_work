@@ -29,11 +29,11 @@
 
 	<Loggers>
 
-	
+
 
 		<Root level="info">
 			<AppenderRef ref="Console" />
-			<AppenderRef ref="databaseAppender" />
+			<!--<AppenderRef ref="databaseAppender" /> -->
 		</Root>
 
 		<Logger level="info" name="com.ivanslushko.training"

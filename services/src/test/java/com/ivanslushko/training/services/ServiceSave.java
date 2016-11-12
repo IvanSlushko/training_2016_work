@@ -23,7 +23,7 @@ import com.ivanslushko.training.datamodel.Ticket;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
 @FixMethodOrder
-public class ServiceTestSave {
+public class ServiceSave {
 
 	@Inject
 	private CityService cityService;
@@ -33,8 +33,7 @@ public class ServiceTestSave {
 	// @AfterClass
 	// @BeforeClass
 
-	@Test
-	@Ignore
+
 	public void saveCityTest() {
 		City city = new City();
 		city.setCity("TestCITY");
@@ -45,8 +44,7 @@ public class ServiceTestSave {
 		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
 	}
 
-	@Test
-	@Ignore
+
 	public void saveCityMultipleTest() {
 		List<City> allCityes = new ArrayList<>();
 
@@ -61,8 +59,7 @@ public class ServiceTestSave {
 	@Inject
 	private PlaneService planeService;
 
-	@Test
-	@Ignore
+
 	public void savePlaneTest() {
 		Plane plane = new Plane();
 
@@ -81,8 +78,7 @@ public class ServiceTestSave {
 	@Inject
 	private PassengerService passengerService;
 
-	@Test
-	@Ignore
+
 	public void savePassengerTest() {
 		Passenger passenger = new Passenger();
 
@@ -101,8 +97,7 @@ public class ServiceTestSave {
 	@Inject
 	private TicketService ticketService;
 
-	@Test
-	@Ignore
+	
 	public void saveTicketTest() {
 		Ticket ticket = new Ticket();
 
@@ -121,8 +116,7 @@ public class ServiceTestSave {
 	@Inject
 	private FlightService flightService;
 
-	@Test
-	@Ignore
+	
 	public void saveFlightTest() {
 		Flight flight = new Flight();
 

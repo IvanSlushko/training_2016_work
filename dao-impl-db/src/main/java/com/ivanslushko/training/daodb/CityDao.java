@@ -10,12 +10,14 @@ public interface CityDao {
 
 	Long insert(City entity);
 
-	void update(City entity);
+	Long update(City entity);
 
 	void save(City entity);
 
 	City delete(Long id);
 
 	List<City> getAll();
+
+
 
 }

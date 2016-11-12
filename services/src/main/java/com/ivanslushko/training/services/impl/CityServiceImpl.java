@@ -37,7 +37,6 @@ public class CityServiceImpl implements CityService {
 	public Long save(City city) {
 		if (city.getId() == null) {
 			Long id = cityDao.insert(city);
-			// LOGGER.info("City created:" + city.toString());
 			LOGGER.info("City created. id={}, city={}", city.getId(), city.getCity());
 			return id;
 		} else {
@@ -45,7 +44,19 @@ public class CityServiceImpl implements CityService {
 			return city.getId();
 		}
 	}
-
+	@Override
+	public Long update(City city) {
+		if (city.getId() == null) {
+			Long id = cityDao.update(city);
+			LOGGER.info("City updated. id={}, city={}", city.getId(), city.getCity());
+			System.out.println("!!!!!!!!!!!!");
+			return id;
+		} else {
+			cityDao.update(city);
+			return city.getId();
+		}
+	}
+	
 	@Override
 	public List<City> getAll() {
 		return cityDao.getAll();
