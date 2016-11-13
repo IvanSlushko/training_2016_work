@@ -35,7 +35,6 @@ public class PassengerServiceImpl implements PassengerService {
 		for (Passenger passenger : passengers) {
 			save(passenger);
 		}
-
 	}
 
 	@Override
@@ -50,12 +49,22 @@ public class PassengerServiceImpl implements PassengerService {
 			return passenger.getId();
 		}
 	}
-	
+
 	@Override
 	public Passenger delete(Long id) {
 		LOGGER.info("Passenger deleted! id={}", id);
 		return passengerDao.delete(id);
-		// TODO Auto-generated method stub
-		
+	}
+
+	@Override
+	public Long update(Passenger passenger) {
+		if (passenger.getId() == null) {
+			Long id = passengerDao.update(passenger);
+			LOGGER.info("passenger updated. id={}, full_name={}", passenger.getId(), passenger.getFullName());
+			return id;
+		} else {
+			passengerDao.update(passenger);
+			return passenger.getId();
+		}
 	}
 }

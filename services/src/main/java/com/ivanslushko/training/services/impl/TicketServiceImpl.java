@@ -54,8 +54,18 @@ public class TicketServiceImpl implements TicketService {
 	public Ticket delete(Long id) {
 		LOGGER.info("Ticket deleted! id={}", id);
 		return ticketDao.delete(id);
-		// TODO Auto-generated method stub
-		
 	}
-	
+
+	@Override
+	public Long update(Ticket ticket) {
+		if (ticket.getId() == null) {
+			Long id = ticketDao.update(ticket);
+			LOGGER.info("Ticket updated. id={}, fl_mumber={}, passenger={}", ticket.getId(), ticket.getFlNum(),
+					ticket.getPassenger());
+			return id;
+		} else {
+			ticketDao.update(ticket);
+			return ticket.getId();
+		}
+	}
 }

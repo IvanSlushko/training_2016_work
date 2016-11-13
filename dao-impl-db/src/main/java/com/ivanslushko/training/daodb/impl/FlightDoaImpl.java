@@ -53,9 +53,10 @@ public class FlightDoaImpl implements FlightDao {
 	}
 
 	@Override
-	public void update(Flight entity) {
-		// TODO Auto-generated method stub
-
+	public Long update(final Flight entity) {
+		jdbcTemplate.update("update flight set plane = ?, fromm = ? , d_and_t = ?, too = ? where id = ?",
+				entity.getPlane(), entity.getFromm(), entity.getdAndT(), entity.getToo(), entity.getId());
+		return entity.getId();
 	}
 
 	@Override

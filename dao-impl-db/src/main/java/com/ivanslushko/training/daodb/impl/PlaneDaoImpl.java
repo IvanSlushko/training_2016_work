@@ -52,9 +52,10 @@ public class PlaneDaoImpl implements PlaneDao {
 	}
 
 	@Override
-	public void update(Plane entity) {
-		// TODO Auto-generated method stub
-
+	public Long update(final Plane entity) {
+		jdbcTemplate.update("update plane set bort_number = ?, model= ? , passenger_count= ? where id = ?",
+				entity.getBortNumber(), entity.getModel(), entity.getPassengerCount(), entity.getId());
+		return entity.getId();
 	}
 
 	@Override

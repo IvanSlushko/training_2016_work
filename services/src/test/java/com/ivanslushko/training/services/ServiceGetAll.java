@@ -5,7 +5,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -25,8 +24,7 @@ public class ServiceGetAll {
 	@Inject
 	private FlightService flightService;
 
-
-
+	@Test
 	public void getAllFlight() {
 
 		List<Flight> flights = flightService.getAll();
@@ -39,8 +37,7 @@ public class ServiceGetAll {
 	@Inject
 	private CityService cityService;
 
-
-
+	@Test
 	public void getAllCity() {
 
 		List<City> cityes = cityService.getAll();
@@ -53,7 +50,7 @@ public class ServiceGetAll {
 	@Inject
 	private PassengerService passengerService;
 
-
+	@Test
 	public void getAllPassenger() {
 
 		List<Passenger> passengers = passengerService.getAll();
@@ -66,7 +63,7 @@ public class ServiceGetAll {
 	@Inject
 	private PlaneService planeService;
 
-
+	@Test
 	public void getAllPlane() {
 
 		List<Plane> planes = planeService.getAll();
@@ -79,7 +76,7 @@ public class ServiceGetAll {
 	@Inject
 	private TicketService ticketService;
 
-
+	@Test
 	public void getAllTicket() {
 
 		List<Ticket> tickets = ticketService.getAll();

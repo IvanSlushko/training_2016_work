@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
-public class FlightFromCityTest {
+public class FlightFromCity {
 
 	@Inject
 	private FlightService flightService;
@@ -20,7 +20,6 @@ public class FlightFromCityTest {
 	public void flightFromCityTest() {
 
 		List<?> flightFromCity = (List<?>) flightService.getFromCity(1L);
-		// Assert.assertNotNull(flightFromCity);
 		System.out.println();
 		System.out.println("From this city flies " + flightFromCity.size() + " Aircraft.");
 

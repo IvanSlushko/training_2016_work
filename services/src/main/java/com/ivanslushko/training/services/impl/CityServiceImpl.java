@@ -49,7 +49,6 @@ public class CityServiceImpl implements CityService {
 		if (city.getId() == null) {
 			Long id = cityDao.update(city);
 			LOGGER.info("City updated. id={}, city={}", city.getId(), city.getCity());
-			System.out.println("!!!!!!!!!!!!");
 			return id;
 		} else {
 			cityDao.update(city);
@@ -64,7 +63,6 @@ public class CityServiceImpl implements CityService {
 
 	@Override
 	public List<FlightFromCity> getFromCity(Long id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -72,10 +70,5 @@ public class CityServiceImpl implements CityService {
 	public City delete(Long id) {
 		LOGGER.info("City deleted!!! id={}", id);
 		return cityDao.delete(id);
-		// TODO Auto-generated method stub
-		
 	}
-
-
-
 }

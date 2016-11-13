@@ -64,4 +64,17 @@ public class FlightServiceImpl implements FlightService {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public Long update(Flight flight) {
+		if (flight.getId() == null) {
+			Long id = flightDao.update(flight);
+			LOGGER.info("Flight updated. id={}, plane={}", flight.getId(), flight.getPlane());
+			System.out.println("!!!!!!!!!!!!");
+			return id;
+		} else {
+			flightDao.update(flight);
+			return flight.getId();
+		}
+	}
 }

@@ -60,14 +60,14 @@ public class CityDaoImpl implements CityDao {
 		return entity.getId();
 
 	}
-	
+
 	@Override
 	public Long update(final City entity) {
-		jdbcTemplate.update("update city set city = ? where id = ?",
-				entity.getCity(), entity.getId());
+		jdbcTemplate.update("update city set city = ? where id = ?", entity.getCity(), entity.getId());
 		return entity.getId();
 
 	}
+
 	@Override
 	public void save(City entity) {
 	}

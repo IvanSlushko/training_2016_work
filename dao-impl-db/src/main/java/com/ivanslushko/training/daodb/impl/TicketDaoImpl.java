@@ -55,9 +55,11 @@ public class TicketDaoImpl implements TicketDao {
 	}
 
 	@Override
-	public void update(Ticket entity) {
-		// TODO Auto-generated method stub
-
+	public Long update(final Ticket entity) {
+		jdbcTemplate.update("update ticket set fl_num = ?, passenger = ?, clas = ? , price = ?, bag = ? where id = ?",
+				entity.getFlNum(), entity.getPassenger(), entity.getClas(), entity.getPrice(), entity.getBag(),
+				entity.getId());
+		return entity.getId();
 	}
 
 	@Override

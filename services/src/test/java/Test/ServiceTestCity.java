@@ -1,4 +1,4 @@
-package com.ivanslushko.training.services;
+package Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ivanslushko.training.datamodel.City;
+import com.ivanslushko.training.services.CityService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
@@ -25,6 +26,9 @@ public class ServiceTestCity {
 
 	/**
 	 * delete City from Base
+	 * 
+	 * @param City
+	 * @return id
 	 */
 	@Test
 	public void deleteCity() {
@@ -32,9 +36,7 @@ public class ServiceTestCity {
 		city.setCity("TestCityDel");
 		Long id = cityService.save(city);
 		cityService.delete(id);
-		// Assert.assertNull(cityService.get(id));
-		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		Assert.assertNull(cityService.get(id));
 	}
 
 	/**
@@ -55,8 +57,10 @@ public class ServiceTestCity {
 	 * insert 3 City in base
 	 */
 	@Test
+	// @Ignore
 	public void saveCityMultiple() {
 		List<City> allCityes = new ArrayList<>();
+		// List<Long> ids = new ArrayList<>();
 		for (int i = 0; i < 3; i++) {
 			City city = new City();
 			city.setCity("City" + i);
@@ -64,6 +68,12 @@ public class ServiceTestCity {
 		}
 		cityService.saveAll(allCityes);
 		Assert.assertNotNull(allCityes);
+		// if (allCityes.size() > 0) {
+		// for (Long id: allCityes) {
+		// cityService.delete(id);
+		// }
+		// }
+
 	}
 
 	/**
@@ -71,7 +81,6 @@ public class ServiceTestCity {
 	 */
 	@Test
 	public void getCity() {
-
 		City city = new City();
 		city.setCity("TestCityLong");
 		Long id = cityService.save(city);
@@ -100,7 +109,6 @@ public class ServiceTestCity {
 		Assert.assertNotNull(id);
 		city.setCity("TestCityUpdated");
 		cityService.update(city);
-		System.out.println(id);
 		City cityFromDb = cityService.get(id);
 		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
 		cityService.delete(id);

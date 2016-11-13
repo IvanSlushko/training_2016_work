@@ -1,228 +1,307 @@
-15:52:50.406 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=21, city=TestCITY
-15:52:50.434 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=21
-15:53:07.120 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=22, city=TestCITY
-15:53:07.132 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=22
-15:53:56.677 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=23, city=TestCITY
-15:53:56.687 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=23
-15:57:47.350 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=24, city=TestCITY
-15:57:47.365 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=24
-16:59:01.504 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=25, city=TestCITY
-17:00:09.722 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=26, city=TestCITY
-17:00:09.740 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=26
-17:00:53.018 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=27, city=TestCITY
-17:00:53.030 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=27
-17:01:27.149 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=28, city=TestCITY
-17:01:27.171 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=28
-17:02:48.607 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=29, city=TestCITY
-17:02:48.633 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=29
-17:03:11.001 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=30, city=TestCITY
-17:03:11.016 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=30
-17:07:49.078 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=31, city=TestCityLong
-17:08:12.284 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=32, city=TestCityLong
-17:08:12.300 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=33, city=TestCITY
-17:08:12.308 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=33
-17:10:10.508 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=34, city=TestCityLong
-17:10:10.526 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=35, city=TestCITY
-17:10:10.535 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=35
-17:14:58.178 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=36, city=TestCityLong
-17:14:58.206 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=37, city=TestCITY
-17:14:58.219 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=37
-17:20:45.024 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=38, city=TestCITY
-17:20:45.041 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=38
-17:20:45.057 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=39, city=TestCityLong
-17:21:21.204 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=40, city=TestCITY
-17:21:21.216 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=40
-17:21:21.223 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=41, city=TestCityLong
-17:21:21.223 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=41
-17:23:11.202 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=42, city=TestCITY
-17:23:11.225 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=42
-17:23:11.234 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=43, city=TestCityLong
-17:23:11.235 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=43
-17:23:11.257 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=44, city=City0
-17:23:11.258 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=45, city=City1
-17:23:11.259 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=46, city=City2
-17:24:33.039 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=47, city=TestCITY
-17:24:33.051 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=47
-17:24:33.068 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=48, city=City0
-17:24:33.069 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=49, city=City1
-17:24:33.071 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=50, city=City2
-17:24:33.077 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=51, city=TestCityLong
-17:24:33.077 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=51
-17:26:31.111 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=52, city=TestCITY
-17:26:31.131 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=52
-17:26:31.154 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=53, city=City0
-17:26:31.155 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=54, city=City1
-17:26:31.158 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=55, city=City2
-17:26:31.168 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=56, city=TestCityLong
-17:26:31.169 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=56
-17:30:34.825 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=57, city=TestCITY
-17:30:34.851 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=57
-17:30:34.871 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=58, city=City0
-17:30:34.872 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=59, city=City1
-17:30:34.874 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=60, city=City2
-17:30:34.881 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=61, city=TestCityLong
-17:30:34.882 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=61
-17:31:38.826 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=62, city=TestCITY
-17:31:38.848 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=62
-17:31:38.869 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=63, city=City0
-17:31:38.870 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=64, city=City1
-17:31:38.873 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=65, city=City2
-17:31:38.880 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=66, city=TestCityLong
-17:31:38.880 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=66
-17:33:18.579 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=67, city=TestCITY
-17:33:18.607 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=67
-17:33:18.626 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=68, city=City0
-17:33:18.627 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=69, city=City1
-17:33:18.628 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=70, city=City2
-17:33:18.636 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=71, city=TestCityLong
-17:33:18.636 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=71
-17:36:15.565 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=72, city=TestCITY
-17:36:15.583 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=72
-17:36:15.604 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=73, city=City0
-17:36:15.605 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=74, city=City1
-17:36:15.608 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=75, city=City2
-17:36:15.611 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=0
-17:36:15.613 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=1
-17:36:15.749 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=76, city=TestCityLong
-17:36:15.749 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=76
-17:37:23.703 [main] INFO  com.ivanslushko.training.services.Log4jDBExample - Info Message!
-17:37:23.704 [main] WARN  com.ivanslushko.training.services.Log4jDBExample - Warn Message!
-17:37:23.704 [main] ERROR com.ivanslushko.training.services.Log4jDBExample - Error Message!
-17:37:23.704 [main] FATAL com.ivanslushko.training.services.Log4jDBExample - Fatal Message!
-17:39:57.029 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=77, city=TestCITY
-17:39:57.050 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=77
-17:39:57.075 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=78, city=City0
-17:39:57.077 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=79, city=City1
-17:39:57.080 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=80, city=City2
-17:39:57.090 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=81, city=TestCityLong
-17:39:57.090 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=81
-17:43:42.796 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=82, city=TestCITY
-17:43:42.819 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=82
-17:43:42.833 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=83, city=City0
-17:43:42.834 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=84, city=City1
-17:43:42.835 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=85, city=City2
-17:43:42.839 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=86, city=TestCityLong
-17:43:42.839 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=86
-17:43:42.849 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=87, city=TestCityDel
-17:43:42.849 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=87
-17:45:13.937 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=88, city=TestCITY
-17:45:13.950 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=88
-17:45:13.964 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=89, city=City0
-17:45:13.965 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=90, city=City1
-17:45:13.967 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=91, city=City2
-17:45:13.972 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=92, city=TestCityLong
-17:45:13.972 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=92
-17:45:13.987 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=93, city=TestCityDel
-17:45:13.988 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=93
-18:00:34.165 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=94, city=TestCITY
-18:00:34.183 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=94
-18:00:34.202 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=95, city=City0
-18:00:34.203 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=96, city=City1
-18:00:34.204 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=97, city=City2
-18:00:34.207 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=98, city=TestCityLong
-18:00:34.208 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=98
-18:00:34.218 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=99, city=TestCityDel
-18:00:34.218 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=99
-18:01:44.481 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=100, city=TestCITY
-18:01:44.494 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=100
-18:01:44.506 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=101, city=City0
-18:01:44.507 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=102, city=City1
-18:01:44.508 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=103, city=City2
-18:01:44.513 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=104, city=TestCityLong
-18:01:44.513 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=104
-18:01:44.529 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=105, city=TestCityDel
-18:01:44.529 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=105
-18:02:25.158 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=106, city=TestCITY
-18:02:25.185 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=106
-18:02:25.208 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=107, city=City0
-18:02:25.209 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=108, city=City1
-18:02:25.212 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=109, city=City2
-18:02:25.232 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=110, city=TestCityLong
-18:02:25.233 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=110
-18:02:25.260 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=111, city=TestCityDel
-18:02:25.260 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=111
-18:06:27.321 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=112, city=TestCITY
-18:06:27.335 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=112
-18:06:27.347 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=113, city=City0
-18:06:27.348 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=114, city=City1
-18:06:27.349 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=115, city=City2
-18:06:27.354 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=116, city=TestCityLong
-18:06:27.355 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=116
-18:06:27.366 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=117, city=TestCityDel
-18:06:27.366 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=117
-18:12:06.702 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=118, city=TestCITY
-18:12:06.730 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=118
-18:12:06.742 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=119, city=City0
-18:12:06.743 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=120, city=City1
-18:12:06.743 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=121, city=City2
-18:12:06.747 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=122, city=TestCityLong
-18:12:06.748 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=122
-18:12:06.761 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=123, city=TestCityDel
-18:12:06.761 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=123
-18:18:05.916 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=124, city=TestCITY
-18:18:05.931 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=124
-18:18:05.943 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=125, city=City0
-18:18:05.944 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=126, city=City1
-18:18:05.944 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=127, city=City2
-18:18:05.948 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=128, city=TestCityLong
-18:18:05.948 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=128
-18:18:05.957 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=129, city=TestCityDel
-18:18:05.957 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=129
-18:18:16.154 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=130, city=TestCITY
-18:18:16.171 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=130
-18:18:16.182 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=131, city=City0
-18:18:16.183 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=132, city=City1
-18:18:16.184 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=133, city=City2
-18:18:16.187 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=134, city=TestCityLong
-18:18:16.188 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=134
-18:18:16.199 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=135, city=TestCityDel
-18:18:16.200 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=135
-18:19:11.672 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info
-18:19:11.674 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-18:19:11.674 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error
-18:23:31.622 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=136, city=TestCITY
-18:23:31.638 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=136
-18:23:31.656 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=137, city=City0
-18:23:31.658 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=138, city=City1
-18:23:31.659 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=139, city=City2
-18:23:31.664 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=140, city=TestCityLong
-18:23:31.664 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=140
-18:23:31.676 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=141, city=TestCityDel
-18:23:31.677 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=141
-18:31:33.433 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=142, city=TestCityUpd
-19:01:51.520 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=143, city=TestCityUpd
-19:06:14.891 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=144, city=TestCityUpd
-19:35:33.921 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=145, city=TestCityUpd
-19:36:40.864 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=146, city=TestCityUpd
-19:37:05.440 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=147, city=TestCityUpd
-19:37:19.595 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=148, city=TestCityUpd
-19:43:26.771 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=149, city=TestCityUpd
-19:46:48.259 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=150, city=TestCityUpd
-19:51:13.154 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City updated. id=null, city=Testted
-19:52:46.998 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=151, city=TestCityUpd
-19:54:38.901 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=152, city=TestCityUpd
-19:55:30.451 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=153, city=TestCityUpd
-19:58:22.583 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=154, city=TestCityUpd
-19:58:22.608 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=154
-19:59:41.683 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=155, city=TestCITY
-19:59:41.696 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=155
-19:59:41.708 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=156, city=City0
-19:59:41.709 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=157, city=City1
-19:59:41.711 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=158, city=City2
-19:59:41.715 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=159, city=TestCityLong
-19:59:41.715 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=159
-19:59:41.724 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=160, city=TestCityUpd
-19:59:41.727 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=160
-19:59:41.731 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=161, city=TestCityDel
-19:59:41.732 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=161
-20:01:29.401 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=162, city=TestCITY
-20:01:29.414 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=162
-20:01:29.427 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=163, city=City0
-20:01:29.427 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=164, city=City1
-20:01:29.428 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=165, city=City2
-20:01:29.433 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=166, city=TestCityLong
-20:01:29.433 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=166
-20:01:29.442 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=167, city=TestCityUpd
-20:01:29.445 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=167
-20:01:29.449 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=168, city=TestCityDel
-20:01:29.449 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=168
+15:10:02.303 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=169, city=TestCITY
+15:10:02.327 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=169
+15:10:02.344 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=170, city=City0
+15:10:02.345 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=171, city=City1
+15:10:02.346 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=172, city=City2
+15:10:02.353 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=173, city=TestCityLong
+15:10:02.353 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=173
+15:10:02.363 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=174, city=TestCityUpd
+15:10:02.367 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=174
+15:10:02.371 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=175, city=TestCityDel
+15:10:02.372 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=175
+15:11:16.850 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=176, city=TestCITY
+15:11:16.873 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=176
+15:11:16.898 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=177, city=City0
+15:11:16.901 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=178, city=City1
+15:11:16.903 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=179, city=City2
+15:11:16.922 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=180, city=TestCityLong
+15:11:16.923 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=180
+15:11:16.939 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=181, city=TestCityUpd
+15:11:16.953 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=182, city=TestCityDel
+15:11:16.953 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=182
+15:12:34.093 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=183, city=TestCITY
+15:12:34.116 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=183
+15:12:34.140 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=184, city=City0
+15:12:34.143 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=185, city=City1
+15:12:34.145 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=186, city=City2
+15:12:34.164 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=187, city=TestCityLong
+15:12:34.164 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=187
+15:12:34.182 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=188, city=TestCityUpd
+15:12:34.195 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=188
+15:12:34.201 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=189, city=TestCityDel
+15:12:34.202 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=189
+15:19:01.780 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=190, city=TestCITY
+15:19:01.803 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=190
+15:19:01.817 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=191, city=City0
+15:19:01.819 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=192, city=City1
+15:19:01.820 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=193, city=City2
+15:19:01.826 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=194, city=TestCityLong
+15:19:01.826 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=194
+15:19:01.835 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=195, city=TestCityUpd
+15:19:01.842 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=195
+15:19:01.846 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=196, city=TestCityDel
+15:19:01.849 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=196
+15:20:04.910 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=197, city=TestCITY
+15:20:04.922 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=197
+15:20:04.932 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=198, city=City0
+15:20:04.932 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=199, city=City1
+15:20:04.934 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=200, city=City2
+15:20:04.938 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=201, city=TestCityLong
+15:20:04.938 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=201
+15:20:04.951 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=202, city=TestCityUpd
+15:20:04.955 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=202
+15:20:04.957 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=203, city=TestCityDel
+15:20:04.957 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=203
+15:22:15.617 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=204, city=TestCITY
+15:22:15.634 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=204
+15:22:15.643 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=205, city=City0
+15:22:15.644 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=206, city=City1
+15:22:15.644 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=207, city=City2
+15:22:15.648 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=208, city=TestCityLong
+15:22:15.651 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=208
+15:22:15.661 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=209, city=TestCityUpd
+15:22:15.665 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=209
+15:22:15.667 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=210, city=TestCityDel
+15:22:15.669 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=210
+15:24:12.099 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=211, city=TestCITY
+15:24:12.117 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=211
+15:24:12.130 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=212, city=City0
+15:24:12.130 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=213, city=City1
+15:24:12.131 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=214, city=City2
+15:24:12.135 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=215, city=TestCityLong
+15:24:12.135 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=215
+15:24:12.146 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=216, city=TestCityUpd
+15:24:12.149 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=216
+15:24:12.152 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=217, city=TestCityDel
+15:24:12.153 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=217
+17:10:00.440 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=11, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+17:15:19.709 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=12, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+17:17:49.814 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=13, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+17:19:49.897 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=14, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+17:47:47.327 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=15, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+17:48:25.511 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=16, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+17:48:25.530 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=16
+18:11:18.831 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=218, city=TestCITY
+18:11:18.844 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=218
+18:11:18.858 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=219, city=City0
+18:11:18.859 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=220, city=City1
+18:11:18.860 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=221, city=City2
+18:11:18.866 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=222, city=TestCityLong
+18:11:18.866 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=222
+18:11:18.874 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=223, city=TestCityUpd
+18:11:18.877 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=223
+18:11:18.880 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=224, city=TestCityDel
+18:11:18.881 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=224
+18:17:47.263 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=17, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+18:17:47.279 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=17
+18:23:06.720 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=11, flight_num=1, passenger=1, clas=1, price=3, bag=true
+18:24:59.282 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=12, flight_num=1, passenger=1, clas=1, price=3, bag=true
+18:25:27.972 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=13, flight_num=1, passenger=1, clas=1, price=3, bag=true
+18:25:27.989 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=13
+18:30:45.758 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=11, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:33:15.508 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=13, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:34:48.238 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=14, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:35:14.626 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=16, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:35:35.586 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=17, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:35:35.602 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=17
+18:35:53.030 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=18, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:35:53.046 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=18
+18:40:11.894 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=11, bortNUM=1111, model=Boeing 1, passCount=55
+18:41:03.762 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=13, bortNUM=1111, model=Boeing 1, passCount=55
+18:42:32.285 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=14, bortNUM=1111, model=Boeing 1, passCount=55
+18:43:05.382 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=15, bortNUM=1111, model=Boeing 1, passCount=55
+18:43:05.402 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=15
+18:43:22.351 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=18, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+18:43:22.367 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=18
+18:43:22.383 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=14, flight_num=1, passenger=1, clas=1, price=3, bag=true
+18:43:22.389 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=14
+18:43:22.394 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=19, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:43:22.399 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=19
+18:43:22.404 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=16, bortNUM=1111, model=Boeing 1, passCount=55
+18:43:22.411 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=16
+18:43:22.417 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=225, city=TestCityUpd
+18:43:22.421 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=225
+18:44:53.310 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=19, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+18:44:53.325 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=19
+18:44:53.332 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=15, flight_num=1, passenger=1, clas=1, price=3, bag=true
+18:44:53.338 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=15
+18:44:53.343 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=20, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:44:53.349 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=20
+18:44:53.353 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=17, bortNUM=1111, model=Boeing 1, passCount=55
+18:44:53.359 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=17
+18:44:53.363 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=226, city=TestCityUpd
+18:44:53.369 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City updated. id=226, city=TestCityUpdated
+18:44:53.369 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=226
+18:48:08.222 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=20, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+18:48:08.239 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Flight updated. id=20, plane=2
+18:48:08.239 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=20
+18:48:08.255 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=16, flight_num=1, passenger=1, clas=1, price=3, bag=true
+18:48:08.261 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Ticket updated. id=16, passenger=2
+18:48:08.262 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=16
+18:48:08.268 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=21, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+18:48:08.273 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Passenger updated. id=21, full_name=NEW Name
+18:48:08.273 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=21
+18:48:08.279 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=18, bortNUM=1111, model=Boeing 1, passCount=55
+18:48:08.285 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - Plane updated. id=18, model=Boeing 2
+18:48:08.285 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=18
+18:48:08.290 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=227, city=TestCityUpd
+18:48:08.294 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City updated. id=227, city=TestCityUpdated
+18:48:08.295 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=227
+19:01:38.343 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=19, bortNUM=9086723, model=Boeing 707, passCount=88
+19:01:38.343 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=19
+19:01:38.367 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=20, bortNUM=9086723, model=Boeing 707, passCount=88
+19:01:38.371 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=20
+19:02:05.252 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=21, bortNUM=9086723, model=Boeing 707, passCount=88
+19:02:05.253 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=21
+19:02:05.263 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=22, bortNUM=9086723, model=Boeing 707, passCount=88
+19:02:05.271 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=22
+19:04:09.577 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=228, city=TestCITY
+19:04:09.589 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=228
+19:04:09.600 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=229, city=City0
+19:04:09.601 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=230, city=City1
+19:04:09.602 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=231, city=City2
+19:04:09.605 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=232, city=TestCityLong
+19:04:09.606 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=232
+19:04:09.613 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=233, city=TestCityUpd
+19:04:09.616 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=233
+19:04:09.619 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=234, city=TestCityDel
+19:04:09.619 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=234
+19:04:24.191 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=23, bortNUM=9086723, model=Boeing 707, passCount=88
+19:04:24.191 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=23
+19:04:24.217 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=24, bortNUM=9086723, model=Boeing 707, passCount=88
+19:04:24.219 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=24
+19:04:24.223 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=25, bortNUM=9086723, model=Boeing 707, passCount=88
+19:04:24.223 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=25
+19:05:59.101 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=26, bortNUM=9086723, model=Boeing 707, passCount=88
+19:05:59.101 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=26
+19:05:59.121 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=27, bortNUM=9086723, model=Boeing 707, passCount=88
+19:05:59.126 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=27
+19:05:59.130 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=28, bortNUM=1111, model=Boeing 1, passCount=55
+19:05:59.132 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=28
+19:05:59.136 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=29, bortNUM=9086723, model=Boeing 707, passCount=88
+19:05:59.136 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=29
+19:07:08.016 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=30, bortNUM=9086723, model=Boeing 707, passCount=88
+19:07:08.016 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=30
+19:07:08.041 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=31, bortNUM=9086723, model=Boeing 707, passCount=88
+19:07:08.043 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=31
+19:07:08.047 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=32, bortNUM=1111, model=Boeing 1, passCount=55
+19:07:08.050 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=32
+19:07:08.053 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=33, bortNUM=9086723, model=Boeing 707, passCount=88
+19:07:08.054 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=33
+19:10:47.130 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=21, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+19:10:47.145 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=22, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+19:10:47.146 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=22
+19:15:09.707 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=23, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+19:15:09.707 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=23
+19:15:09.729 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=24, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+19:15:09.730 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=24
+19:15:09.734 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=25, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+19:15:09.737 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=25
+19:16:30.816 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=26, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+19:16:30.832 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=26
+19:16:30.838 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=27, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+19:16:30.838 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=27
+19:16:30.853 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=28, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+19:16:30.853 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=28
+19:16:30.856 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=29, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+19:16:30.858 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=29
+19:19:06.748 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=17, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:19:06.748 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=17
+19:19:06.767 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=18, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:19:06.771 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=18
+19:21:20.587 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=19, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:21:20.587 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=19
+19:21:20.607 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=20, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:21:20.608 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=20
+19:21:20.612 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=21, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:21:20.615 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=21
+19:22:24.099 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=22, flight_num=1, passenger=1, clas=1, price=3, bag=true
+19:22:24.114 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=22
+19:22:24.120 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=23, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:22:24.120 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=23
+19:22:24.133 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=24, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:22:24.134 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=24
+19:22:24.137 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=25, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:22:24.139 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=25
+19:28:09.770 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=22, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
+19:28:09.771 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=22
+19:28:09.796 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=23, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
+19:28:09.801 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=23
+19:28:09.805 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=24, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
+19:28:09.805 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=24
+19:28:09.813 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=25, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
+19:28:09.814 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=25
+19:28:39.698 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=235, city=TestCITY
+19:28:39.714 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=235
+19:28:39.728 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=236, city=City0
+19:28:39.729 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=237, city=City1
+19:28:39.730 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=238, city=City2
+19:28:39.734 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=239, city=TestCityLong
+19:28:39.734 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=239
+19:28:39.743 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=240, city=TestCityUpd
+19:28:39.746 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=240
+19:28:39.749 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=241, city=TestCityDel
+19:28:39.750 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=241
+19:36:46.842 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=242, city=TestCITY
+19:36:46.863 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=242
+19:36:46.879 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=243, city=City0
+19:36:46.881 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=244, city=City1
+19:36:46.883 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=245, city=City2
+19:36:46.889 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=246, city=TestCityLong
+19:36:46.889 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=246
+19:36:46.901 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=247, city=TestCityUpd
+19:36:46.906 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=247
+19:36:46.912 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=248, city=TestCityDel
+19:36:46.912 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=248
+19:37:49.321 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=249, city=TestCITY
+19:37:49.333 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=249
+19:37:49.345 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=250, city=City0
+19:37:49.346 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=251, city=City1
+19:37:49.347 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=252, city=City2
+19:37:49.352 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=253, city=TestCityLong
+19:37:49.352 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=253
+19:37:49.362 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=254, city=TestCityUpd
+19:37:49.365 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=254
+19:37:49.369 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=255, city=TestCityDel
+19:37:49.369 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=255
+19:38:32.663 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=256, city=TestCITY
+19:38:32.677 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=256
+19:38:32.689 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=257, city=City0
+19:38:32.690 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=258, city=City1
+19:38:32.691 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=259, city=City2
+19:38:32.696 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=260, city=TestCityLong
+19:38:32.696 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=260
+19:38:32.705 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=261, city=TestCityUpd
+19:38:32.709 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=261
+19:38:32.713 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=262, city=TestCityDel
+19:38:32.713 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=262
+19:44:00.569 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=263, city=TestCITY
+19:44:00.586 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=263
+19:44:00.593 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=264, city=TestCityLong
+19:44:00.593 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=264
+19:44:00.606 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=265, city=TestCityUpd
+19:44:00.609 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=265
+19:44:00.613 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=266, city=TestCityDel
+19:44:00.614 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=266
+19:44:16.916 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=267, city=TestCITY
+19:44:16.928 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=267
+19:44:16.940 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=268, city=City0
+19:44:16.941 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=269, city=City1
+19:44:16.941 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=270, city=City2
+19:44:16.945 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=271, city=TestCityLong
+19:44:16.946 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=271
+19:44:16.953 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=272, city=TestCityUpd
+19:44:16.956 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=272
+19:44:16.960 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=273, city=TestCityDel
+19:44:16.960 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=273
+19:53:56.092 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=274, city=TestCITY
+19:53:56.108 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=274
+19:53:56.120 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=275, city=City0
+19:53:56.121 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=276, city=City1
+19:53:56.122 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=277, city=City2
+19:53:56.125 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=278, city=TestCityLong
+19:53:56.125 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=278
+19:53:56.133 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=279, city=TestCityUpd
+19:53:56.136 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=279
+19:53:56.139 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=280, city=TestCityDel
+19:53:56.139 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=280

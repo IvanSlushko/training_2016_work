@@ -1,23 +1,19 @@
 package com.ivanslushko.training.daodb;
 
-import java.util.List;
-
 import com.ivanslushko.training.datamodel.City;
 
-public interface CityDao {
+public interface CityDao extends AbstractDao<City>{
 
-	City get(Long id);
-
-	Long insert(City entity);
-
-	Long update(City entity);
-
-	void save(City entity);
-
-	City delete(Long id);
-
-	List<City> getAll();
-
-
+//	City get(Long id);
+//
+//	Long insert(City entity);
+//
+//	Long update(City entity);
+//
+//	void save(City entity);
+//
+//	City delete(Long id);
+//
+//	List<City> getAll();
 
 }

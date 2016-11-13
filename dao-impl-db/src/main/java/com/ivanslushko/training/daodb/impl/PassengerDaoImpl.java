@@ -51,9 +51,10 @@ public class PassengerDaoImpl implements PassengerDao {
 	}
 
 	@Override
-	public void update(Passenger entity) {
-		// TODO Auto-generated method stub
-
+	public Long update(final Passenger entity) {
+		jdbcTemplate.update("update passenger set full_name = ?, birthday = ? , passport = ? where id = ?",
+				entity.getFullName(), entity.getBirthday(), entity.getPassport(), entity.getId());
+		return entity.getId();
 	}
 
 	@Override
@@ -71,7 +72,6 @@ public class PassengerDaoImpl implements PassengerDao {
 
 	@Override
 	public void save(Passenger entity) {
-
 	}
 
 }

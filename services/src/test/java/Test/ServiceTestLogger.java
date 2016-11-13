@@ -1,4 +1,4 @@
-package com.ivanslushko.training.services;
+package Test;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

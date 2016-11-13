@@ -32,15 +32,6 @@ public class PlaneServiceImpl implements PlaneService {
 		}
 	}
 
-	// @Override
-	// public void save(Plane plane) {
-	// if (plane.getId() == null) {
-	// planeDao.insert(plane);
-	// } else {
-	// planeDao.update(plane);
-	// }
-	// }
-
 	@Override
 	public Long save(Plane plane) {
 		if (plane.getId() == null) {
@@ -63,8 +54,18 @@ public class PlaneServiceImpl implements PlaneService {
 	public Plane delete(Long id) {
 		LOGGER.info("Plane deleted! id={}", id);
 		return planeDao.delete(id);
-		// TODO Auto-generated method stub
+	}
 
+	@Override
+	public Long update(Plane plane) {
+		if (plane.getId() == null) {
+			Long id = planeDao.update(plane);
+			LOGGER.info("Plane updated. id={}, model={}", plane.getId(), plane.getModel());
+			return id;
+		} else {
+			planeDao.update(plane);
+			return plane.getId();
+		}
 	}
 
 }
