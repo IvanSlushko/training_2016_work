@@ -2,8 +2,8 @@ package com.ivanslushko.training.services;
 
 import java.util.List;
 
-import com.ivanslushko.training.daodb.customentity.FlightFromCity;
 import com.ivanslushko.training.datamodel.City;
+import com.ivanslushko.training.datamodel.FlightFromCity;
 
 public interface CityService extends AbstractService<City>{
 

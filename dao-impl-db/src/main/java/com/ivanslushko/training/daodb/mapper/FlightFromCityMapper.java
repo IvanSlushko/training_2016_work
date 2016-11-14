@@ -5,9 +5,9 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.ivanslushko.training.daodb.customentity.FlightFromCity;
 import com.ivanslushko.training.datamodel.City;
 import com.ivanslushko.training.datamodel.Flight;
+import com.ivanslushko.training.datamodel.FlightFromCity;
 
 public final class FlightFromCityMapper implements RowMapper<FlightFromCity> {
 

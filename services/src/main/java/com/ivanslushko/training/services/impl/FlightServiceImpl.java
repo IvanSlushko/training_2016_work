@@ -8,9 +8,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.ivanslushko.training.daodb.FlightDao;
-import com.ivanslushko.training.daodb.customentity.FlightFromCity;
+import com.ivanslushko.training.daoapi.IFlightDao;
 import com.ivanslushko.training.datamodel.Flight;
+import com.ivanslushko.training.datamodel.FlightFromCity;
 import com.ivanslushko.training.services.FlightService;
 
 @Service
@@ -19,7 +19,7 @@ public class FlightServiceImpl implements FlightService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(FlightServiceImpl.class);
 
 	@Inject
-	private FlightDao flightDao;
+	private IFlightDao flightDao;
 
 	@Override
 	public Flight get(Long id) {
@@ -58,10 +58,9 @@ public class FlightServiceImpl implements FlightService {
 	}
 
 	@Override
-	public Flight delete(Long id) {
+	public void delete(Long id) {
 		LOGGER.info("Flight deleted! id={}", id);
-		return flightDao.delete(id);
-		// TODO Auto-generated method stub
+		 flightDao.delete(id);
 		
 	}
 

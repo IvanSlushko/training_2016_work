@@ -13,12 +13,13 @@
 	    http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
 	    http://www.springframework.org/schema/task
 	    http://www.springframework.org/schema/task/spring-task-3.0.xsd">
-	
+
 	<context:annotation-config />
 	
-	<context:component-scan base-package="com.ivanslushko.training.daodb.impl" />
-	<context:component-scan base-package="com.ivanslushko.training.services.impl" />
+	 <!--   <import resource="classpath:db-dao-beans.xml" /> -->
+	  <import resource="classpath:xml-dao-beans.xml" />
 
+	<context:component-scan base-package="com.ivanslushko.training.services.impl" />
 
 	<context:property-placeholder
 		ignore-unresolvable="true" location="classpath:db.properties" />
@@ -36,14 +37,14 @@
 		<property name="password" value="${jdbc.password}" />
 		<property name="schema" value="${db.schema}" />
 	</bean>
-	
+
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<constructor-arg ref="dataSource" />
 	</bean>
 
 
 	<tx:annotation-driven />
-	
+
 	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource" />

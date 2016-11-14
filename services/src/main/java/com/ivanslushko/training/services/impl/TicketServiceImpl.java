@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.ivanslushko.training.daodb.TicketDao;
+import com.ivanslushko.training.daoapi.ITicketDao;
 import com.ivanslushko.training.datamodel.Ticket;
 import com.ivanslushko.training.services.TicketService;
 
@@ -18,7 +18,7 @@ public class TicketServiceImpl implements TicketService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(TicketServiceImpl.class);
 
 	@Inject
-	private TicketDao ticketDao;
+	private ITicketDao ticketDao;
 
 	@Override
 	public Ticket get(Long id) {
@@ -51,9 +51,9 @@ public class TicketServiceImpl implements TicketService {
 	}
 
 	@Override
-	public Ticket delete(Long id) {
+	public void delete(Long id) {
 		LOGGER.info("Ticket deleted! id={}", id);
-		return ticketDao.delete(id);
+		ticketDao.delete(id);
 	}
 
 	@Override

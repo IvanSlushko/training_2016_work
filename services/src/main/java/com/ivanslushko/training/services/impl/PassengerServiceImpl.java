@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.ivanslushko.training.daodb.PassengerDao;
+import com.ivanslushko.training.daoapi.IPassengerDao;
 import com.ivanslushko.training.datamodel.Passenger;
 import com.ivanslushko.training.services.PassengerService;
 
@@ -18,7 +18,7 @@ public class PassengerServiceImpl implements PassengerService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PlaneServiceImpl.class);
 
 	@Inject
-	private PassengerDao passengerDao;
+	private IPassengerDao passengerDao;
 
 	@Override
 	public Passenger get(Long id) {
@@ -51,9 +51,9 @@ public class PassengerServiceImpl implements PassengerService {
 	}
 
 	@Override
-	public Passenger delete(Long id) {
+	public void delete(Long id) {
 		LOGGER.info("Passenger deleted! id={}", id);
-		return passengerDao.delete(id);
+		passengerDao.delete(id);
 	}
 
 	@Override

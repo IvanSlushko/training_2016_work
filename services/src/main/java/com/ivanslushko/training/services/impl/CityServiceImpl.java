@@ -8,9 +8,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.ivanslushko.training.daodb.CityDao;
-import com.ivanslushko.training.daodb.customentity.FlightFromCity;
+import com.ivanslushko.training.daoapi.ICityDao;
 import com.ivanslushko.training.datamodel.City;
+import com.ivanslushko.training.datamodel.FlightFromCity;
 import com.ivanslushko.training.services.CityService;
 
 @Service
@@ -19,7 +19,7 @@ public class CityServiceImpl implements CityService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(CityServiceImpl.class);
 
 	@Inject
-	private CityDao cityDao;
+	private ICityDao cityDao;
 
 	@Override
 	public City get(Long id) {
@@ -44,6 +44,7 @@ public class CityServiceImpl implements CityService {
 			return city.getId();
 		}
 	}
+
 	@Override
 	public Long update(City city) {
 		if (city.getId() == null) {
@@ -55,7 +56,7 @@ public class CityServiceImpl implements CityService {
 			return city.getId();
 		}
 	}
-	
+
 	@Override
 	public List<City> getAll() {
 		return cityDao.getAll();
@@ -67,8 +68,8 @@ public class CityServiceImpl implements CityService {
 	}
 
 	@Override
-	public City delete(Long id) {
+	public void delete(Long id) {
 		LOGGER.info("City deleted!!! id={}", id);
-		return cityDao.delete(id);
+		cityDao.delete(id);
 	}
 }

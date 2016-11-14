@@ -11,10 +11,15 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>com.ivanslushko.training</groupId>
 			<artifactId>dao-impl-db</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ivanslushko.training</groupId>
+			<artifactId>dao-impl-xml</artifactId>
 		</dependency>
 
 		<dependency>
