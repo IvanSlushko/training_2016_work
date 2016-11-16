@@ -7,14 +7,12 @@ import javax.inject.Inject;
 
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ivanslushko.training.datamodel.City;
-import com.ivanslushko.training.services.CityService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
@@ -47,12 +45,12 @@ public class ServiceTestCity {
 	
 	public void saveCity() {
 		City city = new City();
-		city.setCity("TestCITY");
+		city.setCity("TestCitySave");
 		Long id = cityService.save(city);
 		Assert.assertNotNull(id);// check that ID isn't null
 		City cityFromDb = cityService.get(id);
 		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
-		//cityService.delete(id);
+		cityService.delete(id);
 	}
 
 	/**
@@ -103,7 +101,6 @@ public class ServiceTestCity {
 	 * update City
 	 */
 	@Test
-	@Ignore
 	public void UpdateCity() {
 		City city = new City();
 		city.setCity("TestCityUpd");

@@ -1,4 +1,4 @@
-package temp_services;
+package com.ivanslushko.training.services;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -25,16 +25,26 @@ public class ConnectionFactory {
 														// from some
 														// configuration file
 
+		System.out.println(222);
+
 		GenericObjectPool pool = new GenericObjectPool();
 		DriverManagerConnectionFactory connectionFactory = new DriverManagerConnectionFactory(
 				"jdbc:postgresql://localhost:5432/LowCostAir", properties);
+
+		System.out.println(333);
+
 		new PoolableConnectionFactory(connectionFactory, pool, null, "SELECT 1", 3, false, true,
 				Connection.TRANSACTION_READ_COMMITTED);
+
+		System.out.println(4444);
 
 		this.dataSource = new PoolingDataSource(pool);
 	}
 
 	public static Connection getDatabaseConnection() throws SQLException {
+		
+		System.out.println(11);
+		
 		return Singleton.INSTANCE.dataSource.getConnection();
 	}
 }

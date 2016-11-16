@@ -15,7 +15,7 @@ public class AbstractModel {
     public static String table() {
         return "";
     }
-
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     public String getTable() {
         String className = this.getClass().getSimpleName();
         String regex = "([a-z])([A-Z]+)";

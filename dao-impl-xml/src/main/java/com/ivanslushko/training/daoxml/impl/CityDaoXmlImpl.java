@@ -41,9 +41,7 @@ public class CityDaoXmlImpl implements ICityDao {
 
 	@Override
 	public City get(Long id) {
-
 		List<City> allCity = readCollection();
-
 		for (City city : allCity) {
 			if (city.getId().equals(id)) {
 				return city;
@@ -74,19 +72,22 @@ public class CityDaoXmlImpl implements ICityDao {
 	public Long insert(final City entity) {
 		List<City> allCity = readCollection();
 		Long id = getNextId(allCity);
-
 		allCity.add(entity);
-
 		entity.setId(new Long(id));
-
 		writeCollection(allCity);
 		return id;
 	}
 
 	@Override
 	public Long update(final City entity) {
-		// !!!!!!!!!!
-		throw new UnsupportedOperationException();
+		List<City> allCity = readCollection();
+		for (City city : allCity) {
+			if (city.getId().equals(entity.getId())) {
+				city.setCity(entity.getCity());
+			}
+		}
+		writeCollection(allCity);
+		return null;
 	}
 
 	private List<City> readCollection() {
@@ -108,6 +109,5 @@ public class CityDaoXmlImpl implements ICityDao {
 	@Override
 	public void save(City entity) {
 		// TODO Auto-generated method stub
-		
 	}
 }
