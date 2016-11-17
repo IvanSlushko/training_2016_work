@@ -15,14 +15,16 @@
 			</Policies>
 		</RollingFile>
 
+
+
 		<JDBC name="databaseAppender" tableName="public.log_info">
 			<ConnectionFactory
 				class="com.ivanslushko.training.services.ConnectionFactory" method="getDatabaseConnection" />
 			<Column name="user_id" literal="LOGGING.APPLICATION_LOG_SEQUENCE.NEXTVAL" />
 			<Column name="date" isEventTimestamp="true" />
-			<Column name="level" pattern="%level" />
-			<Column name="logger" pattern="%logger" />
-			<Column name="message" pattern="%message" />
+			<Column name="level" pattern="%level" isUnicode="false"/>
+			<Column name="logger" pattern="%logger" isUnicode="false"/>
+			<Column name="message" pattern="%message" isUnicode="false"/>
 		</JDBC>
 
 
