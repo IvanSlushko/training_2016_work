@@ -26,10 +26,6 @@ public class PlaneDaoDbImpl implements IPlaneDao {
 
 	@Override
 	public Plane get(Long id) {
-		// return jdbcTemplate.queryForObject("select * from plane where id =
-		// ?", new Object[] { id },
-		// new BeanPropertyRowMapper<Plane>(Plane.class));
-
 		try {
 			return jdbcTemplate.queryForObject("select * from plane where id = ?", new Object[] { id },
 					new BeanPropertyRowMapper<Plane>(Plane.class));

@@ -3,10 +3,13 @@ package com.ivanslushko.training.datamodel;
 public class FlightFromCity {
 	private City city;
 	private Flight flight;
-
-//	private ArrayList<FlightFromCity> flightFC = 
-//			new ArrayList<FlightFromCity>();
-
+	public Object Date;
+	public Object Too;	
+	public Object FrCity ;
+	public Object Plane ;
+//	public Object ToCity ;
+	
+	
 	public City getCity() {
 		return city;
 	}
@@ -23,12 +26,47 @@ public class FlightFromCity {
 		this.flight = flight;
 	}
 
-//	public ArrayList<FlightFromCity> getFlightFC() {
-//		return flightFC;
+	public Object getDate() {
+		return Date;
+	}
+
+	public void setDate(Object date) {
+		Date = date;
+	}
+
+	public Object getToo() {
+		return Too;
+	}
+
+	public void setToo(Object too) {
+		Too = too;
+	}
+
+	public Object getFrCity() {
+		return FrCity;
+	}
+
+	public void setFrCity(Object frCity) {
+		FrCity = frCity;
+	}
+
+	public Object getPlane() {
+		return Plane;
+	}
+
+	public void setPlane(Object plane) {
+		Plane = plane;
+	}
+
+//	public Object getToCity() {
+//		return ToCity;
 //	}
 //
-//	public void setFlightFC(ArrayList<FlightFromCity> flightFC) {
-//		this.flightFC = flightFC;
+//	public void setToCity(Object toCity) {
+//		ToCity = toCity;
 //	}
+
+
+
 
 }

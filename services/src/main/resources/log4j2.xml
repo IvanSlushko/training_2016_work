@@ -17,16 +17,12 @@
 
 
 
-		<JDBC name="databaseAppender" tableName="public.log_info">
-			<ConnectionFactory
-				class="com.ivanslushko.training.services.ConnectionFactory" method="getDatabaseConnection" />
-			<Column name="user_id" literal="LOGGING.APPLICATION_LOG_SEQUENCE.NEXTVAL" />
-			<Column name="date" isEventTimestamp="true" />
-			<Column name="level" pattern="%level" isUnicode="false"/>
-			<Column name="logger" pattern="%logger" isUnicode="false"/>
-			<Column name="message" pattern="%message" isUnicode="false"/>
-		</JDBC>
-
+		<!-- <JDBC name="databaseAppender" tableName="public.log_info"> <ConnectionFactory 
+			class="com.ivanslushko.training.services.ConnectionFactory" method="getDatabaseConnection" 
+			/> <Column name="user_id" literal="LOGGING.APPLICATION_LOG_SEQUENCE.NEXTVAL" 
+			/> <Column name="date" isEventTimestamp="true" /> <Column name="level" pattern="%level" 
+			isUnicode="false"/> <Column name="logger" pattern="%logger" isUnicode="false"/> 
+			<Column name="message" pattern="%message" isUnicode="false"/> </JDBC> -->
 
 
 	</Appenders>
@@ -35,7 +31,7 @@
 
 		<Root level="info">
 			<AppenderRef ref="Console" />
-			<AppenderRef ref="databaseAppender" level="INFO" />
+			<!-- <AppenderRef ref="databaseAppender" level="INFO" /> -->
 		</Root>
 
 		<Logger level="info" name="com.ivanslushko.training"

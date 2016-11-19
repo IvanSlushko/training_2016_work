@@ -86,7 +86,6 @@ public class FlightDaoDbImpl implements IFlightDao {
 
 	@Override
 	public List<FlightFromCity> getFromCity(Long id) {
-
 		List<FlightFromCity> rs = jdbcTemplate.query(
 				"select * from flight f left join city c on f.fromm=c.id where c.id=?", new Object[] { id },
 				new FlightFromCityMapper());

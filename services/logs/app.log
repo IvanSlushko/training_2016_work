@@ -1,68 +1,17 @@
-00:03:48.362 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:03:48.371 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:03:48.372 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:06:52.883 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:06:52.884 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:06:52.884 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:12:25.269 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:12:25.270 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:12:25.271 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:13:11.984 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:13:11.985 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:13:11.985 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:14:27.705 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:14:27.707 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:14:27.707 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:14:39.701 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:14:39.702 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:14:39.702 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:15:23.449 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:15:23.450 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:15:23.450 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:16:07.954 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:16:07.955 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:16:07.956 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:16:22.317 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:16:22.318 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:16:22.318 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:17:35.479 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:17:35.480 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:17:35.481 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-00:24:38.171 [main] ERROR com.ivanslushko.training.services.MyApp - Didn't do it.
-00:27:37.972 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-00:27:37.973 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-00:27:37.973 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-22:41:24.561 [main] ERROR com.ivanslushko.training.services.st - test error
-22:47:59.824 [main] ERROR com.ivanslushko.training.services.st - test error
-22:48:32.317 [main] ERROR com.ivanslushko.training.services.st - test error
-22:53:03.601 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-22:53:03.602 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-22:53:03.602 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-23:05:32.671 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-23:05:32.673 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-23:05:32.674 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-23:11:11.560 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-23:11:11.562 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-23:11:11.562 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-23:15:26.680 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-23:15:26.682 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-23:15:26.683 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-23:50:35.539 [main] ERROR com.ivanslushko.training.services.Bar - Did it again!
-23:50:35.541 [main] ERROR com.ivanslushko.training.services.MyApp - Didn't do it.
-23:50:40.874 [main] ERROR com.ivanslushko.training.services.Bar - Did it again!
-23:50:40.875 [main] ERROR com.ivanslushko.training.services.MyApp - Didn't do it.
-23:51:05.757 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-23:51:05.760 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-23:51:05.760 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-23:51:40.111 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-23:51:40.112 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-23:51:40.113 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-23:52:19.143 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-23:52:19.144 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-23:52:19.144 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-23:55:39.758 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-23:55:39.759 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-23:55:39.759 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-23:56:09.154 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-23:56:09.155 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-23:56:09.155 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
+18:51:31.082 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
+18:51:31.090 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
+18:51:31.090 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
+18:51:45.036 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=453, city=TestCitySave
+18:51:45.054 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=453
+18:51:45.072 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=454, city=City0
+18:51:45.073 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=455, city=City1
+18:51:45.074 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=456, city=City2
+18:51:45.078 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=457, city=TestCityLong
+18:51:45.079 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=457
+18:51:45.096 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=458, city=TestCityUpd
+18:51:45.102 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=458
+18:51:45.109 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=459, city=TestCityDel
+18:51:45.109 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=459
+18:55:28.202 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
+18:55:28.204 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
+18:55:28.204 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212

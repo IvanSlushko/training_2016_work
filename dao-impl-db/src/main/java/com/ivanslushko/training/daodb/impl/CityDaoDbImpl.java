@@ -26,9 +26,6 @@ public class CityDaoDbImpl implements ICityDao {
 
 	@Override
 	public City get(Long id) {
-		// return jdbcTemplate.queryForObject("select * from city where id = ?",
-		// new Object[] { id },
-		// new BeanPropertyRowMapper<City>(City.class));
 		try {
 			return jdbcTemplate.queryForObject("select * from city where id = ?", new Object[] { id },
 					new BeanPropertyRowMapper<City>(City.class));

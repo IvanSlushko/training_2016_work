@@ -13,6 +13,5 @@ public class ServiceTestLogger {
 		LOGGER.info("info133rreewq212");
 		LOGGER.warn("warn");
 		LOGGER.error("error11221212");
-
 	}
 }

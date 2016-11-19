@@ -26,9 +26,6 @@ public class TicketDaoDbImpl implements ITicketDao {
 
 	@Override
 	public Ticket get(Long id) {
-		// return jdbcTemplate.queryForObject("select * from ticket where id =
-		// ?", new Object[] { id },
-		// new BeanPropertyRowMapper<Ticket>(Ticket.class));
 		try {
 			return jdbcTemplate.queryForObject("select * from ticket where id = ?", new Object[] { id },
 					new BeanPropertyRowMapper<Ticket>(Ticket.class));

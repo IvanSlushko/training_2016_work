@@ -26,9 +26,6 @@ public class PassengerDaoDbImpl implements IPassengerDao {
 
 	@Override
 	public Passenger get(Long id) {
-		// return jdbcTemplate.queryForObject("select * from passenger where id
-		// = ?", new Object[] { id },
-		// new BeanPropertyRowMapper<Passenger>(Passenger.class));
 		try {
 			return jdbcTemplate.queryForObject("select * from passenger where id = ?", new Object[] { id },
 					new BeanPropertyRowMapper<Passenger>(Passenger.class));
