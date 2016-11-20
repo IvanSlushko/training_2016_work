@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import com.ivanslushko.training.daoapi.ICityDao;
 import com.ivanslushko.training.datamodel.City;
-import com.ivanslushko.training.datamodel.FlightFromCity;
 import com.ivanslushko.training.services.CityService;
 
 @Service
@@ -63,13 +62,19 @@ public class CityServiceImpl implements CityService {
 	}
 
 	@Override
-	public List<FlightFromCity> getFromCity(Long id) {
-		return null;
-	}
-
-	@Override
 	public void delete(Long id) {
 		LOGGER.info("City deleted!!! id={}", id);
 		cityDao.delete(id);
 	}
+	
+
+//	   @Scheduled(initialDelay = 100, fixedDelay = 500)
+    public void testPeriodicalMethod() {
+        System.out.println("testPeriodicalMethod");
+    }
+	
+	
+	
+	
+	
 }
