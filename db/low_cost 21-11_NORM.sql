@@ -16,7 +16,7 @@ CREATE TABLE "flight" (
 	"fromm" bigint NOT NULL,
 	"d_and_t" DATE NOT NULL,
 	"too" bigint NOT NULL,
-	CONSTRAINT flight_pk PRIMARY KEY ("num")
+	CONSTRAINT flight_pk PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
 );
@@ -66,6 +66,6 @@ ALTER TABLE "flight" ADD CONSTRAINT "flight_fk2" FOREIGN KEY ("too") REFERENCES 
 
 
 
-ALTER TABLE "ticket" ADD CONSTRAINT "ticket_fk0" FOREIGN KEY ("fl_num") REFERENCES "flight"("num");
+ALTER TABLE "ticket" ADD CONSTRAINT "ticket_fk0" FOREIGN KEY ("fl_num") REFERENCES "flight"("id");
 ALTER TABLE "ticket" ADD CONSTRAINT "ticket_fk1" FOREIGN KEY ("passenger") REFERENCES "passenger"("id");
 

@@ -1,110 +1,332 @@
-16:14:48.158 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=42, bortNUM=9086723, model=Boeing 707, passCount=88
-16:14:48.165 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=42
-16:14:48.197 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=43, bortNUM=9086723, model=Boeing 707, passCount=88
-16:14:48.200 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=43
-16:14:48.204 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=44, bortNUM=1111, model=Boeing 1, passCount=55
-16:14:48.208 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=44
-16:14:48.211 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=45, bortNUM=9086723, model=Boeing 707, passCount=88
-16:14:48.212 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=45
-16:25:35.406 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=22, city=TestCitySave
-16:25:35.413 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=22
-16:25:35.546 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=22, city=City0
-16:25:35.561 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=23, city=City1
-16:25:35.579 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=24, city=City2
-16:25:35.596 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=25, city=TestCityLong
-16:25:35.597 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=25
-16:25:35.623 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=25, city=TestCityUpd
-16:25:35.636 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=25
-16:25:35.650 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=25, city=TestCityDel
-16:25:35.650 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=25
-16:25:46.549 [main] INFO  com.ivanslushko.training.services.ServiceTestLogger - info133rreewq212
-16:25:46.550 [main] WARN  com.ivanslushko.training.services.ServiceTestLogger - warn
-16:25:46.551 [main] ERROR com.ivanslushko.training.services.ServiceTestLogger - error11221212
-16:25:52.132 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=6, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
-16:25:52.144 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=6
-16:25:52.158 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=6, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
-16:25:52.158 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=6
-16:25:52.176 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=6, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
-16:25:52.177 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=6
-16:25:52.201 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=6, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
-16:25:52.205 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=6
-16:26:56.936 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=6, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:26:56.937 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=6
-16:26:56.955 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=6, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
-16:26:56.968 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=6
-16:26:56.980 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=6, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:26:56.981 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=6
-16:26:56.996 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=6, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:26:57.000 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=6
-16:27:18.786 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=34, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:27:18.786 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=34
-16:27:18.811 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=35, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
-16:27:18.816 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=35
-16:27:18.820 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=36, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:27:18.821 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=36
-16:27:18.826 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=37, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:27:18.828 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=37
-16:27:35.718 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=38, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:27:35.718 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=38
-16:27:35.739 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=39, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
-16:27:35.745 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=39
-16:27:35.749 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=40, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:27:35.749 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=40
-16:27:35.754 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=41, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-16:27:35.755 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=41
-16:34:19.913 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=460, city=TestCitySave
-16:34:19.928 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=460
-16:34:19.943 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=461, city=City0
-16:34:19.943 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=462, city=City1
-16:34:19.944 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=463, city=City2
-16:34:19.949 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=464, city=TestCityLong
-16:34:19.949 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=464
-16:34:19.968 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=465, city=TestCityUpd
-16:34:19.972 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=465
-16:34:19.982 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=466, city=TestCityDel
-16:34:19.982 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=466
-16:34:43.282 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=467, city=TestCitySave
-16:34:43.294 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=467
-16:34:43.310 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=468, city=City0
-16:34:43.311 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=469, city=City1
-16:34:43.312 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=470, city=City2
-16:34:43.316 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=471, city=TestCityLong
-16:34:43.317 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=471
-16:34:43.334 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=472, city=TestCityUpd
-16:34:43.339 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=472
-16:34:43.345 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=473, city=TestCityDel
-16:34:43.345 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=473
-16:35:13.611 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=474, city=TestCitySave
-16:35:13.624 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=474
-16:35:13.639 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=475, city=City0
-16:35:13.641 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=476, city=City1
-16:35:13.642 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=477, city=City2
-16:35:13.646 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=478, city=TestCityLong
-16:35:13.647 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=478
-16:35:13.667 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=479, city=TestCityUpd
-16:35:13.672 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=479
-16:35:13.676 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=480, city=TestCityDel
-16:35:13.676 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=480
-18:41:36.136 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=481, city=TestCitySave
-18:41:36.157 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=481
-18:41:36.178 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=482, city=City0
-18:41:36.179 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=483, city=City1
-18:41:36.180 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=484, city=City2
-18:41:36.185 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=485, city=TestCityLong
-18:41:36.186 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=485
-18:41:36.194 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=486, city=TestCityUpd
-18:41:36.200 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=486
-18:41:36.204 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=487, city=TestCityDel
-18:41:36.205 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=487
-18:50:34.919 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=25, city=TestCitySave
-18:50:34.928 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=25
-18:50:35.125 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=25, city=City0
-18:50:35.140 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=26, city=City1
-18:50:35.152 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=27, city=City2
-18:50:35.166 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=28, city=TestCityLong
-18:50:35.166 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=28
-18:50:35.191 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=28, city=TestCityUpd
-18:50:35.208 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=28
-18:50:35.220 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=28, city=TestCityDel
-18:50:35.220 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=28
-18:57:53.059 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City get: id=3, title=Barcelona
+19:51:18.307 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=34, flight_num=1, passenger=1, clas=1, price=3, bag=true
+19:51:18.340 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=34
+19:51:18.348 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=35, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:51:18.348 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=35
+19:51:18.365 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=36, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:51:18.366 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=36
+19:51:18.371 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=37, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:51:18.373 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=37
+19:51:45.531 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=38, flight_num=1, passenger=1, clas=1, price=3, bag=true
+19:51:45.553 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=38
+19:51:45.561 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=39, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:51:45.561 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=39
+19:51:45.577 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=40, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:51:45.577 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=40
+19:51:45.582 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=41, flight_num=1, passenger=5, clas=2, price=3, bag=false
+19:51:45.584 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=41
+19:54:47.362 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=42, flight_num=1, passenger=5, clas=2, price=0, bag=false
+20:10:12.862 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=43, flight_num=1, passenger=5, clas=2, price=0, bag=false
+20:59:08.038 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=11, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:00:21.290 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=12, flight_num=1, passenger=1, clas=1, price=3, bag=true
+21:00:21.307 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=12
+21:00:21.316 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=13, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:00:21.316 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=13
+21:00:21.327 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=14, flight_num=1, passenger=5, clas=2, price=3, bag=false
+21:00:21.327 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=14
+21:00:21.332 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=15, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:00:21.334 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=15
+21:00:46.518 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=16, flight_num=1, passenger=1, clas=1, price=3, bag=true
+21:00:46.546 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=16
+21:00:46.555 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=17, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:00:46.555 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=17
+21:00:46.572 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=18, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:00:46.573 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=18
+21:00:46.580 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=19, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:00:46.584 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=19
+21:01:41.702 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=20, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:01:41.726 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=21, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:01:41.727 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=21
+21:01:41.742 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=22, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:01:41.743 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=22
+21:01:41.748 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=23, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:01:41.750 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=23
+21:03:30.640 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=24, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:03:30.659 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=24
+21:03:30.667 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=25, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:03:30.667 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=25
+21:03:30.682 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=26, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:03:30.683 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=26
+21:03:30.687 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=27, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:03:30.689 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=27
+21:03:46.169 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=28, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:03:46.187 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=28
+21:03:46.195 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=29, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:03:46.195 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=29
+21:03:46.209 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=30, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:03:46.210 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=30
+21:03:46.214 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=31, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:03:46.216 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=31
+21:10:23.494 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=32, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:10:23.518 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=32
+21:10:23.526 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=33, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:10:23.526 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=33
+21:10:23.542 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=34, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:10:23.543 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=34
+21:10:23.547 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=35, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:10:23.549 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=35
+21:10:43.431 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=36, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:10:43.452 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=36
+21:10:43.461 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=37, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:10:43.461 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=37
+21:10:43.478 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=38, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:10:43.481 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=38
+21:10:43.486 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=39, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:10:43.488 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=39
+21:11:21.894 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=40, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:11:21.920 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=40
+21:11:21.934 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=41, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:11:21.934 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=41
+21:11:21.962 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=42, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:11:21.972 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=43, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:11:21.974 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=43
+21:15:28.668 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=44, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:15:28.687 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=44
+21:15:28.696 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=45, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:15:28.697 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=45
+21:15:28.709 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=46, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:15:28.710 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=46
+21:15:28.714 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=47, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:15:28.716 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=47
+21:18:23.462 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=48, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:18:23.480 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=48
+21:18:23.486 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=49, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:18:23.487 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=49
+21:18:23.499 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=50, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:18:23.501 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=50
+21:18:23.505 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=51, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:18:23.508 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=51
+21:19:50.225 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=52, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:19:50.245 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=52
+21:19:50.254 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=53, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:19:50.254 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=53
+21:19:50.268 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=54, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:19:50.270 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=54
+21:19:50.274 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=55, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:19:50.276 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=55
+21:25:39.780 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=56, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:25:39.805 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=56
+21:25:39.813 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=57, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:25:39.813 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=57
+21:25:39.828 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=58, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:25:39.830 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=58
+21:25:39.835 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=59, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:25:39.838 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=59
+21:32:08.850 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=60, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:32:08.875 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=60
+21:32:08.883 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=61, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:32:08.883 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=61
+21:32:08.897 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=62, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:32:08.899 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=62
+21:32:08.904 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=63, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:32:08.907 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=63
+21:32:54.279 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=64, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:32:54.300 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=64
+21:32:54.307 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=65, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:32:54.307 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=65
+21:32:54.323 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=66, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:32:54.325 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=66
+21:32:54.329 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=67, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:32:54.332 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=67
+21:33:45.159 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=68, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:33:45.177 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=68
+21:33:45.185 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=69, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:33:45.185 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=69
+21:33:45.199 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=70, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:33:45.200 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=70
+21:33:45.204 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=71, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:33:45.207 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=71
+21:36:06.246 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=72, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:36:06.270 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=72
+21:36:06.278 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=73, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:06.279 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=73
+21:36:06.295 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=74, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:06.298 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=74
+21:36:06.306 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=75, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:06.308 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=75
+21:36:30.388 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=76, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:36:30.406 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=76
+21:36:30.414 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=77, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:30.415 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=77
+21:36:30.431 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=78, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:30.433 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=78
+21:36:30.437 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=79, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:30.440 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=79
+21:36:43.001 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=80, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:36:43.021 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=80
+21:36:43.029 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=81, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:43.029 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=81
+21:36:43.045 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=82, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:43.047 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=82
+21:36:43.051 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=83, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:36:43.053 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=83
+21:37:03.400 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=84, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:37:03.420 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=84
+21:37:03.427 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=85, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:37:03.427 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=85
+21:37:03.441 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=86, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:37:03.443 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=86
+21:37:03.447 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=87, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:37:03.450 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=87
+21:43:35.639 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=88, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:43:35.662 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=88
+21:43:35.669 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=89, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:43:35.669 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=89
+21:43:35.683 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=90, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:43:35.685 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=90
+21:43:35.689 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=91, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:43:35.691 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=91
+21:43:46.994 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=92, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:43:47.013 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=92
+21:43:47.019 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=93, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:43:47.020 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=93
+21:43:47.036 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=94, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:43:47.038 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=94
+21:43:47.043 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=95, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:43:47.045 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=95
+21:44:50.890 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=96, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:44:50.909 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=96
+21:44:50.916 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=97, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:44:50.916 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=97
+21:44:50.928 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=98, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:44:50.930 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=98
+21:44:50.934 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=99, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:44:50.937 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=99
+21:45:37.602 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=100, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:45:37.627 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=100
+21:45:37.636 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=101, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:45:37.636 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=101
+21:45:37.651 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=102, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:45:37.652 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=102
+21:45:37.656 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=103, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:45:37.659 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=103
+21:46:57.292 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=104, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:46:57.313 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=104
+21:46:57.320 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=105, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:46:57.320 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=105
+21:46:57.334 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=106, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:46:57.335 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=106
+21:46:57.339 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=107, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:46:57.341 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=107
+21:47:48.017 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=108, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:47:48.037 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=108
+21:47:48.045 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=109, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:47:48.045 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=109
+21:47:48.060 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=110, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:47:48.061 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=110
+21:47:48.066 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=111, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:47:48.069 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=111
+21:47:59.570 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=112, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:47:59.590 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=112
+21:47:59.598 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=113, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:47:59.598 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=113
+21:47:59.614 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=114, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:47:59.614 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=114
+21:47:59.618 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=115, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:47:59.621 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=115
+21:48:17.540 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=116, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:48:17.559 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=116
+21:48:17.566 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=117, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:48:17.566 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=117
+21:48:17.580 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=118, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:48:17.580 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=118
+21:48:17.584 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=119, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:48:17.586 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=119
+21:49:15.914 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=120, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:49:15.931 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=120
+21:49:15.938 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=121, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:49:15.939 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=121
+21:49:15.954 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=122, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:49:15.955 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=122
+21:49:15.960 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=123, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:49:15.964 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=123
+21:51:02.279 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=124, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:51:02.302 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=124
+21:51:02.310 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=125, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:51:02.310 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=125
+21:51:02.325 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=126, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:51:02.326 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=126
+21:51:02.331 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=127, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:51:02.333 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=127
+21:52:55.104 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=128, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:52:55.125 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=128
+21:52:55.132 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=129, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:52:55.132 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=129
+21:52:55.145 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=130, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:52:55.145 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=130
+21:52:55.149 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=131, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:52:55.152 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=131
+21:53:32.560 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=132, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:53:32.580 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=132
+21:53:32.587 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=133, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:53:32.588 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=133
+21:53:32.603 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=134, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:53:32.603 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=134
+21:53:32.607 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=135, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:53:32.609 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=135
+21:54:55.108 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=136, flight_num=1, passenger=1, clas=1, price=313, bag=true
+21:54:55.130 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=136
+21:54:55.138 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=137, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:54:55.138 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=137
+21:54:55.154 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=138, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:54:55.155 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=138
+21:54:55.160 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=139, flight_num=1, passenger=5, clas=2, price=313, bag=false
+21:54:55.163 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=139
+22:04:40.694 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=140, flight_num=1, passenger=1, clas=1, price=313, bag=true
+22:04:40.719 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=140
+22:04:40.731 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=141, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:04:40.731 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=141
+22:04:40.749 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=142, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:04:40.750 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=142
+22:04:40.754 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=143, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:04:40.757 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=143
+22:04:52.619 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=144, flight_num=1, passenger=1, clas=1, price=313, bag=true
+22:04:52.637 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=144
+22:04:52.645 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=145, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:04:52.646 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=145
+22:04:52.658 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=146, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:04:52.659 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=146
+22:04:52.662 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=147, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:04:52.665 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=147
+22:05:16.595 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=148, flight_num=1, passenger=1, clas=1, price=313, bag=true
+22:05:16.612 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=148
+22:05:16.619 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=149, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:05:16.619 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=149
+22:05:16.632 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=150, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:05:16.632 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=150
+22:05:16.636 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=151, flight_num=1, passenger=5, clas=2, price=313, bag=false
+22:05:16.638 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=151
+22:19:36.556 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=11, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:19:36.556 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=11
+22:19:36.566 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=12, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:19:36.570 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=12
+22:19:38.714 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=13, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+22:19:38.734 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=13
+22:19:38.743 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=14, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:19:38.743 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=14
+22:19:38.759 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=15, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:19:38.759 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=15
+22:19:38.763 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=16, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:19:38.765 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=16
+22:26:07.076 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=11, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:26:07.076 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=11
+22:26:07.089 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=12, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:26:07.095 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=12
+22:26:07.652 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=13, plane=1, from=1, dateAndTime=2222-02-02T00:00:00.000+0300, to=2
+22:26:07.670 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=13
+22:26:07.679 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=14, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:26:07.680 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=14
+22:26:07.693 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=15, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:26:07.693 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=15
+22:26:07.699 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=16, plane=2, from=3, dateAndTime=2016-10-30T00:00:00.000+0300, to=2
+22:26:07.700 [main] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=16
+22:26:24.148 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=11, city=TestCitySave
+22:26:24.163 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=11
+22:26:24.181 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12, city=City0
+22:26:24.182 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=13, city=City1
+22:26:24.183 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=14, city=City2
+22:26:24.187 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=15, city=TestCityLong
+22:26:24.188 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=15
+22:26:24.199 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=16, city=TestCityUpd
+22:26:24.204 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=16
+22:26:24.210 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=17, city=TestCityDel
+22:26:24.211 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=17

@@ -12,7 +12,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ivanslushko.training.datamodel.Ticket;
-import com.ivanslushko.training.services.TicketService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
@@ -35,7 +34,7 @@ public class ServiceTestTicket {
 		ticket.setFlNum(1);
 		ticket.setPassenger(5);//
 		ticket.setClas(2);
-		ticket.setPrice(3);
+		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(false);
 		Long id = ticketService.save(ticket);
 		ticketService.delete(id);
@@ -51,7 +50,7 @@ public class ServiceTestTicket {
 		ticket.setFlNum(1);
 		ticket.setPassenger(5);//
 		ticket.setClas(2);
-		ticket.setPrice(3);
+		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(false);
 		Long id = ticketService.save(ticket);
 		Assert.assertNotNull(id);
@@ -69,11 +68,19 @@ public class ServiceTestTicket {
 		ticket.setFlNum(1);
 		ticket.setPassenger(5);//
 		ticket.setClas(2);
-		ticket.setPrice(3);
+		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(false);
 		Long id = ticketService.save(ticket);
 		Assert.assertNotNull("Ticket for id should not be null", ticket);
 		Assert.assertEquals(new Long(id), ticket.getId());
+
+		// ПРЕОБРАЗОВАНИЕ ЦЕНЫ ТУДА И ОБРАТНО
+		System.out.println((double) (ticket.getPrice()) / 100);
+		double a = ((double) (ticket.getPrice()) / 100) + 0.1;
+		System.out.println(a);
+		double b = a * 100;
+		System.out.println(Math.round(b));
+
 		ticketService.delete(id);
 	}
 
@@ -95,14 +102,14 @@ public class ServiceTestTicket {
 		ticket.setFlNum(1);
 		ticket.setPassenger(1);
 		ticket.setClas(1);
-		ticket.setPrice(3);
+		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(true);
 		Long id = ticketService.save(ticket);
 		Assert.assertNotNull(id);
 		ticket.setFlNum(2);
 		ticket.setPassenger(2);
 		ticket.setClas(2);
-		ticket.setPrice(2);
+		ticket.setPrice((int) (3.14 * 100));
 		ticket.setBag(false);
 		ticketService.update(ticket);
 		Ticket ticketFromDb = ticketService.get(id);

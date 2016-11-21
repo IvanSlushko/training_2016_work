@@ -8,6 +8,7 @@ import javax.inject.Inject;
 
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -36,7 +37,6 @@ public class ServiceSave {
 	// @AfterClass
 	// @BeforeClass
 
-
 	public void saveCityTest() {
 		City city = new City();
 		city.setCity("TestCITY");
@@ -46,7 +46,6 @@ public class ServiceSave {
 		System.out.println(id);
 		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
 	}
-
 
 	public void saveCityMultipleTest() {
 		List<City> allCityes = new ArrayList<>();
@@ -61,7 +60,6 @@ public class ServiceSave {
 
 	@Inject
 	private PlaneService planeService;
-
 
 	public void savePlaneTest() {
 		Plane plane = new Plane();
@@ -81,7 +79,6 @@ public class ServiceSave {
 	@Inject
 	private PassengerService passengerService;
 
-
 	public void savePassengerTest() {
 		Passenger passenger = new Passenger();
 
@@ -97,29 +94,29 @@ public class ServiceSave {
 
 	}
 
+
 	@Inject
 	private TicketService ticketService;
 
-	
 	public void saveTicketTest() {
 		Ticket ticket = new Ticket();
 
 		ticket.setFlNum(1);
 		ticket.setPassenger(5);//
 		ticket.setClas(2);
-		ticket.setPrice(3);
+		ticket.setPrice((int) (3.13*100));
 		ticket.setBag(false);
 
 		Long id = ticketService.save(ticket);
 		Assert.assertNotNull(id);
 		Ticket ticketFromDb = ticketService.get(id);
 		Assert.assertEquals(ticket.getFlNum(), ticketFromDb.getFlNum());
+		
 	}
 
 	@Inject
 	private FlightService flightService;
 
-	
 	public void saveFlightTest() {
 		Flight flight = new Flight();
 
