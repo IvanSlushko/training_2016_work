@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.ivanslushko.training.daoapi.ITicketDao;
 import com.ivanslushko.training.datamodel.Ticket;
+import com.ivanslushko.training.datamodel.TicketOnFlight;
 import com.ivanslushko.training.services.TicketService;
 
 @Service
@@ -67,5 +68,10 @@ public class TicketServiceImpl implements TicketService {
 			ticketDao.update(ticket);
 			return ticket.getId();
 		}
+	}
+
+	@Override
+	public List<TicketOnFlight> ticketOnFlight(Long id) {
+		return ticketDao.ticketOnFlight(id);
 	}
 }

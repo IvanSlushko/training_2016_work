@@ -28,16 +28,12 @@ public class FlightDaoDbImpl implements IFlightDao {
 
 	@Override
 	public Flight get(Long id) {
-		// return jdbcTemplate.queryForObject("select * from flight where id =
-		// ?", new Object[] { id },
-		// new BeanPropertyRowMapper<Flight>(Flight.class));
 		try {
 			return jdbcTemplate.queryForObject("select * from flight where id = ?", new Object[] { id },
 					new BeanPropertyRowMapper<Flight>(Flight.class));
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
-
 	}
 
 	@Override
@@ -58,7 +54,6 @@ public class FlightDaoDbImpl implements IFlightDao {
 		}, keyHolder);
 		entity.setId(keyHolder.getKey().longValue());
 		return entity.getId();
-
 	}
 
 	@Override
@@ -90,6 +85,6 @@ public class FlightDaoDbImpl implements IFlightDao {
 				"select * from flight f left join city c on f.fromm=c.id where c.id=?", new Object[] { id },
 				new FlightFromCityMapper());
 		return rs;
-
 	}
+
 }

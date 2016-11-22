@@ -1,18 +1,11 @@
 package com.ivanslushko.training.daoapi;
 
+import java.util.List;
+
 import com.ivanslushko.training.datamodel.Ticket;
+import com.ivanslushko.training.datamodel.TicketOnFlight;
 
 public interface ITicketDao extends IAbstractDao<Ticket> {
 
-	// Ticket get(Long id);
-	//
-	// Long insert(Ticket entity);
-	//
-	// void update(Ticket entity);
-	//
-	// Ticket delete(Long id);
-	//
-	// void save(Ticket entity);
-	//
-	// List<Ticket> getAll();
+	List<TicketOnFlight> ticketOnFlight(Long id);
 }

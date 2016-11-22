@@ -14,6 +14,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.daoapi.ITicketDao;
 import com.ivanslushko.training.datamodel.Ticket;
+import com.ivanslushko.training.datamodel.TicketOnFlight;
 import com.thoughtworks.xstream.XStream;
 
 @Repository
@@ -113,6 +114,11 @@ public class TicketDaoXmlImpl implements ITicketDao {
 	@Override
 	public void save(Ticket entity) {
 		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public List<TicketOnFlight> ticketOnFlight(Long id) {
+		throw new UnsupportedOperationException();
 	}
 
 }

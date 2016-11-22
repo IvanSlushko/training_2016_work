@@ -3,13 +3,12 @@ package com.ivanslushko.training.datamodel;
 public class FlightFromCity {
 	private City city;
 	private Flight flight;
+	
 	public Object Date;
 	public Object Too;	
 	public Object FrCity ;
 	public Object Plane ;
-//	public Object ToCity ;
-	
-	
+
 	public City getCity() {
 		return city;
 	}

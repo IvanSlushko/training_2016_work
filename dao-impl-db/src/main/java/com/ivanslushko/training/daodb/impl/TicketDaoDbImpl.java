@@ -16,7 +16,9 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.daoapi.ITicketDao;
+import com.ivanslushko.training.daodb.mapper.TicketOnFlightMapper;
 import com.ivanslushko.training.datamodel.Ticket;
+import com.ivanslushko.training.datamodel.TicketOnFlight;
 
 @Repository
 public class TicketDaoDbImpl implements ITicketDao {
@@ -32,7 +34,6 @@ public class TicketDaoDbImpl implements ITicketDao {
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
-
 	}
 
 	@Override
@@ -57,7 +58,6 @@ public class TicketDaoDbImpl implements ITicketDao {
 		}, keyHolder);
 		entity.setId(keyHolder.getKey().longValue());
 		return entity.getId();
-
 	}
 
 	@Override
@@ -84,4 +84,11 @@ public class TicketDaoDbImpl implements ITicketDao {
 	public void save(Ticket entity) {
 	}
 
+	@Override
+	public List<TicketOnFlight> ticketOnFlight(Long id) {
+		List<TicketOnFlight> rs = jdbcTemplate.query(
+				"select * from ticket t left join flight f on t.fl_num=f.id where f.id=?", new Object[] { id },
+				new TicketOnFlightMapper());
+		return rs;
+	}
 }
