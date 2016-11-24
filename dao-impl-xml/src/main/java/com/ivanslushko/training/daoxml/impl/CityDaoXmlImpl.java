@@ -9,6 +9,7 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 
+import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
@@ -34,6 +35,7 @@ public class CityDaoXmlImpl implements ICityDao {
 
 		file = new File(basePath + "/cityes.xml");
 		if (!file.exists()) {
+			FileUtils.forceMkdir(file.getParentFile());
 			file.createNewFile();
 			xstream.toXML(new ArrayList<>(), new FileOutputStream(file));
 		}

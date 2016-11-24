@@ -14,7 +14,8 @@ public interface AbstractService<T> {
 	Long update(T entiti);
 
 	T get(Long id);
-
+	
+	@Transactional
 	void delete(Long id);
 
 	List<T> getAll();
