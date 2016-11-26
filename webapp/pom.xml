@@ -53,6 +53,5 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 		</dependency>
 
-
 	</dependencies>
 </project>

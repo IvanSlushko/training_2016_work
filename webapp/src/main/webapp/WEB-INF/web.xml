@@ -27,7 +27,6 @@
 	   <url-pattern>/myFirtsService</url-pattern>
 	</servlet-mapping>
 
-
  	<servlet-mapping>
       <servlet-name>HelloWeb</servlet-name>
       <url-pattern>/</url-pattern>

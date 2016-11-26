@@ -28,11 +28,11 @@ public class FlightFromCityTest {
 	@Test
 	public void flightFromCityTest() {
 
-		List<FlightFromCity> flightFromCity = flightService.getFromCity(1l);
+		List<FlightFromCity> flightFromCity = flightService.getFromCity(6l);
 
 		System.out.println();
 		System.out.println(
-				"From " + flightFromCity.get(0).getFrCity() + " flies " + flightFromCity.size() + " Aircraft.");
+				"From " + flightFromCity.get(0).getFrCity() + " flies " + flightFromCity.size() + " Aircraft:");
 		System.out.println();
 
 		for (int i = 0; i < flightFromCity.size(); i++) {

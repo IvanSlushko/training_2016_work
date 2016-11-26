@@ -16,7 +16,7 @@ public class LogFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws java.io.IOException, ServletException {
 
-		System.out.println("Log filter_____");
+		System.out.println("<----- Log filter ----->");
 		chain.doFilter(request, response);
 	}
 

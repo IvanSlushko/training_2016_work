@@ -1,0 +1,16 @@
+17:53:38.038 [qtp2106620844-16] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=32, city=new!!new
+18:16:31.317 [qtp2106620844-13] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=33, city=eererewetwete
+18:22:33.777 [qtp2106620844-17] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=34, city=eeeeewwwwwwQQ
+18:28:12.465 [qtp2106620844-16] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=35, city=qqqwwwtt
+18:37:03.925 [qtp2106620844-17] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=32
+18:37:18.476 [qtp2106620844-19] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=33
+18:37:21.476 [qtp2106620844-17] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=34
+18:38:58.937 [qtp2106620844-13] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=35
+19:18:20.980 [qtp2106620844-20] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=3
+19:19:06.451 [qtp2106620844-19] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=28
+19:31:15.570 [qtp2106620844-18] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=17, plane=3, from=5, dateAndTime=2016-11-16T03:00:00.000+0300, to=8
+19:33:22.735 [qtp2106620844-20] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight deleted! id=17
+19:57:11.638 [qtp2106620844-17] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane created. id=11, bortNUM=966, model=Boeing-666, passCount=66
+19:57:53.158 [qtp2106620844-16] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Plane deleted! id=11
+20:27:15.935 [qtp2106620844-16] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=29, flight_num=1, passenger=8, clas=1, price=666, bag=true
+20:28:03.268 [qtp2106620844-17] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=29

@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Nov 25 21:05:50 MSK 2016
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1480097150034
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.codehaus.jackson\:jackson-mapper-asl\:pom\:1.9.13 from/to central (https\://repo.maven.apache.org/maven2)\: repo.maven.apache.org

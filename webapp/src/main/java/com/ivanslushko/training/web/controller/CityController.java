@@ -27,18 +27,17 @@ public class CityController {
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<CityModel>> getAll() {
 		List<City> all = service.getAll();
-		System.out.println(all);
+		
 		List<CityModel> converted = new ArrayList<>();
 		for (City city : all) {
 			converted.add(entity2model(city));
 		}
-		System.out.println(converted);
 		return new ResponseEntity<List<CityModel>>(converted, HttpStatus.OK);
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-	public ResponseEntity<CityModel> getById(@PathVariable Long Id) {
-		City city = service.get(Id);
+	public ResponseEntity<CityModel> getById(@PathVariable Long id) {
+		City city = service.get(id);
 		return new ResponseEntity<CityModel>(entity2model(city), HttpStatus.OK);
 	}
 
@@ -46,30 +45,26 @@ public class CityController {
 	public ResponseEntity<Void> createNewCity(@RequestBody CityModel cityModel) {
 		service.save(model2entity(cityModel));
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
-
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
-	public ResponseEntity<Void> updateAuthor(@RequestBody CityModel cityModel, @PathVariable Long Id) {
+	public ResponseEntity<Void> updateCity(@RequestBody CityModel cityModel, @PathVariable Long id) {
 		City city = model2entity(cityModel);
-		city.setId(Id);
+		city.setId(id);
 		service.update(city);
 		return new ResponseEntity<Void>(HttpStatus.OK);
-
 	}
-
+	
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<Void> delete(@PathVariable Long Id) {
-		service.delete(Id);
+	public ResponseEntity<Void> delete(@PathVariable Long id) {
+		service.delete(id);
 		return new ResponseEntity<Void>(HttpStatus.OK);
-
 	}
 
 	private CityModel entity2model(City city) {
 		CityModel e = new CityModel();
 		e.setCity(city.getCity());
 		e.setId(city.getId());
-		System.out.println("convert "+city);
 		return e;
 	}
 
@@ -79,5 +74,4 @@ public class CityController {
 		e.setCity(cityModel.getCity());
 		return e;
 	}
-
 }

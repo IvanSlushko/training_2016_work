@@ -1,8 +1,11 @@
-23:40:58.496 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=25, flight_num=1, passenger=1, clas=1, price=313, bag=true
-23:40:58.523 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=25
-23:40:58.529 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=26, flight_num=1, passenger=5, clas=2, price=313, bag=false
-23:40:58.530 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=26
-23:40:58.545 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=27, flight_num=1, passenger=5, clas=2, price=313, bag=false
-23:40:58.546 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=27
-23:40:58.551 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=28, flight_num=1, passenger=5, clas=2, price=313, bag=false
-23:40:58.554 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=28
+17:46:50.306 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=25, city=TestCitySave
+17:46:50.347 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=25
+17:46:50.358 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=26, city=City0
+17:46:50.360 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=27, city=City1
+17:46:50.361 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=28, city=City2
+17:46:50.364 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=29, city=TestCityLong
+17:46:50.365 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=29
+17:46:50.377 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=30, city=TestCityUpd
+17:46:50.382 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=30
+17:46:50.387 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=31, city=TestCityDel
+17:46:50.387 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=31
