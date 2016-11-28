@@ -23,9 +23,9 @@ public class ServletExample extends HttpServlet {
 		out.println("<h2>today ....................</h2>");// меньше
 
 		out.println("<br/><hr/>"); // line
-		
+
 		out.println("<BLOCKQUOTE> 124521212231… </BLOCKQUOTE>");
-		
+
 		System.out.println("Servlet executed!!!!");
 	}
 

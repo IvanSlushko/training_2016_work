@@ -39,7 +39,7 @@ public class FlightFromCityTest {
 			City city = cityService.get(Integer.toUnsignedLong((Integer) flightFromCity.get(i).getToo()));
 			Plane plane = planeService.get(Integer.toUnsignedLong((Integer) flightFromCity.get(i).getPlane()));
 
-			System.out.println("-> at " + flightFromCity.get(i).getDate() + " to " + city.getCity() + " city on plane   "
+			System.out.println("-> at " + flightFromCity.get(i).getDate() + " to " + city.getCity() + " city on plane "
 					+ plane.getModel() + " bort number: " + plane.getBortNumber());
 		}
 	}

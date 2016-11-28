@@ -1,5 +1,6 @@
 package com.ivanslushko.training.web.controller;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +15,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ivanslushko.training.datamodel.Flight;
+import com.ivanslushko.training.datamodel.FlightFromCity;
 import com.ivanslushko.training.services.FlightService;
+import com.ivanslushko.training.web.model.FlightFromCityModel;
 import com.ivanslushko.training.web.model.FlightModel;
 
 @RestController
@@ -35,6 +38,17 @@ public class FlightController {
 		return new ResponseEntity<List<FlightModel>>(converted, HttpStatus.OK);
 	}
 
+	@RequestMapping(value = "/ffc/{id}", method = RequestMethod.GET)
+	public ResponseEntity<List<FlightFromCityModel>> getFromCity(@PathVariable Long id) {
+		List<FlightFromCity> all = service.getFromCity(id);
+
+		List<FlightFromCityModel> converted = new ArrayList<>();
+		for (FlightFromCity flightFromCity : all) {
+			converted.add(entity2model(flightFromCity));
+		}
+		return new ResponseEntity<List<FlightFromCityModel>>(converted, HttpStatus.OK);
+	}
+
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ResponseEntity<FlightModel> getById(@PathVariable Long id) {
 		Flight flight = service.get(id);
@@ -51,11 +65,6 @@ public class FlightController {
 	public ResponseEntity<Void> updateFlight(@RequestBody FlightModel flightModel, @PathVariable Long id) {
 		Flight flight = model2entity(flightModel);
 		flight.setId(id);
-//		 flight.setPlane(plane);
-//		 flight.setFromm(fromm);
-//		 flight.setdAndT(dAndT);
-//		 flight.setToo(too);
-
 		service.update(flight);
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
@@ -64,6 +73,17 @@ public class FlightController {
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
 		service.delete(id);
 		return new ResponseEntity<Void>(HttpStatus.OK);
+	}
+
+	private FlightFromCityModel entity2model(FlightFromCity flightFromCity) {
+		FlightFromCityModel e = new FlightFromCityModel();
+		e.setId(flightFromCity.getFlight().getId());
+		e.setPlane(flightFromCity.getFlight().getPlane());
+		e.setFromm(flightFromCity.getFlight().getFromm());
+		e.setFr_city( (String) flightFromCity.getFrCity());
+		e.setD_and_t(flightFromCity.getFlight().getdAndT());
+		e.setToo(flightFromCity.getFlight().getToo());
+		return e;
 	}
 
 	private FlightModel entity2model(Flight flight) {
