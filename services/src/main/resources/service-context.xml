@@ -42,7 +42,6 @@
 		<constructor-arg ref="dataSource" />
 	</bean>
 
-
 	<tx:annotation-driven />
 
 	<bean id="transactionManager"
@@ -51,5 +50,6 @@
 	</bean>
 
 	<task:annotation-driven />
-
+	
+	<context:component-scan base-package="com.ivanslushko.training.services.components" />
 </beans>

@@ -1,6 +1,5 @@
 package com.ivanslushko.training.web.controller;
 
-import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 

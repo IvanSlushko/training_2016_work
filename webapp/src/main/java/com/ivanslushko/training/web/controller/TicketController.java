@@ -1,5 +1,6 @@
 package com.ivanslushko.training.web.controller;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ivanslushko.training.datamodel.Ticket;
+import com.ivanslushko.training.datamodel.TicketOnFlight;
 import com.ivanslushko.training.services.TicketService;
 import com.ivanslushko.training.web.model.TicketModel;
+import com.ivanslushko.training.web.model.TicketOnFlightModel;
 
 @RestController
 @RequestMapping("/ticket")
@@ -33,6 +36,17 @@ public class TicketController {
 			converted.add(entity2model(ticket));
 		}
 		return new ResponseEntity<List<TicketModel>>(converted, HttpStatus.OK);
+	}
+
+	@RequestMapping(value = "/tof/{id}", method = RequestMethod.GET)
+	public ResponseEntity<List<TicketOnFlightModel>> ticketOnFlight(@PathVariable Long id) {
+		List<TicketOnFlight> all = service.ticketOnFlight(id);
+
+		List<TicketOnFlightModel> converted = new ArrayList<>();
+		for (TicketOnFlight ticketOnFlight : all) {
+			converted.add(entity2model(ticketOnFlight));
+		}
+		return new ResponseEntity<List<TicketOnFlightModel>>(converted, HttpStatus.OK);
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
@@ -83,5 +97,25 @@ public class TicketController {
 		e.setBag(ticketModel.getBag());
 		return e;
 	}
+
+	private TicketOnFlightModel entity2model(TicketOnFlight ticketOnFlight) {
+		TicketOnFlightModel e = new TicketOnFlightModel();
+		e.setBag((Boolean) ticketOnFlight.getTicket().getBag());
+		e.setClas((Integer) ticketOnFlight.getTicket().getClas());
+		e.setDate((Date) ticketOnFlight.getFlight().getdAndT());
+		e.setFlNum((Integer) ticketOnFlight.getFlNum());
+		e.setFrCity((Integer) ticketOnFlight.getFlight().getFromm());
+		e.setPassenger((Integer) ticketOnFlight.getTicket().getPassenger());
+		e.setPlane((Integer) ticketOnFlight.getFlight().getPlane());
+		e.setToo((Integer) ticketOnFlight.getFlight().getToo());
+		e.setPrice((double) (ticketOnFlight.getTicket().getPrice()) / 100);
+		return e;
+	}
+
+	// Flight 5 contains 4 passenger(s) on board:
+	// -> Passenger № 4, class: 2, ticket price: 3.11$, bag: false.
+	// -> Passenger № 6, class: 2, ticket price: 5.35$, bag: false.
+	// -> Passenger № 7, class: 2, ticket price: 4.22$, bag: false.
+	// -> Passenger № 3, class: 2, ticket price: 3.54$, bag: true.
 
 }
