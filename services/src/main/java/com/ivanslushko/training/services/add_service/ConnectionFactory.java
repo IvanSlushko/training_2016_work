@@ -1,4 +1,4 @@
-package com.ivanslushko.training.services;
+package com.ivanslushko.training.services.add_service;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -3,6 +3,7 @@ package temp_services;
 import javax.inject.Inject;
 
 import org.junit.Assert;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,9 +43,9 @@ public class ServiceGetById {
 	private FlightService flightService;
 
 	public void getByIdtestFlight() {
-		Flight flight = flightService.get(3L);
+		Flight flight = flightService.get(8L);
 		Assert.assertNotNull("flight 1 should not be null", flight);
-		Assert.assertEquals(new Long(3l), flight.getId());
+		Assert.assertEquals(new Long(8l), flight.getId());
 		LOGGER.info("Flight get: . id={}, plane={}, from={}, date={},to={}", flight.getId(), flight.getPlane(),
 				flight.getFromm(), flight.getdAndT(), flight.getToo());
 

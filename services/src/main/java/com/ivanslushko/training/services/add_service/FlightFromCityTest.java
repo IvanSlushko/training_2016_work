@@ -1,4 +1,4 @@
-package com.ivanslushko.training.services;
+package com.ivanslushko.training.services.add_service;
 
 import java.util.List;
 
@@ -12,6 +12,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.ivanslushko.training.datamodel.City;
 import com.ivanslushko.training.datamodel.FlightFromCity;
 import com.ivanslushko.training.datamodel.Plane;
+import com.ivanslushko.training.services.CityService;
+import com.ivanslushko.training.services.FlightService;
+import com.ivanslushko.training.services.PlaneService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
