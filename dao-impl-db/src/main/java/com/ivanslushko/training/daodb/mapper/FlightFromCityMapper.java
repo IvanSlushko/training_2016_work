@@ -17,17 +17,17 @@ public final class FlightFromCityMapper implements RowMapper<FlightFromCity> {
 
 		int too = rs.getInt("too");
 		Date date = rs.getDate("d_and_t");
-		String fr_city = rs.getString("city");
+		String fr_city = rs.getString("city_en");
 
 		Flight flight = new Flight();
 		flight.setId(rs.getLong("id"));
 		flight.setPlane(rs.getInt("plane"));
 		flight.setFromm(rs.getInt("fromm"));
-		flight.setdAndT(rs.getDate("d_and_t"));
+		flight.setdAndT(rs.getTimestamp("d_and_t"));
 		flight.setToo(rs.getInt("too"));
 
 		City city = new City();
-		city.setCity((rs.getString("city")));
+		city.setCity_en((rs.getString("city_en")));
 
 		FlightFromCity flightFromCity = new FlightFromCity();
 		flightFromCity.setFlight(flight);

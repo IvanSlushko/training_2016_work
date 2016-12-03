@@ -1,6 +1,6 @@
 package com.ivanslushko.training.services;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -13,7 +13,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ivanslushko.training.datamodel.Flight;
-import com.ivanslushko.training.services.FlightService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
@@ -35,7 +34,7 @@ public class ServiceTestFlight {
 		Flight flight = new Flight();
 		flight.setPlane(2);
 		flight.setFromm(3);
-		flight.setdAndT(Date.valueOf("2016-10-30"));
+		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(2);
 		Long id = flightService.save(flight);
 		flightService.delete(id);
@@ -50,7 +49,7 @@ public class ServiceTestFlight {
 		Flight flight = new Flight();
 		flight.setPlane(2);
 		flight.setFromm(3);
-		flight.setdAndT(Date.valueOf("2016-10-30"));
+		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(2);
 		Long id = flightService.save(flight);
 		Assert.assertNotNull(id);
@@ -67,7 +66,7 @@ public class ServiceTestFlight {
 		Flight flight = new Flight();
 		flight.setPlane(2);
 		flight.setFromm(3);
-		flight.setdAndT(Date.valueOf("2016-10-30"));
+		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(2);
 		Long id = flightService.save(flight);
 		Assert.assertNotNull("Flight for id should not be null", flight);
@@ -92,13 +91,13 @@ public class ServiceTestFlight {
 		Flight flight = new Flight();
 		flight.setPlane(1);
 		flight.setFromm(1);
-		flight.setdAndT(Date.valueOf("2222-02-02"));
+		flight.setdAndT(Timestamp.valueOf("2222-02-22 12:58:20"));
 		flight.setToo(2);
 		Long id = flightService.save(flight);
 		Assert.assertNotNull(id);
 		flight.setPlane(2);
 		flight.setFromm(2);
-		flight.setdAndT(Date.valueOf("3333-03-03"));
+		flight.setdAndT(Timestamp.valueOf("3333-03-03 12:33:33"));
 		flight.setToo(3);
 		flightService.update(flight);
 		Flight flightFromDb = flightService.get(id);

@@ -33,7 +33,8 @@ public class TicketOnFlightTest {
 			System.out.println("-> Passenger № " + ticketOnFlight.get(i).getTicket().getPassenger() + ", class: "
 					+ ticketOnFlight.get(i).getTicket().getClas() + ", ticket price: "
 					+ ((double) (ticketOnFlight.get(i).getTicket().getPrice()) / 100) + "$, bag: "
-					+ ticketOnFlight.get(i).getTicket().getBag() + ".");
+					+ ticketOnFlight.get(i).getTicket().getBag() + ", first registration: "
+					+ ticketOnFlight.get(i).getTicket().getFirst_reg() + ".");
 		}
 		System.out.println();
 	}

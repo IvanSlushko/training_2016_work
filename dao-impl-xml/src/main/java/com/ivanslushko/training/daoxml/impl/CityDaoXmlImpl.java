@@ -85,7 +85,9 @@ public class CityDaoXmlImpl implements ICityDao {
 		List<City> allCity = readCollection();
 		for (City city : allCity) {
 			if (city.getId().equals(entity.getId())) {
-				city.setCity(entity.getCity());
+				city.setCity_ru(entity.getCity_ru());
+				city.setCity_en(entity.getCity_en());
+				city.setCity_by(entity.getCity_by());
 			}
 		}
 		writeCollection(allCity);

@@ -1,6 +1,5 @@
 package com.ivanslushko.training.web.controller;
 
-import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -84,6 +83,7 @@ public class TicketController {
 		e.setClas(ticket.getClas());
 		e.setPrice(ticket.getPrice());
 		e.setBag(ticket.getBag());
+		e.setFirst_reg(ticket.getFirst_reg());
 		return e;
 	}
 
@@ -95,14 +95,19 @@ public class TicketController {
 		e.setClas(ticketModel.getClas());
 		e.setPrice(ticketModel.getPrice());
 		e.setBag(ticketModel.getBag());
+		e.setFirst_reg(ticketModel.getFirst_reg());
 		return e;
 	}
 
 	private TicketOnFlightModel entity2model(TicketOnFlight ticketOnFlight) {
 		TicketOnFlightModel e = new TicketOnFlightModel();
 		e.setBag((Boolean) ticketOnFlight.getTicket().getBag());
+		e.setFirst_reg((Boolean) ticketOnFlight.getTicket().getFirst_reg());
 		e.setClas((Integer) ticketOnFlight.getTicket().getClas());
-		e.setDate((Date) ticketOnFlight.getFlight().getdAndT());
+		
+		e.setDate(ticketOnFlight.getFlight().getdAndT());
+		
+		
 		e.setFlNum((Integer) ticketOnFlight.getFlNum());
 		e.setFrCity((Integer) ticketOnFlight.getFlight().getFromm());
 		e.setPassenger((Integer) ticketOnFlight.getTicket().getPassenger());

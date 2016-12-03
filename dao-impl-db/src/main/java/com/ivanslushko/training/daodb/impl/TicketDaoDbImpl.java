@@ -39,7 +39,7 @@ public class TicketDaoDbImpl implements ITicketDao {
 	@Override
 	public Long insert(final Ticket entity) {
 
-		final String INSERT_SQL = "insert into ticket (fl_num,passenger,clas,price,bag) values(?,?,?,?,?)";
+		final String INSERT_SQL = "insert into ticket (fl_num,passenger,clas,price,bag,first_reg) values(?,?,?,?,?,?)";
 
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		jdbcTemplate.update(new PreparedStatementCreator() {
@@ -52,6 +52,7 @@ public class TicketDaoDbImpl implements ITicketDao {
 				ps.setInt(3, entity.getClas());
 				ps.setInt(4, entity.getPrice());
 				ps.setBoolean(5, entity.getBag());
+				ps.setBoolean(6, entity.getFirst_reg());
 
 				return ps;
 			}
@@ -62,8 +63,8 @@ public class TicketDaoDbImpl implements ITicketDao {
 
 	@Override
 	public Long update(final Ticket entity) {
-		jdbcTemplate.update("update ticket set fl_num = ?, passenger = ?, clas = ? , price = ?, bag = ? where id = ?",
-				entity.getFlNum(), entity.getPassenger(), entity.getClas(), entity.getPrice(), entity.getBag(),
+		jdbcTemplate.update("update ticket set fl_num = ?, passenger = ?, clas = ? , price = ?, bag = ?,first_reg=? where id = ?",
+				entity.getFlNum(), entity.getPassenger(), entity.getClas(), entity.getPrice(), entity.getBag(),entity.getFirst_reg(),
 				entity.getId());
 		return entity.getId();
 	}

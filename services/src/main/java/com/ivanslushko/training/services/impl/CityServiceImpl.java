@@ -36,7 +36,8 @@ public class CityServiceImpl implements CityService {
 	public Long save(City city) {
 		if (city.getId() == null) {
 			Long id = cityDao.insert(city);
-			LOGGER.info("City created. id={}, city={}", city.getId(), city.getCity());
+			LOGGER.info("City created. id={}, city_ru={}, city_en={}, city_by={}", city.getId(), city.getCity_ru(),
+					city.getCity_en(), city.getCity_by());
 			return id;
 		} else {
 			cityDao.update(city);
@@ -48,7 +49,8 @@ public class CityServiceImpl implements CityService {
 	public Long update(City city) {
 		if (city.getId() == null) {
 			Long id = cityDao.update(city);
-			LOGGER.info("City updated. id={}, city={}", city.getId(), city.getCity());
+			LOGGER.info("City updated. id={}, city_ru={}, city_en={}, city_by={}", city.getId(), city.getCity_ru(),
+					city.getCity_en(), city.getCity_by());
 			return id;
 		} else {
 			cityDao.update(city);
@@ -66,15 +68,9 @@ public class CityServiceImpl implements CityService {
 		LOGGER.info("City deleted!!! id={}", id);
 		cityDao.delete(id);
 	}
-	
 
-//	   @Scheduled(initialDelay = 100, fixedDelay = 500)
-    public void testPeriodicalMethod() {
-        System.out.println("testPeriodicalMethod");
-    }
-	
-	
-	
-	
-	
+	// @Scheduled(initialDelay = 100, fixedDelay = 500)
+	public void testPeriodicalMethod() {
+		System.out.println("testPeriodicalMethod");
+	}
 }

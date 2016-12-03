@@ -27,7 +27,7 @@ public class CityController {
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<CityModel>> getAll() {
 		List<City> all = service.getAll();
-		
+
 		List<CityModel> converted = new ArrayList<>();
 		for (City city : all) {
 			converted.add(entity2model(city));
@@ -54,7 +54,7 @@ public class CityController {
 		service.update(city);
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
-	
+
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
 		service.delete(id);
@@ -63,7 +63,9 @@ public class CityController {
 
 	private CityModel entity2model(City city) {
 		CityModel e = new CityModel();
-		e.setCity(city.getCity());
+		e.setCity_ru(city.getCity_ru());
+		e.setCity_en(city.getCity_en());
+		e.setCity_by(city.getCity_by());
 		e.setId(city.getId());
 		return e;
 	}
@@ -71,7 +73,10 @@ public class CityController {
 	private City model2entity(CityModel cityModel) {
 		City e = new City();
 		e.setId(cityModel.getId());
-		e.setCity(cityModel.getCity());
+		e.setCity_ru(cityModel.getCity_ru());
+		e.setCity_en(cityModel.getCity_en());
+		e.setCity_by(cityModel.getCity_by());
+
 		return e;
 	}
 }

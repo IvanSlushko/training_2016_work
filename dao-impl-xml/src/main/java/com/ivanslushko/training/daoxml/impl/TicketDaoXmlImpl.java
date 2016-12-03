@@ -89,6 +89,7 @@ public class TicketDaoXmlImpl implements ITicketDao {
 				ticket.setClas(entity.getClas());
 				ticket.setPrice(entity.getPrice());
 				ticket.setBag(entity.getBag());
+				ticket.setFirst_reg(entity.getFirst_reg());
 			}
 		}
 		writeCollection(allTicket);

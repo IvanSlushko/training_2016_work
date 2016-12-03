@@ -1,6 +1,7 @@
 package temp_services;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +9,6 @@ import javax.inject.Inject;
 
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -39,12 +39,16 @@ public class ServiceSave {
 
 	public void saveCityTest() {
 		City city = new City();
-		city.setCity("TestCITY");
+		city.setCity_ru("TestCITY_ru");
+		city.setCity_en("TestCITY_en");
+		city.setCity_by("TestCITY_by");
 		Long id = cityService.save(city);
 		Assert.assertNotNull(id);
 		City cityFromDb = cityService.get(id);
 		System.out.println(id);
-		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
+		Assert.assertEquals(city.getCity_ru(), cityFromDb.getCity_ru());
+		Assert.assertEquals(city.getCity_en(), cityFromDb.getCity_en());
+		Assert.assertEquals(city.getCity_by(), cityFromDb.getCity_by());
 	}
 
 	public void saveCityMultipleTest() {
@@ -52,7 +56,9 @@ public class ServiceSave {
 
 		for (int i = 0; i < 3; i++) {
 			City city = new City();
-			city.setCity("City" + i);
+			city.setCity_ru("City_ru" + i);
+			city.setCity_en("City_en" + i);
+			city.setCity_by("City_by" + i);
 			allCityes.add(city);
 		}
 		cityService.saveAll(allCityes);
@@ -94,7 +100,6 @@ public class ServiceSave {
 
 	}
 
-
 	@Inject
 	private TicketService ticketService;
 
@@ -104,14 +109,15 @@ public class ServiceSave {
 		ticket.setFlNum(1);
 		ticket.setPassenger(5);//
 		ticket.setClas(2);
-		ticket.setPrice((int) (3.13*100));
+		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(false);
+		ticket.setFirst_reg(false);
 
 		Long id = ticketService.save(ticket);
 		Assert.assertNotNull(id);
 		Ticket ticketFromDb = ticketService.get(id);
 		Assert.assertEquals(ticket.getFlNum(), ticketFromDb.getFlNum());
-		
+
 	}
 
 	@Inject
@@ -122,7 +128,7 @@ public class ServiceSave {
 
 		flight.setPlane(2);
 		flight.setFromm(3);
-		flight.setdAndT(Date.valueOf("2016-10-30"));
+		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(2);
 
 		Long id = flightService.save(flight);

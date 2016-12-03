@@ -22,12 +22,13 @@ public class TicketOnFlightMapper implements RowMapper<TicketOnFlight> {
 		ticket.setPrice(rs.getInt("price"));
 		ticket.setClas(rs.getInt("clas"));
 		ticket.setBag(rs.getBoolean("bag"));
+		ticket.setFirst_reg(rs.getBoolean("first_reg"));
 
 		Flight flight = new Flight();
 		flight.setId(rs.getLong("id"));
 		flight.setPlane(rs.getInt("plane"));
 		flight.setFromm(rs.getInt("fromm"));
-		flight.setdAndT(rs.getDate("d_and_t"));
+		flight.setdAndT(rs.getTimestamp("d_and_t"));
 		flight.setToo(rs.getInt("too"));
 
 		TicketOnFlight ticketOnFlight = new TicketOnFlight();

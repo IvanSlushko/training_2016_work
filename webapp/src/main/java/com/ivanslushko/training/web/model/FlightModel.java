@@ -1,13 +1,13 @@
 package com.ivanslushko.training.web.model;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 public class FlightModel {
 
 	private Long id;
 	private Integer plane;
 	private Integer fromm;
-	private Date d_and_t;
+	private Timestamp d_and_t;
 	private Integer too;
 
 	public Long getId() {
@@ -34,11 +34,11 @@ public class FlightModel {
 		this.fromm = fromm;
 	}
 
-	public Date getD_and_t() {
+	public Timestamp getD_and_t() {
 		return d_and_t;
 	}
 
-	public void setD_and_t(Date d_and_t) {
+	public void setD_and_t(Timestamp d_and_t) {
 		this.d_and_t = d_and_t;
 	}
 

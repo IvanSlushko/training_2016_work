@@ -36,6 +36,7 @@ public class ServiceTestTicket {
 		ticket.setClas(2);
 		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(false);
+		ticket.setFirst_reg(false);
 		Long id = ticketService.save(ticket);
 		ticketService.delete(id);
 		Assert.assertNull(ticketService.get(id));
@@ -52,11 +53,12 @@ public class ServiceTestTicket {
 		ticket.setClas(2);
 		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(false);
+		ticket.setFirst_reg(false);
 		Long id = ticketService.save(ticket);
 		Assert.assertNotNull(id);
 		Ticket ticketFromDb = ticketService.get(id);
 		Assert.assertEquals(ticket.getFlNum(), ticketFromDb.getFlNum());
-		ticketService.delete(id);
+//		ticketService.delete(id);
 	}
 
 	/**
@@ -70,6 +72,7 @@ public class ServiceTestTicket {
 		ticket.setClas(2);
 		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(false);
+		ticket.setFirst_reg(false);
 		Long id = ticketService.save(ticket);
 		Assert.assertNotNull("Ticket for id should not be null", ticket);
 		Assert.assertEquals(new Long(id), ticket.getId());
@@ -81,7 +84,7 @@ public class ServiceTestTicket {
 		double b = a * 100;
 		System.out.println(Math.round(b));
 
-		ticketService.delete(id);
+//		ticketService.delete(id);
 	}
 
 	/**
@@ -104,20 +107,28 @@ public class ServiceTestTicket {
 		ticket.setClas(1);
 		ticket.setPrice((int) (3.13 * 100));
 		ticket.setBag(true);
+		ticket.setFirst_reg(true);
+		
 		Long id = ticketService.save(ticket);
+		
 		Assert.assertNotNull(id);
+		
 		ticket.setFlNum(2);
 		ticket.setPassenger(2);
 		ticket.setClas(2);
 		ticket.setPrice((int) (3.14 * 100));
 		ticket.setBag(false);
+		ticket.setFirst_reg(false);
 		ticketService.update(ticket);
+		
 		Ticket ticketFromDb = ticketService.get(id);
+		
 		Assert.assertEquals(ticket.getFlNum(), ticketFromDb.getFlNum());
 		Assert.assertEquals(ticket.getPassenger(), ticketFromDb.getPassenger());
 		Assert.assertEquals(ticket.getClas(), ticketFromDb.getClas());
 		Assert.assertEquals(ticket.getPrice(), ticketFromDb.getPrice());
 		Assert.assertEquals(ticket.getBag(), ticketFromDb.getBag());
-		ticketService.delete(id);
+		Assert.assertEquals(ticket.getFirst_reg(), ticketFromDb.getFirst_reg());		
+//		ticketService.delete(id);
 	}
 }

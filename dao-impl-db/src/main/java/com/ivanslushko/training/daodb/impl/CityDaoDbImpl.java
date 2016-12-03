@@ -49,7 +49,7 @@ public class CityDaoDbImpl implements ICityDao {
 	@Override
 	public Long insert(final City entity) {
 
-		final String INSERT_SQL = "insert into city (city) values(?)";
+		final String INSERT_SQL = "insert into city (city_ru,city_en,city_by) values(?,?,?)";
 
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		jdbcTemplate.update(new PreparedStatementCreator() {
@@ -57,7 +57,9 @@ public class CityDaoDbImpl implements ICityDao {
 			@Override
 			public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
 				PreparedStatement ps = connection.prepareStatement(INSERT_SQL, new String[] { "id" });
-				ps.setString(1, entity.getCity());
+				ps.setString(1, entity.getCity_ru());
+				ps.setString(2, entity.getCity_en());
+				ps.setString(3, entity.getCity_by());
 				return ps;
 			}
 		}, keyHolder);
@@ -68,7 +70,7 @@ public class CityDaoDbImpl implements ICityDao {
 
 	@Override
 	public Long update(final City entity) {
-		jdbcTemplate.update("update city set city = ? where id = ?", entity.getCity(), entity.getId());
+		jdbcTemplate.update("update city set city_ru = ?,city_en = ?,city_by = ? where id = ?", entity.getCity_ru(),entity.getCity_en(),entity.getCity_by(), entity.getId());
 		return entity.getId();
 
 	}

@@ -46,7 +46,9 @@ public class SecuredControllerSample {
 
 	private CityModel entity2model(City city) {
 		CityModel e = new CityModel();
-		e.setCity(city.getCity());
+		e.setCity_ru(city.getCity_ru());
+		e.setCity_en(city.getCity_en());
+		e.setCity_by(city.getCity_by());
 		e.setId(city.getId());
 		return e;
 	}

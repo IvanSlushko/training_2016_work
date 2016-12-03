@@ -1,12 +1,12 @@
 package com.ivanslushko.training.datamodel;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 public class Flight extends AbstractModel {
 
 	private Integer plane;
 	private Integer fromm;
-	private Date dAndT;
+	private Timestamp dAndT;
 	private Integer too;
 
 	public Integer getPlane() {
@@ -25,11 +25,11 @@ public class Flight extends AbstractModel {
 		this.fromm = fromm;
 	}
 
-	public Date getdAndT() {
+	public Timestamp getdAndT() {
 		return dAndT;
 	}
 
-	public void setdAndT(Date dAndT) {
+	public void setdAndT(Timestamp dAndT) {
 		this.dAndT = dAndT;
 	}
 

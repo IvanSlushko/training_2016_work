@@ -47,7 +47,7 @@ public class FlightDaoDbImpl implements IFlightDao {
 
 				ps.setInt(1, entity.getPlane());
 				ps.setInt(2, entity.getFromm());
-				ps.setDate(3, entity.getdAndT());
+				ps.setTimestamp(3, entity.getdAndT());
 				ps.setInt(4, entity.getToo());
 				return ps;
 			}

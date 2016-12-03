@@ -15,7 +15,8 @@ public class TicketMapper implements RowMapper<Ticket> {
 		Integer clas = rs.getInt("class");
 		Integer price = rs.getInt("price");
 		Boolean bag = rs.getBoolean("bag");
-
+		Boolean firstReg = rs.getBoolean("first_reg");
+		
 		Ticket entity = new Ticket();
 
 		entity.setId(id);
@@ -24,6 +25,7 @@ public class TicketMapper implements RowMapper<Ticket> {
 		entity.setClas(clas);
 		entity.setPrice(price);
 		entity.setBag(bag);
+		entity.setFirst_reg(firstReg);
 		return entity;
 	}
 

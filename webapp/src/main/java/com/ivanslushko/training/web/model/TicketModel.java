@@ -7,6 +7,7 @@ public class TicketModel {
 	private Integer clas;
 	private Integer price;
 	private Boolean bag;
+	private Boolean first_reg;
 
 	public Long getId() {
 		return id;
@@ -60,5 +61,13 @@ public class TicketModel {
 	public String toString() {
 		return "TicketModel [id=" + id + ", flight №=" + fl_num + ", passenger " + passenger + ", class " + clas
 				+ ", price " + price + ", baggage " + bag + " ]";
+	}
+
+	public Boolean getFirst_reg() {
+		return first_reg;
+	}
+
+	public void setFirst_reg(Boolean first_reg) {
+		this.first_reg = first_reg;
 	}
 }

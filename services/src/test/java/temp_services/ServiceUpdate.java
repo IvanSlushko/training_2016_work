@@ -1,6 +1,7 @@
 package temp_services;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import javax.inject.Inject;
 
@@ -39,14 +40,14 @@ public class ServiceUpdate {
 	@Ignore
 	public void UpdateCity() {
 		City city = new City();
-		city.setCity("TestCityUpd");
+		city.setCity_ru("TestCityUpdRu");
 		Long id = cityService.save(city);
 		Assert.assertNotNull(id);
-		city.setCity("TestCityUpdated");
+		city.setCity_ru("TestCityUpdatedRu");
 		cityService.update(city);
 		City cityFromDb = cityService.get(id);
-		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
-		LOGGER.info("City updated. id={}, city={}", city.getId(), city.getCity());
+		Assert.assertEquals(city.getCity_ru(), cityFromDb.getCity_ru());
+		LOGGER.info("City updated. id={}, city={}", city.getId(), city.getCity_ru());
 		cityService.delete(id);
 	}
 
@@ -59,13 +60,13 @@ public class ServiceUpdate {
 		Flight flight = new Flight();
 		flight.setPlane(1);
 		flight.setFromm(1);
-		flight.setdAndT(Date.valueOf("2222-02-02"));
+		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(2);
 		Long id = flightService.save(flight);
 		Assert.assertNotNull(id);
 		flight.setPlane(2);
 		flight.setFromm(2);
-		flight.setdAndT(Date.valueOf("3333-03-03"));
+		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(3);
 		flightService.update(flight);
 		Flight flightFromDb = flightService.get(id);
@@ -89,6 +90,7 @@ public class ServiceUpdate {
 		ticket.setClas(1);
 		ticket.setPrice(3);
 		ticket.setBag(true);
+		ticket.setFirst_reg(true);
 		Long id = ticketService.save(ticket);
 		Assert.assertNotNull(id);
 		ticket.setFlNum(2);
@@ -96,6 +98,7 @@ public class ServiceUpdate {
 		ticket.setClas(2);
 		ticket.setPrice(2);
 		ticket.setBag(false);
+		ticket.setFirst_reg(false);
 		ticketService.update(ticket);
 		Ticket ticketFromDb = ticketService.get(id);
 		Assert.assertEquals(ticket.getFlNum(), ticketFromDb.getFlNum());
@@ -103,6 +106,7 @@ public class ServiceUpdate {
 		Assert.assertEquals(ticket.getClas(), ticketFromDb.getClas());
 		Assert.assertEquals(ticket.getPrice(), ticketFromDb.getPrice());
 		Assert.assertEquals(ticket.getBag(), ticketFromDb.getBag());
+		Assert.assertEquals(ticket.getFirst_reg(), ticketFromDb.getFirst_reg());
 		LOGGER.info("Ticket updated. id={}, passenger={}", ticket.getId(), ticket.getPassenger());
 		ticketService.delete(id);
 	}

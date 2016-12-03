@@ -1,11 +1,11 @@
 package com.ivanslushko.training.web.model;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 public class TicketOnFlightModel {
 
 	public Integer flNum;
-	public Date date;
+	public Timestamp date;
 	public Integer plane;
 	public Integer frCity;
 	public Integer too;
@@ -13,12 +13,13 @@ public class TicketOnFlightModel {
 	public Integer clas;
 	public Double price;
 	public Boolean bag;
+	private Boolean first_reg;
 
-	public Date getDate() {
+	public Timestamp getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(Timestamp date) {
 		this.date = date;
 	}
 
@@ -86,11 +87,19 @@ public class TicketOnFlightModel {
 		this.flNum = flNum;
 	}
 
+	public Boolean getFirst_reg() {
+		return first_reg;
+	}
+
+	public void setFirst_reg(Boolean first_reg) {
+		this.first_reg = first_reg;
+	}
+
 	@Override
 	public String toString() {
-		return "TicketOnFlightModel [date=" + date + ", too=" + too + ", frCity=" + frCity + ", plane=" + plane
-				+ ", passenger=" + passenger + ", clas=" + clas + ", price=" + price + ", bag=" + bag + ", flNum="
-				+ flNum + "]";
+		return "TicketOnFlightModel [flNum=" + flNum + ", date=" + date + ", plane=" + plane + ", frCity=" + frCity
+				+ ", too=" + too + ", passenger=" + passenger + ", clas=" + clas + ", price=" + price + ", bag=" + bag
+				+ ", first_reg=" + first_reg + "]";
 	}
 
 }

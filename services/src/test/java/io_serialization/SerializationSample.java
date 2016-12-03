@@ -20,7 +20,9 @@ public class SerializationSample {
 
 		for (int i = 0; i < 10; i++) {
 			City e = new City();
-			e.setCity("City " + i);
+			e.setCity_ru("City ru " + i);
+			e.setCity_en("City en " + i);
+			e.setCity_by("City by " + i);
 			e.setId(new Long(i));
 			cityList.add(e);
 		}

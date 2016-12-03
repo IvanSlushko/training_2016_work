@@ -31,12 +31,12 @@ public class ServiceGetById {
 
 	@Inject
 	private CityService cityService;
-
+@Test
 	public void getByIdtestCity() {
-		City city = cityService.get(3L);
+		City city = cityService.get(7L);
 		Assert.assertNotNull("city 3 should not be null", city);
-		Assert.assertEquals(new Long(3), city.getId());
-		LOGGER.info("City get: id={}, title={}", city.getId(), city.getCity());
+		Assert.assertEquals(new Long(7), city.getId());
+		LOGGER.info("City get: id={}, city_ru={},city_en={},city_by={}", city.getId(), city.getCity_ru(), city.getCity_en(), city.getCity_by());
 	}
 
 	@Inject

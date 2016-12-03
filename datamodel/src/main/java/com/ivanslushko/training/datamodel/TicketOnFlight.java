@@ -12,6 +12,7 @@ public class TicketOnFlight {
 	public Object Clas;	
 	public Object Price;
 	public Object Bag;
+	public Object First_reg;
 	public Object FlNum;
 	
 	public Object getDate() {
@@ -100,6 +101,14 @@ public class TicketOnFlight {
 
 	public void setFlNum(Object flNum) {
 		FlNum = flNum;
+	}
+
+	public Object getFirst_reg() {
+		return First_reg;
+	}
+
+	public void setFirst_reg(Object first_reg) {
+		First_reg = first_reg;
 	}
 
 }

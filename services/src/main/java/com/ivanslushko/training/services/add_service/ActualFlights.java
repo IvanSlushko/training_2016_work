@@ -25,14 +25,15 @@ public class ActualFlights {
 		List<Flight> flights = flightService.getAll();
 
 		System.out.println("            curreht time-------> " + System.currentTimeMillis());
-
+		System.out.println("            ALL FLIGHTS:");
 		for (int i = 0; i < flights.size(); i++) {
-			// 21hr. = 75600000 ms.      or 4hr to check in!!!
-			if (flights.get(i).getdAndT().getTime() + 75600000 >= (System.currentTimeMillis())) {
+			System.out.println("- " + flights.get(i) + "                " + flights.get(i).getdAndT().getTime());
+		}
+		System.out.println("            ACTUAL FLIGHTS:");
+		for (int i = 0; i < flights.size(); i++) {
+			if (flights.get(i).getdAndT().getTime() >= (System.currentTimeMillis())) {
 				System.out.println(
 						"----->  " + flights.get(i) + "                " + flights.get(i).getdAndT().getTime());
-			} else {
-				System.out.println("- " + flights.get(i) + "                " + flights.get(i).getdAndT().getTime());
 			}
 		}
 	}

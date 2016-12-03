@@ -7,6 +7,7 @@ public class Ticket extends AbstractModel {
 	private Integer clas;
 	private Integer price;
 	private Boolean bag;
+	private Boolean first_reg;
 
 	public Integer getFlNum() {
 		return flNum;
@@ -47,8 +48,18 @@ public class Ticket extends AbstractModel {
 	public void setBag(Boolean bag) {
 		this.bag = bag;
 	}
-	   @Override
-	    public String toString() {
-	        return getId() + "FlNumber: " + flNum + ", passenger= " + passenger + " clas " + clas + " price: " + price + " bag " + bag ;
-	    }
+	
+	public Boolean getFirst_reg() {
+		return first_reg;
+	}
+
+	public void setFirst_reg(Boolean first_reg) {
+		this.first_reg = first_reg;
+	}
+
+	@Override
+	public String toString() {
+		return "Ticket [flNum=" + flNum + ", passenger=" + passenger + ", clas=" + clas + ", price=" + price + ", bag="
+				+ bag + ", first_reg=" + first_reg + "]";
+	}
 }

@@ -3,11 +3,11 @@ package com.ivanslushko.training.datamodel;
 public class FlightFromCity {
 	private City city;
 	private Flight flight;
-	
+
 	public Object Date;
-	public Object Too;	
-	public Object FrCity ;
-	public Object Plane ;
+	public Object Too;
+	public Object FrCity;
+	public Object Plane;
 
 	public City getCity() {
 		return city;
@@ -56,16 +56,5 @@ public class FlightFromCity {
 	public void setPlane(Object plane) {
 		Plane = plane;
 	}
-
-//	public Object getToCity() {
-//		return ToCity;
-//	}
-//
-//	public void setToCity(Object toCity) {
-//		ToCity = toCity;
-//	}
-
-
-
 
 }

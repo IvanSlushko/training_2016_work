@@ -32,7 +32,9 @@ public class ServiceTestCity {
 	@Test
 	public void deleteCity() {
 		City city = new City();
-		city.setCity("TestCityDel");
+		city.setCity_ru("TestCityDelRu");
+		city.setCity_en("TestCityDelEn");
+		city.setCity_by("TestCityDelBy");
 		Long id = cityService.save(city);
 		cityService.delete(id);
 		Assert.assertNull(cityService.get(id));
@@ -42,14 +44,18 @@ public class ServiceTestCity {
 	 * insert in City base new City
 	 */
 	@Test
-	
+
 	public void saveCity() {
 		City city = new City();
-		city.setCity("TestCitySave");
+		city.setCity_ru("TestCityRu");
+		city.setCity_en("TestCityEn");
+		city.setCity_by("TestCityBy");
 		Long id = cityService.save(city);
 		Assert.assertNotNull(id);// check that ID isn't null
 		City cityFromDb = cityService.get(id);
-		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
+		Assert.assertEquals(city.getCity_ru(), cityFromDb.getCity_ru());
+		Assert.assertEquals(city.getCity_en(), cityFromDb.getCity_en());
+		Assert.assertEquals(city.getCity_by(), cityFromDb.getCity_by());
 		cityService.delete(id);
 	}
 
@@ -59,20 +65,15 @@ public class ServiceTestCity {
 	@Test
 	public void saveCityMultiple() {
 		List<City> allCityes = new ArrayList<>();
-		// List<Long> ids = new ArrayList<>();
 		for (int i = 0; i < 3; i++) {
 			City city = new City();
-			city.setCity("City" + i);
+			city.setCity_ru("City_ru" + i);
+			city.setCity_en("City_en" + i);
+			city.setCity_by("City_by" + i);
 			allCityes.add(city);
 		}
 		cityService.saveAll(allCityes);
 		Assert.assertNotNull(allCityes);
-		// if (allCityes.size() > 0) {
-		// for (Long id: allCityes) {
-		// cityService.delete(id);
-		// }
-		// }
-
 	}
 
 	/**
@@ -81,7 +82,9 @@ public class ServiceTestCity {
 	@Test
 	public void getCity() {
 		City city = new City();
-		city.setCity("TestCityLong");
+		city.setCity_ru("TestCityLongRu");
+		city.setCity_en("TestCityLongEn");
+		city.setCity_by("TestCityLongBy");
 		Long id = cityService.save(city);
 		Assert.assertNotNull("City for id should not be null", city);
 		Assert.assertEquals(new Long(id), city.getId());
@@ -103,13 +106,19 @@ public class ServiceTestCity {
 	@Test
 	public void UpdateCity() {
 		City city = new City();
-		city.setCity("TestCityUpd");
+		city.setCity_ru("TestCityUpdRu");
+		city.setCity_en("TestCityUpdEn");
+		city.setCity_by("TestCityUpdBy");
 		Long id = cityService.save(city);
 		Assert.assertNotNull(id);
-		city.setCity("TestCityUpdated");
+		city.setCity_ru("TestCityUpdatedRu");
+		city.setCity_en("TestCityUpdatedEn");
+		city.setCity_by("TestCityUpdatedBy");
 		cityService.update(city);
 		City cityFromDb = cityService.get(id);
-		Assert.assertEquals(city.getCity(), cityFromDb.getCity());
+		Assert.assertEquals(city.getCity_ru(), cityFromDb.getCity_ru());
+		Assert.assertEquals(city.getCity_en(), cityFromDb.getCity_en());
+		Assert.assertEquals(city.getCity_by(), cityFromDb.getCity_by());
 		cityService.delete(id);
 	}
 }
