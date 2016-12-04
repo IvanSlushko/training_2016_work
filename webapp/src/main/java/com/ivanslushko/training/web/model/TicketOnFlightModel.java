@@ -1,11 +1,9 @@
 package com.ivanslushko.training.web.model;
 
-import java.sql.Timestamp;
-
 public class TicketOnFlightModel {
 
 	public Integer flNum;
-	public Timestamp date;
+	public String date;
 	public Integer plane;
 	public Integer frCity;
 	public Integer too;
@@ -15,11 +13,11 @@ public class TicketOnFlightModel {
 	public Boolean bag;
 	private Boolean first_reg;
 
-	public Timestamp getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Timestamp date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 

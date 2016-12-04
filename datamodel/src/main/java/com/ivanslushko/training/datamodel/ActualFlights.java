@@ -1,20 +1,13 @@
-package com.ivanslushko.training.web.model;
+package com.ivanslushko.training.datamodel;
 
-public class FlightModel {
+import java.sql.Timestamp;
 
-	private Long id;
+public class ActualFlights extends AbstractModel{
+	
 	private Integer plane;
 	private Integer fromm;
-	private String d_and_t;
+	private Timestamp dAndT;
 	private Integer too;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public Integer getPlane() {
 		return plane;
@@ -32,12 +25,12 @@ public class FlightModel {
 		this.fromm = fromm;
 	}
 
-	public String getD_and_t() {
-		return d_and_t;
+	public Timestamp getdAndT() {
+		return dAndT;
 	}
 
-	public void setD_and_t(String d_and_t) {
-		this.d_and_t = d_and_t;
+	public void setdAndT(Timestamp dAndT) {
+		this.dAndT = dAndT;
 	}
 
 	public Integer getToo() {
@@ -50,7 +43,7 @@ public class FlightModel {
 
 	@Override
 	public String toString() {
-		return "FlightModel [id=" + id + ", plane=" + plane + ", from " + fromm + ", date " + d_and_t + ", to " + too
-				+ " ]";
+		return "ActualFlights [plane=" + plane + ", fromm=" + fromm + ", dAndT=" + dAndT + ", too=" + too + "]";
 	}
+
 }

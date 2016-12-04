@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.daoapi.IFlightDao;
+import com.ivanslushko.training.datamodel.ActualFlights;
 import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.datamodel.FlightFromCity;
 import com.thoughtworks.xstream.XStream;
@@ -117,6 +118,11 @@ public class FlightDoaXmlImpl implements IFlightDao {
 
 	@Override
 	public List<FlightFromCity> getFromCity(Long id) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public List<ActualFlights> actualFlights() {
 		throw new UnsupportedOperationException();
 	}
 }

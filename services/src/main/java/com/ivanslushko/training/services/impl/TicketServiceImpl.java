@@ -37,8 +37,9 @@ public class TicketServiceImpl implements TicketService {
 	public Long save(Ticket ticket) {
 		if (ticket.getId() == null) {
 			Long id = ticketDao.insert(ticket);
-			LOGGER.info("Ticket created. id={}, flight_num={}, passenger={}, clas={}, price={}, bag={}, first_reg={}", ticket.getId(),
-					ticket.getFlNum(), ticket.getPassenger(), ticket.getClas(), ticket.getPrice(), ticket.getBag(),ticket.getFirst_reg());
+			LOGGER.info("Ticket created. id={}, flight_num={}, passenger={}, clas={}, price={}, bag={}, first_reg={}",
+					ticket.getId(), ticket.getFlNum(), ticket.getPassenger(), ticket.getClas(),
+					(double) ticket.getPrice() / 100, ticket.getBag(), ticket.getFirst_reg());
 			return id;
 		} else {
 			ticketDao.update(ticket);

@@ -32,6 +32,7 @@ public class ActualFlights {
 		System.out.println("            ACTUAL FLIGHTS:");
 		for (int i = 0; i < flights.size(); i++) {
 			if (flights.get(i).getdAndT().getTime() >= (System.currentTimeMillis())) {
+
 				System.out.println(
 						"----->  " + flights.get(i) + "                " + flights.get(i).getdAndT().getTime());
 			}

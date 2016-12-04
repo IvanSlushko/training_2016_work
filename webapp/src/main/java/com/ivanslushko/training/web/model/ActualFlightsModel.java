@@ -1,11 +1,10 @@
 package com.ivanslushko.training.web.model;
 
-public class FlightFromCityModel {
+public class ActualFlightsModel {
 
 	private Long id;
 	private Integer plane;
 	private Integer fromm;
-	private String fr_city;
 	private String d_and_t;
 	private Integer too;
 
@@ -51,16 +50,8 @@ public class FlightFromCityModel {
 
 	@Override
 	public String toString() {
-		return "FlightFromCityModel city id=" + id + ", from: " + fromm + ", date " + d_and_t + ", date " + d_and_t
-				+ ", to: " + too + " ]";
+		return "ActualFlightsModel [id=" + id + ", plane=" + plane + ", fromm=" + fromm + 
+				", d_and_t=" + d_and_t + ", too=" + too + "]";
 	}
-
-	public String getFr_city() {
-		return fr_city;
-	}
-
-	public void setFr_city(String fr_city) {
-		this.fr_city = fr_city;
-	}
-
+	
 }

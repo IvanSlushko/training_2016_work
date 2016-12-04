@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.ivanslushko.training.daoapi.IFlightDao;
+import com.ivanslushko.training.datamodel.ActualFlights;
 import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.datamodel.FlightFromCity;
 import com.ivanslushko.training.services.FlightService;
@@ -52,6 +53,11 @@ public class FlightServiceImpl implements FlightService {
 		return flightDao.getFromCity(id);
 	}
 
+	@Override
+	public List<ActualFlights> actualFlights() {
+		return flightDao.actualFlights();
+	}
+	
 	@Override
 	public List<Flight> getAll() {
 		return flightDao.getAll();

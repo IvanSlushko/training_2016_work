@@ -61,7 +61,7 @@ public class TicketController {
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
-	public ResponseEntity<Void> updatePlane(@RequestBody TicketModel ticketModel, @PathVariable Long id) {
+	public ResponseEntity<Void> updateTicket(@RequestBody TicketModel ticketModel, @PathVariable Long id) {
 		Ticket ticket = model2entity(ticketModel);
 		ticket.setId(id);
 
@@ -81,7 +81,7 @@ public class TicketController {
 		e.setFl_num(ticket.getFlNum());
 		e.setPassenger(ticket.getPassenger());
 		e.setClas(ticket.getClas());
-		e.setPrice(ticket.getPrice());
+		e.setPrice((double) (ticket.getPrice()) / 100);
 		e.setBag(ticket.getBag());
 		e.setFirst_reg(ticket.getFirst_reg());
 		return e;
@@ -93,7 +93,7 @@ public class TicketController {
 		e.setFlNum(ticketModel.getFl_num());
 		e.setPassenger(ticketModel.getPassenger());
 		e.setClas(ticketModel.getClas());
-		e.setPrice(ticketModel.getPrice());
+		e.setPrice((int) (ticketModel.getPrice().doubleValue() * 100));
 		e.setBag(ticketModel.getBag());
 		e.setFirst_reg(ticketModel.getFirst_reg());
 		return e;
@@ -104,10 +104,7 @@ public class TicketController {
 		e.setBag((Boolean) ticketOnFlight.getTicket().getBag());
 		e.setFirst_reg((Boolean) ticketOnFlight.getTicket().getFirst_reg());
 		e.setClas((Integer) ticketOnFlight.getTicket().getClas());
-		
-		e.setDate(ticketOnFlight.getFlight().getdAndT());
-		
-		
+		e.setDate(ticketOnFlight.getFlight().getdAndT().toString());
 		e.setFlNum((Integer) ticketOnFlight.getFlNum());
 		e.setFrCity((Integer) ticketOnFlight.getFlight().getFromm());
 		e.setPassenger((Integer) ticketOnFlight.getTicket().getPassenger());

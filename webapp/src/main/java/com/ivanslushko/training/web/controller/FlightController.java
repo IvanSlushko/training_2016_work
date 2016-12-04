@@ -1,5 +1,6 @@
 package com.ivanslushko.training.web.controller;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,9 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ivanslushko.training.datamodel.ActualFlights;
 import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.datamodel.FlightFromCity;
 import com.ivanslushko.training.services.FlightService;
+import com.ivanslushko.training.web.model.ActualFlightsModel;
 import com.ivanslushko.training.web.model.FlightFromCityModel;
 import com.ivanslushko.training.web.model.FlightModel;
 
@@ -46,6 +49,17 @@ public class FlightController {
 			converted.add(entity2model(flightFromCity));
 		}
 		return new ResponseEntity<List<FlightFromCityModel>>(converted, HttpStatus.OK);
+	}
+
+	@RequestMapping(value = "/af", method = RequestMethod.GET)
+	public ResponseEntity<List<ActualFlightsModel>> getActualFlifhts() {
+		List<ActualFlights> all = service.actualFlights();
+
+		List<ActualFlightsModel> converted = new ArrayList<>();
+		for (ActualFlights actualFlightsModel : all) {
+			converted.add(entity2model(actualFlightsModel));
+		}
+		return new ResponseEntity<List<ActualFlightsModel>>(converted, HttpStatus.OK);
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
@@ -79,18 +93,28 @@ public class FlightController {
 		e.setId(flightFromCity.getFlight().getId());
 		e.setPlane(flightFromCity.getFlight().getPlane());
 		e.setFromm(flightFromCity.getFlight().getFromm());
-		e.setFr_city( (String) flightFromCity.getFrCity());
-		e.setD_and_t(flightFromCity.getFlight().getdAndT());
+		e.setFr_city((String) flightFromCity.getFrCity());
+		e.setD_and_t(flightFromCity.getFlight().getdAndT().toString());
 		e.setToo(flightFromCity.getFlight().getToo());
 		return e;
 	}
-//here!!!!!!!!!!!!!!
+
+	private ActualFlightsModel entity2model(ActualFlights actualFlights) {
+		ActualFlightsModel e = new ActualFlightsModel();
+		e.setId(actualFlights.getId());
+		e.setPlane(actualFlights.getPlane());
+		e.setFromm(actualFlights.getFromm());
+		e.setD_and_t(actualFlights.getdAndT().toString());
+		e.setToo(actualFlights.getToo());
+		return e;
+	}
+
 	private FlightModel entity2model(Flight flight) {
 		FlightModel e = new FlightModel();
 		e.setId(flight.getId());
 		e.setPlane(flight.getPlane());
 		e.setFromm(flight.getFromm());
-		e.setD_and_t(flight.getdAndT());
+		e.setD_and_t(flight.getdAndT().toString());
 		e.setToo(flight.getToo());
 		return e;
 	}
@@ -100,7 +124,7 @@ public class FlightController {
 		e.setId(flightModel.getId());
 		e.setPlane(flightModel.getPlane());
 		e.setFromm(flightModel.getFromm());
-		e.setdAndT(flightModel.getD_and_t());
+		e.setdAndT(Timestamp.valueOf(flightModel.getD_and_t()));
 		e.setToo(flightModel.getToo());
 		return e;
 	}

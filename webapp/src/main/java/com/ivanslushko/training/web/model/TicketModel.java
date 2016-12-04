@@ -5,7 +5,7 @@ public class TicketModel {
 	private Integer fl_num;
 	private Integer passenger;
 	private Integer clas;
-	private Integer price;
+	private Double price;
 	private Boolean bag;
 	private Boolean first_reg;
 
@@ -41,11 +41,11 @@ public class TicketModel {
 		this.clas = clas;
 	}
 
-	public Integer getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(Integer price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 

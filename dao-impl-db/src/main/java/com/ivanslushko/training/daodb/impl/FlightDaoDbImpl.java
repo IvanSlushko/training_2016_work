@@ -17,6 +17,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.daoapi.IFlightDao;
 import com.ivanslushko.training.daodb.mapper.FlightFromCityMapper;
+import com.ivanslushko.training.datamodel.ActualFlights;
 import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.datamodel.FlightFromCity;
 
@@ -87,4 +88,10 @@ public class FlightDaoDbImpl implements IFlightDao {
 		return rs;
 	}
 
+	@Override
+	public List<ActualFlights> actualFlights() {
+		List<ActualFlights> rs = jdbcTemplate.query("SELECT * FROM public.flight where d_and_t>=NOW();", new BeanPropertyRowMapper<ActualFlights>(ActualFlights.class));
+		return rs;
+	}
+	
 }
