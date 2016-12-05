@@ -1,5 +1,6 @@
 package com.ivanslushko.training.services.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -66,5 +67,20 @@ public class PassengerServiceImpl implements PassengerService {
 			passengerDao.update(passenger);
 			return passenger.getId();
 		}
+	}
+
+	@Override
+	public List<Passenger> findByFullName(String fullName) {
+		return passengerDao.findByFullName(fullName);
+	}
+
+	@Override
+	public List<Passenger> findByBirthday(Date birthday) {
+		return passengerDao.findByBirthday(birthday);
+	}
+
+	@Override
+	public List<Passenger> findByPassport(String passport) {
+		return passengerDao.findByPassport(passport);
 	}
 }

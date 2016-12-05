@@ -26,8 +26,7 @@ public class ActualFlightsNew {
 
 		for (int i = 0; i < actualFlights.size(); i++) {
 
-			System.out.println("->" + actualFlights.get(i));
+			System.out.println("->   ID:" + actualFlights.get(i).getId() + "   " + actualFlights.get(i));
 		}
 	}
-
 }

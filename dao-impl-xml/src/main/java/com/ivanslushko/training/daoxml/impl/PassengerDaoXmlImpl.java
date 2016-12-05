@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -13,7 +14,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
 import com.ivanslushko.training.daoapi.IPassengerDao;
-import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.datamodel.Passenger;
 import com.thoughtworks.xstream.XStream;
 
@@ -112,5 +112,20 @@ public class PassengerDaoXmlImpl implements IPassengerDao {
 	@Override
 	public void save(Passenger entity) {
 		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public List<Passenger> findByFullName(String fullName) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public List<Passenger> findByBirthday(Date birthday) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public List<Passenger> findByPassport(String passport) {
+		throw new UnsupportedOperationException();
 	}
 }

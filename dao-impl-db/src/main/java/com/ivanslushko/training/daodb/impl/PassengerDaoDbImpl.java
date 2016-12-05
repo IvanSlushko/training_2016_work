@@ -3,6 +3,7 @@ package com.ivanslushko.training.daodb.impl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -32,7 +33,6 @@ public class PassengerDaoDbImpl implements IPassengerDao {
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
-
 	}
 
 	@Override
@@ -78,6 +78,39 @@ public class PassengerDaoDbImpl implements IPassengerDao {
 
 	@Override
 	public void save(Passenger entity) {
+	}
+
+	@Override
+	public List<Passenger> findByFullName(String fullName) {
+		try {
+			List<Passenger> rs = jdbcTemplate.query("select * from passenger where full_name = ?",
+					new Object[] { fullName }, new BeanPropertyRowMapper<Passenger>(Passenger.class));
+			return rs;
+		} catch (EmptyResultDataAccessException e) {
+			return null;
+		}
+	}
+
+	@Override
+	public List<Passenger> findByBirthday(Date birthday) {
+		try {
+			List<Passenger> rs = jdbcTemplate.query("select * from passenger where birthday = ?",
+					new Object[] { birthday }, new BeanPropertyRowMapper<Passenger>(Passenger.class));
+			return rs;
+		} catch (EmptyResultDataAccessException e) {
+			return null;
+		}
+	}
+
+	@Override
+	public List<Passenger> findByPassport(String passport) {
+		try {
+			List<Passenger> rs = jdbcTemplate.query("select * from passenger where passport = ?",
+					new Object[] { passport }, new BeanPropertyRowMapper<Passenger>(Passenger.class));
+			return rs;
+		} catch (EmptyResultDataAccessException e) {
+			return null;
+		}
 	}
 
 }

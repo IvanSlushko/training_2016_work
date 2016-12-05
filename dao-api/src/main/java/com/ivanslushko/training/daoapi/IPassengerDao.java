@@ -1,18 +1,15 @@
 package com.ivanslushko.training.daoapi;
 
+import java.util.Date;
+import java.util.List;
+
 import com.ivanslushko.training.datamodel.Passenger;
 
-public interface IPassengerDao extends IAbstractDao<Passenger>{
+public interface IPassengerDao extends IAbstractDao<Passenger> {
 
-//	Passenger get(Long id);
-//
-//	Long insert(Passenger entity);
-//
-//	void update(Passenger entity);
-//
-//	void save(Passenger entity);
-//
-//	Passenger delete(Long id);
-//
-//	List<Passenger> getAll();
+	List<Passenger> findByFullName(String fullName);
+
+	List<Passenger> findByBirthday(Date birthday);
+
+	List<Passenger> findByPassport(String passport);
 }
