@@ -62,14 +62,11 @@ public class PassengerController {
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
 	
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	
 	@RequestMapping(value = "/fbf/{full_name}", method = RequestMethod.GET)
 	public ResponseEntity<List<PassengerModel>> getByFullName(@PathVariable String full_name) {
 		List<Passenger> all = service.findByFullName(full_name);
 		List<PassengerModel> converted = new ArrayList<>();
-			
-		if (null != all) {
+		if (all.size()!=0) {
 			for (Passenger passenger : all) {
 				converted.add(entity2model(passenger));
 			}
@@ -77,38 +74,29 @@ public class PassengerController {
         } else return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 	
-	
-
 	@RequestMapping(value = "/fbb/{birthday}", method = RequestMethod.GET)
 	public ResponseEntity<List<PassengerModel>> getByBirthday(@PathVariable Date birthday) {
 		List<Passenger> all = service.findByBirthday(birthday);
 		List<PassengerModel> converted = new ArrayList<>();
-		for (Passenger passenger : all) {
-			converted.add(entity2model(passenger));
-		}
-		return new ResponseEntity<List<PassengerModel>>(converted, HttpStatus.OK);
+		if (all.size()!=0) {
+			for (Passenger passenger : all) {
+				converted.add(entity2model(passenger));
+			}
+			return new ResponseEntity<List<PassengerModel>>(converted, HttpStatus.OK);
+        } else return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 	
 	@RequestMapping(value = "/fbp/{passport}", method = RequestMethod.GET)
 	public ResponseEntity<List<PassengerModel>> getByPassport(@PathVariable String passport) {
 		List<Passenger> all = service.findByPassport(passport);
 		List<PassengerModel> converted = new ArrayList<>();
-		for (Passenger passenger : all) {
-			converted.add(entity2model(passenger));
-		}
-		return new ResponseEntity<List<PassengerModel>>(converted, HttpStatus.OK);
+		if (all.size()!=0) {
+			for (Passenger passenger : all) {
+				converted.add(entity2model(passenger));
+			}
+			return new ResponseEntity<List<PassengerModel>>(converted, HttpStatus.OK);
+        } else return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
-	
-	
-//	@RequestMapping(value = "/fbp/{passport}", method = RequestMethod.GET)
-//	public ResponseEntity<List<PassengerModel>> getByPassport(@PathVariable String passport) {
-//		List<Passenger> all = service.findByFullName(passport);
-//		List<PassengerModel> converted = new ArrayList<>();
-//		for (Passenger passenger : all) {
-//			converted.add(entity2model(passenger));
-//		}
-//		return new ResponseEntity<List<PassengerModel>>(converted, HttpStatus.OK);
-//	}
 	
 	private PassengerModel entity2model(Passenger passenger) {
 		PassengerModel e = new PassengerModel();

@@ -70,4 +70,5 @@ public class TicketModel {
 	public void setFirst_reg(Boolean first_reg) {
 		this.first_reg = first_reg;
 	}
+
 }
