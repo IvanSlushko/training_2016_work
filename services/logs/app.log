@@ -1,10 +1,11 @@
-22:11:52.888 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger with full name Anton Goncharuk found! 
-22:13:57.649 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger with full name nton Goncharuk found! 
-22:18:28.935 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=21, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-22:18:28.946 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=21
-22:18:28.989 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=22, full_name=Test Name, birthday=2222-02-02T00:00:00.000+0300, passport=KH1111111
-22:18:28.998 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=22
-22:18:29.003 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=23, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-22:18:29.004 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=23
-22:18:29.010 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=24, full_name=Igor Malikov, birthday=1972-04-01T00:00:00.000+0300, passport=KH9087765
-22:18:29.013 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger deleted! id=24
+23:09:43.179 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=3630, city_ru=TestCityRu, city_en=TestCityEn, city_by=TestCityBy
+23:09:43.219 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=3630
+23:09:43.230 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=3631, city_ru=City_ru0, city_en=City_en0, city_by=City_by0
+23:09:43.232 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=3632, city_ru=City_ru1, city_en=City_en1, city_by=City_by1
+23:09:43.234 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=3633, city_ru=City_ru2, city_en=City_en2, city_by=City_by2
+23:09:43.238 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=3634, city_ru=TestCityLongRu, city_en=TestCityLongEn, city_by=TestCityLongBy
+23:09:43.239 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=3634
+23:09:43.257 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=3635, city_ru=TestCityUpdRu, city_en=TestCityUpdEn, city_by=TestCityUpdBy
+23:09:43.265 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=3635
+23:09:43.270 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=3636, city_ru=TestCityDelRu, city_en=TestCityDelEn, city_by=TestCityDelBy
+23:09:43.271 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=3636

@@ -43,7 +43,6 @@ public class TicketController {
 	@Inject
 	private PlaneService planeService;
 
-
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<TicketModel>> getAll() {
 		List<Ticket> all = service.getAll();
@@ -65,10 +64,10 @@ public class TicketController {
 		}
 		return new ResponseEntity<List<TicketOnFlightModel>>(converted, HttpStatus.OK);
 	}
-	
-	//1111111111111111111111111111111111111   TFI
+
 	@RequestMapping(value = "/tfi/{id}", method = RequestMethod.GET)
-	public ResponseEntity<TicketFullModel> ticketFullModel (@PathVariable Long id) {
+	public ResponseEntity<List<TicketFullModel>> ticketFullModel(@PathVariable Long id) {
+
 		Ticket ticket = service.get(id);
 		Passenger passenger = passengerService.get(Integer.toUnsignedLong(ticket.getPassenger()));
 		Flight flight = flightService.get(Integer.toUnsignedLong(ticket.getFlNum()));
@@ -76,31 +75,23 @@ public class TicketController {
 		City cityTo = cityService.get(Integer.toUnsignedLong(flight.getToo()));
 		Plane plane = planeService.get(Integer.toUnsignedLong(flight.getPlane()));
 
-		ArrayList<String> info= new ArrayList<>();
-		info.add(passenger.getFullName());
-		info.add(passenger.getBirthday().toString());
-		info.add(passenger.getPassport());
-		info.add(ticket.getClas().toString());
-		info.add(ticket.getPrice().toString());
-		info.add(ticket.getBag().toString());	
-		info.add(ticket.getFirst_reg().toString());
-		info.add(flight.getdAndT().toString());		
-		info.add(cityFrom.getCity_en().toString());		
-		info.add(cityTo.getCity_en().toString());	
-		info.add(plane.getBortNumber().toString());		
-		info.add(plane.getModel().toString());	
-		info.add(plane.getPassengerCount().toString());	
-		
-		System.out.println(info);
-		
-		return new ResponseEntity<TicketFullModel>(HttpStatus.OK);
-		
+		ArrayList<Object> passenger1 = new ArrayList<>();
+
+		passenger1.add(passenger.getFullName() + ", birthday: " + passenger.getBirthday() + ", passport: "
+				+ passenger.getPassport());
+		passenger1.add("Class: " + ticket.getClas() + ", price: " + (double) ticket.getPrice() / 100 + "$, baggage: "
+				+ ticket.getBag() + ", priority boarding and registration: " + ticket.getFirst_reg());
+		passenger1.add(
+				"Departs from: " + cityFrom.getCity_en() + " to " + cityTo.getCity_en() + " at " + flight.getdAndT());
+		passenger1.add(plane.getModel() + ", bort number: " + plane.getBortNumber() + ", capacity of persons on board: "
+				+ plane.getPassengerCount());
+
+		List<TicketFullModel> converted = new ArrayList<>();
+		converted.add(entity2model(passenger1));
+
+		return new ResponseEntity<List<TicketFullModel>>(converted, HttpStatus.OK);
+
 	}
-	
-	
-	
-	
-	
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ResponseEntity<TicketModel> getById(@PathVariable Long id) {
@@ -129,19 +120,15 @@ public class TicketController {
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
 
-//	private TicketFullModel entity2model (Ticket ticket) {
-//		TicketModel e = new TicketModel();
-//		e.setId(ticket.getId());
-//		e.setFl_num(ticket.getFlNum());
-//		e.setPassenger(ticket.getPassenger());
-//		e.setClas(ticket.getClas());
-//		e.setPrice((double) (ticket.getPrice()) / 100);
-//		e.setBag(ticket.getBag());
-//		e.setFirst_reg(ticket.getFirst_reg());
-//		return e;
-//	}
-	
-	
+	private TicketFullModel entity2model(ArrayList<Object> passenger1) {
+		TicketFullModel e = new TicketFullModel();
+		e.setPassenger(passenger1.get(0).toString());
+		e.setTicket(passenger1.get(1).toString());
+		e.setFlight(passenger1.get(2).toString());
+		e.setPlane(passenger1.get(3).toString());
+		return e;
+	}
+
 	private TicketModel entity2model(Ticket ticket) {
 		TicketModel e = new TicketModel();
 		e.setId(ticket.getId());
