@@ -58,7 +58,7 @@ public class ServiceTestTicket {
 		Assert.assertNotNull(id);
 		Ticket ticketFromDb = ticketService.get(id);
 		Assert.assertEquals(ticket.getFlNum(), ticketFromDb.getFlNum());
-//		ticketService.delete(id);
+		ticketService.delete(id);
 	}
 
 	/**
@@ -84,7 +84,7 @@ public class ServiceTestTicket {
 		double b = a * 100;
 		System.out.println(Math.round(b));
 
-//		ticketService.delete(id);
+		ticketService.delete(id);
 	}
 
 	/**
@@ -129,6 +129,6 @@ public class ServiceTestTicket {
 		Assert.assertEquals(ticket.getPrice(), ticketFromDb.getPrice());
 		Assert.assertEquals(ticket.getBag(), ticketFromDb.getBag());
 		Assert.assertEquals(ticket.getFirst_reg(), ticketFromDb.getFirst_reg());		
-//		ticketService.delete(id);
+		ticketService.delete(id);
 	}
 }

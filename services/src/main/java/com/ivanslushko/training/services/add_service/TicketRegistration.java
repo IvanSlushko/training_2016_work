@@ -14,8 +14,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ivanslushko.training.datamodel.ActualFlights;
 import com.ivanslushko.training.datamodel.City;
+import com.ivanslushko.training.datamodel.Flight;
 import com.ivanslushko.training.datamodel.Passenger;
 import com.ivanslushko.training.datamodel.Plane;
+import com.ivanslushko.training.datamodel.Ticket;
 import com.ivanslushko.training.datamodel.TicketOnFlight;
 import com.ivanslushko.training.services.CityService;
 import com.ivanslushko.training.services.FlightService;
@@ -44,15 +46,16 @@ public class TicketRegistration {
 	public void Registration() {
 
 		/**
-		 * insert in Passenger base new Passenger
+		 * starting price parameters to flight
 		 */
-		// Start price to flight
-		Double price = 2.55;// price
+
+		Double price = 2.55;// start price
 		Double priceBag = 6.40;
 		Double priceFirstReg = 1.25;
 		Double priceClass = 1.50; // 1 class
+
 		/**
-		 * insert in Passenger base new Passenger
+		 * show all actual flights
 		 */
 		List<ActualFlights> actualFlights = flightService.actualFlights();
 		System.out.println("        ActualFlights:");
@@ -61,7 +64,7 @@ public class TicketRegistration {
 			City cityFr = cityService.get(Integer.toUnsignedLong((Integer) actualFlights.get(i).getFromm()));
 			City cityTo = cityService.get(Integer.toUnsignedLong((Integer) actualFlights.get(i).getToo()));
 			Plane planePassCount = planeService.get(Integer.toUnsignedLong((Integer) actualFlights.get(i).getPlane()));
-			List<TicketOnFlight> ticketOnFlight = ticketService.ticketOnFlight(Integer.toUnsignedLong((Integer) i));
+			List<TicketOnFlight> ticketOnFlight = ticketService.ticketOnFlight(actualFlights.get(i).getId());
 
 			if (ticketOnFlight.size() < planePassCount.getPassengerCount()) {
 				System.out.println("->   ID:" + actualFlights.get(i).getId() + "   From " + cityFr.getCity_en() + " to "
@@ -74,11 +77,10 @@ public class TicketRegistration {
 						+ planePassCount.getPassengerCount() + ",  registered: " + ticketOnFlight.size()
 						+ " people.        NO TICKETS!!! PLANE FULL!!! ");
 			}
-
 		}
 
 		/**
-		 * insert in Passenger base new Passenger
+		 * flight selection
 		 */
 		Long b = null;// fl_num
 		try {
@@ -98,7 +100,36 @@ public class TicketRegistration {
 			return;
 		}
 		/**
-		 * insert in Passenger base new Passenger
+		 * price correction
+		 */
+		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+		Flight flight = flightService.get(b);
+//		System.out.println(flight.getdAndT().getTime());
+//		System.out.println(System.currentTimeMillis());
+
+		Integer remTime = (int) ((flight.getdAndT().getTime() - System.currentTimeMillis()) / 1000 / 60 / 60 / 24);// days
+
+//		System.out.println("              ОСТАЛОСЬ " + remTime + " ДНЕЙ");
+//		System.out.println("             СТАРТОВАЯ " + price);
+
+		if (remTime > 150 && remTime <= 180)// 5-6
+			price *= 1.11;
+		else if (remTime > 120 && remTime <= 150)// 4-5
+			price *= 1.12;
+		else if (remTime > 90 && remTime <= 120) // 3-4
+			price *= 1.13;
+		else if (remTime > 60 && remTime <= 90) // 2-3
+			price *= 1.14;
+		else if (remTime > 30 && remTime <= 60) // 1-2
+			price *= 1.15;
+		else if (remTime <= 30) // 1
+			price = price * 1.16;
+
+		System.out.println("НА ВЫХОДЕ " + price);
+		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		/**
+		 * baggage selection
 		 */
 		System.out.println("Are you register baggage?  (yes/no)    Price: " + priceBag + "$");
 		String bag = (scn.next());
@@ -119,7 +150,7 @@ public class TicketRegistration {
 
 		System.out.println("Current ticket price: " + price + "$");
 		/**
-		 * insert in Passenger base new Passenger
+		 * primary landing and registration selection
 		 */
 		System.out
 				.println("Are you want the primary landing and registration?  (yes/no) Price: " + priceFirstReg + "$");
@@ -140,9 +171,9 @@ public class TicketRegistration {
 
 		System.out.println("Current ticket price: " + price + "$  ");
 		/**
-		 * insert in Passenger base new Passenger
+		 * class selection
 		 */
-		System.out.println("You want to fly 1 class (price" + priceClass + "$) or 2 class?  (enter 1 or 2) ");
+		System.out.println("You want to fly 1 class (price " + priceClass + "$) or 2 class?  (enter 1 or 2) ");
 		String cla = (scn.next());
 		Integer clas; // clas
 		switch (cla) {
@@ -160,43 +191,92 @@ public class TicketRegistration {
 
 		System.out.println("Current ticket price: " + price + "$");
 		/**
-		 * insert in Passenger base new Passenger
+		 * registered Passenger or search passenger in base by passport
 		 */
 		System.out.println("Are you registered in LowCostAir?  (yes/no):");
 		String reg = (scn.next());
+		String fullName;
+		Long passId = null;
 		switch (reg) {
 		case "yes":
-			System.out.println("Enter you passport number (example KH5632267):");
+			System.out.println("Enter you passport number (example KH5630095):");
 			String passport1 = (scn.next());
-
 			List<Passenger> passenger = passengerService.findByPassport(passport1);
 			if (passenger.size() == 0) {
 				System.out.println("This Passport not found!");
 				return;
 			} else {
 				System.out.println("Passenger found: " + passenger);
+				passId = passenger.get(0).getId();
 			}
 			break;
 		case "no":
-			System.out.println("Enter you full name:");
-			String fullName = (scn.next());
-			System.out.println("Enter you birthday  (example 1982-12-22):");
-
-			System.out.println(" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ");
-			
-			String birthday = (scn.next());
-			System.out.println("Enter you passport (example KH5632267):");
-			String passport = (scn.next());
-			Passenger passenger2 = new Passenger();
-			passenger2.setFullName(fullName);
-			passenger2.setBirthday(Date.valueOf(birthday));
-			passenger2.setPassport("KH9087765");
-			System.out.println(passenger2);
-			break;
+			try {
+				System.out.println("Enter you first name:");
+				String firstName = (scn.next());
+				System.out.println("Enter you last name:");
+				String lastName = (scn.next());
+				fullName = (firstName + " " + lastName).toString();
+				System.out.println("Enter you birthday  (example 1982-12-22):");
+				String birthday = (scn.next());
+				System.out.println("Enter you passport (example KH5632267):");
+				String passport = (scn.next());
+				Passenger passenger2 = new Passenger();
+				passenger2.setFullName(fullName);
+				passenger2.setBirthday(Date.valueOf(birthday));
+				passenger2.setPassport(passport);
+				Long id = passengerService.save(passenger2);
+				passId = id;
+				break;
+			} catch (Exception e) {
+				System.out.println("INCORRECT BIRTHDAY OR THIS PASSPORT IS ALREADY REGISTERED!!!");
+				return;
+			}
 		default:
 			System.out.println("You can enter only YES or NO!");
 			return;
 		}
-		System.out.println("!!!!!!!!!!");
+
+		/**
+		 * insert in Ticket base new Ticket
+		 */
+		Ticket ticket = new Ticket();
+
+		ticket.setFlNum(((Number) b).intValue());
+		ticket.setPassenger(((Number) passId).intValue());
+		ticket.setClas(clas);
+		ticket.setPrice((int) Math.round((price * 100)));
+		ticket.setBag(baggage);
+		ticket.setFirst_reg(firstReg);
+		Long id = ticketService.save(ticket);
+
+		/**
+		 * full info of ticket
+		 */
+		System.out.println();
+		System.out.println("Congratulations, you are registered on flight!");
+
+		Passenger passenger = passengerService.get(passId);
+
+		System.out.println("Passenger: " + passenger.getFullName() + ", birthday: " + passenger.getBirthday()
+				+ ", passport: " + passenger.getPassport());
+
+		System.out.println("           Ticket class: " + clas + ", price: " + price + "$, baggage: " + baggage
+				+ ", priority boarding and registration: " + firstReg);
+
+		// Flight flight = flightService.get(b);
+
+		City cityFrom = cityService.get(Integer.toUnsignedLong(flight.getFromm()));
+
+		City cityTo = cityService.get(Integer.toUnsignedLong(flight.getToo()));
+
+		System.out.println("           Departs from: " + cityFrom.getCity_en() + " to " + cityTo.getCity_en() + " at "
+				+ flight.getdAndT());
+
+		Plane plane = planeService.get(Integer.toUnsignedLong(flight.getPlane()));
+
+		System.out.println("           Plane : " + plane.getModel() + ", bort number: " + plane.getBortNumber()
+				+ ", capacity of persons on board: " + plane.getPassengerCount());
+		System.out.println();
 	}
 }

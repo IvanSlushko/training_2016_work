@@ -3,7 +3,7 @@ package com.ivanslushko.training.datamodel;
 import java.sql.Date;
 
 public class Passenger extends AbstractModel {
-
+	
 	private String fullName;
 	private Date birthday;
 	private String passport;
@@ -33,6 +33,6 @@ public class Passenger extends AbstractModel {
 	}
 	   @Override
 	    public String toString() {
-	        return getId() + "Passenger: " + fullName + ", birthday= " + birthday + " passport " + passport ;
+	        return "ID: " +getId() + " -- Passenger: " + fullName + ", birthday: " + birthday + ", passport " + passport+ "." ;
 	    }
 }

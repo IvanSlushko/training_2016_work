@@ -9,3 +9,24 @@
 23:09:43.265 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=3635
 23:09:43.270 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=3636, city_ru=TestCityDelRu, city_en=TestCityDelEn, city_by=TestCityDelBy
 23:09:43.271 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=3636
+17:03:34.687 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=25, full_name=first last, birthday=2222-02-02T00:00:00.000+0300, passport=KH9087765
+17:15:00.774 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=26, full_name=ffff llll, birthday=2222-04-04T00:00:00.000+0300, passport=RT6665545
+17:24:29.125 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=28, full_name=fff lll, birthday=2222-02-02T00:00:00.000+0300, passport=gh7777
+18:02:06.898 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=29, full_name=ff ll, birthday=2222-02-02T00:00:00.000+0300, passport=hy777
+18:02:06.920 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=46, flight_num=4, passenger=29, clas=2, price=2.54, bag=false, first_reg=false
+18:04:38.575 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=30, full_name=f l, birthday=2222-02-02T00:00:00.000+0300, passport=rt666
+18:04:38.581 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=47, flight_num=4, passenger=30, clas=2, price=2.54, bag=false, first_reg=false
+18:06:41.545 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=32, full_name=e r, birthday=2222-02-02T00:00:00.000+0300, passport=we44
+18:06:41.551 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=48, flight_num=4, passenger=32, clas=2, price=2.54, bag=false, first_reg=false
+18:07:59.787 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=33, full_name=w e, birthday=4444-04-04T00:00:00.000+0300, passport=re234
+18:07:59.794 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=49, flight_num=4, passenger=33, clas=2, price=2.54, bag=false, first_reg=false
+18:12:38.729 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=34, full_name=e r, birthday=2222-02-02T00:00:00.000+0300, passport=re789
+18:12:38.744 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=50, flight_num=4, passenger=34, clas=2, price=2.54, bag=false, first_reg=false
+18:13:36.214 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=35, full_name=q w, birthday=3333-03-03T00:00:00.000+0300, passport=gh8889
+18:13:36.222 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=51, flight_num=4, passenger=35, clas=2, price=2.55, bag=false, first_reg=false
+19:05:53.474 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=52, flight_num=4, passenger=10, clas=1, price=4.05, bag=false, first_reg=false
+19:20:10.720 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=53, flight_num=4, passenger=10, clas=1, price=11.7, bag=true, first_reg=true
+19:39:59.403 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=54, flight_num=1, passenger=10, clas=1, price=11.7, bag=true, first_reg=true
+19:41:22.154 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=36, full_name=qwerty wwwrty, birthday=1233-06-02T00:00:00.000+0300, passport=HT5466237
+19:41:22.157 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=55, flight_num=1, passenger=36, clas=2, price=2.55, bag=false, first_reg=false
+19:47:16.957 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=56, flight_num=26, passenger=10, clas=1, price=5.3, bag=false, first_reg=true

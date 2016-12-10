@@ -59,6 +59,12 @@ public class PassengerSearch {
 			System.out.println("By Passport:");
 			for (int i = 0; i < passenger.size(); i++) {
 				System.out.println("    " + passenger.get(i));
+				
+				
+				System.out.println("    " + passenger.get(i).getId());
+				
+				
+				
 			}
 		}
 	}
