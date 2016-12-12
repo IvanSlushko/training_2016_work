@@ -25,6 +25,7 @@ public final class FlightFromCityMapper implements RowMapper<FlightFromCity> {
 		flight.setFromm(rs.getInt("fromm"));
 		flight.setdAndT(rs.getTimestamp("d_and_t"));
 		flight.setToo(rs.getInt("too"));
+		flight.setStartPrice(rs.getInt("start_price"));
 
 		City city = new City();
 		city.setCity_en((rs.getString("city_en")));
@@ -36,7 +37,7 @@ public final class FlightFromCityMapper implements RowMapper<FlightFromCity> {
 		flightFromCity.setToo(too);
 		flightFromCity.setDate(date);
 		flightFromCity.setPlane(rs.getInt("plane"));
-
+		
 		return flightFromCity;
 	}
 }

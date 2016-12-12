@@ -89,6 +89,7 @@ public class FlightDoaXmlImpl implements IFlightDao {
 				flight.setFromm(entity.getFromm());
 				flight.setdAndT(entity.getdAndT());
 				flight.setToo(entity.getToo());
+				flight.setStartPrice(entity.getStartPrice());
 			}
 		}
 		writeCollection(allFlight);

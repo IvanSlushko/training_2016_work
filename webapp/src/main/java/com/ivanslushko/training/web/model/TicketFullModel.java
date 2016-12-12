@@ -1,19 +1,11 @@
 package com.ivanslushko.training.web.model;
 
 public class TicketFullModel {
-//	private Long id;
+
 	private String passenger;
 	private String ticket;
 	private String flight;
 	private String plane;
-
-//	public Long getId() {
-//		return id;
-//	}
-//
-//	public void setId(Long id) {
-//		this.id = id;
-//	}
 
 	public String getPassenger() {
 		return passenger;

@@ -36,6 +36,7 @@ public class ServiceTestFlight {
 		flight.setFromm(3);
 		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(2);
+		flight.setStartPrice((int) (3.13 * 100));
 		Long id = flightService.save(flight);
 		flightService.delete(id);
 		Assert.assertNull(flightService.get(id));
@@ -51,6 +52,7 @@ public class ServiceTestFlight {
 		flight.setFromm(3);
 		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(2);
+		flight.setStartPrice((int) (3.13 * 100));
 		Long id = flightService.save(flight);
 		Assert.assertNotNull(id);
 		Flight flightFromDb = flightService.get(id);
@@ -68,6 +70,7 @@ public class ServiceTestFlight {
 		flight.setFromm(3);
 		flight.setdAndT(Timestamp.valueOf("2016-10-30 12:58:20"));
 		flight.setToo(2);
+		flight.setStartPrice((int) (3.13 * 100));
 		Long id = flightService.save(flight);
 		Assert.assertNotNull("Flight for id should not be null", flight);
 		Assert.assertEquals(new Long(id), flight.getId());
@@ -93,18 +96,21 @@ public class ServiceTestFlight {
 		flight.setFromm(1);
 		flight.setdAndT(Timestamp.valueOf("2222-02-22 12:58:20"));
 		flight.setToo(2);
+		flight.setStartPrice((int) (3.13 * 100));
 		Long id = flightService.save(flight);
 		Assert.assertNotNull(id);
 		flight.setPlane(2);
 		flight.setFromm(2);
 		flight.setdAndT(Timestamp.valueOf("3333-03-03 12:33:33"));
 		flight.setToo(3);
+		flight.setStartPrice((int) (3.14 * 100));
 		flightService.update(flight);
 		Flight flightFromDb = flightService.get(id);
 		Assert.assertEquals(flight.getPlane(), flightFromDb.getPlane());
 		Assert.assertEquals(flight.getFromm(), flightFromDb.getFromm());
 		Assert.assertEquals(flight.getdAndT(), flightFromDb.getdAndT());
 		Assert.assertEquals(flight.getToo(), flightFromDb.getToo());
-		flightService.delete(id);
+		Assert.assertEquals(flight.getStartPrice(), flightFromDb.getStartPrice());
+//		flightService.delete(id);
 	}
 }

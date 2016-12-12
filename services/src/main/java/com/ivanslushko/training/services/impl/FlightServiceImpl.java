@@ -38,8 +38,8 @@ public class FlightServiceImpl implements FlightService {
 	public Long save(Flight flight) {
 		if (flight.getId() == null) {
 			Long id = flightDao.insert(flight);
-			LOGGER.info("Flight created. id={}, plane={}, from={}, dateAndTime={}, to={}", flight.getId(),
-					flight.getPlane(), flight.getFromm(), flight.getdAndT(), flight.getToo());
+			LOGGER.info("Flight created. id={}, plane={}, from={}, dateAndTime={}, to={}, startPrice={}", flight.getId(),
+					flight.getPlane(), flight.getFromm(), flight.getdAndT(), flight.getToo(), flight.getStartPrice());
 			return id;
 		} else {
 			flightDao.update(flight);
@@ -75,7 +75,6 @@ public class FlightServiceImpl implements FlightService {
 		if (flight.getId() == null) {
 			Long id = flightDao.update(flight);
 			LOGGER.info("Flight updated. id={}, plane={}", flight.getId(), flight.getPlane());
-			System.out.println("!!!!!!!!!!!!");
 			return id;
 		} else {
 			flightDao.update(flight);

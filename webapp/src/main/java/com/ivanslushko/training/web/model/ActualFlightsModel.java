@@ -7,6 +7,7 @@ public class ActualFlightsModel {
 	private Integer fromm;
 	private String d_and_t;
 	private Integer too;
+	private Double start_price;
 
 	public Long getId() {
 		return id;
@@ -48,10 +49,17 @@ public class ActualFlightsModel {
 		this.too = too;
 	}
 
+	public Double getStart_price() {
+		return start_price;
+	}
+
+	public void setStart_price(Double start_price) {
+		this.start_price = start_price;
+	}
+
 	@Override
 	public String toString() {
-		return "ActualFlightsModel [id=" + id + ", plane=" + plane + ", fromm=" + fromm + 
-				", d_and_t=" + d_and_t + ", too=" + too + "]";
+		return "ActualFlightsModel [id=" + id + ", plane=" + plane + ", fromm=" + fromm + ", d_and_t=" + d_and_t
+				+ ", too=" + too + ", start price:  " + start_price + "$]";
 	}
-	
 }

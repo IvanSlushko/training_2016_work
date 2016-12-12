@@ -8,6 +8,7 @@ public class ActualFlights extends AbstractModel{
 	private Integer fromm;
 	private Timestamp dAndT;
 	private Integer too;
+	private Integer startPrice;	
 
 	public Integer getPlane() {
 		return plane;
@@ -43,7 +44,15 @@ public class ActualFlights extends AbstractModel{
 
 	@Override
 	public String toString() {
-		return "ActualFlights [plane=" + plane + ", fromm=" + fromm + ", dAndT=" + dAndT + ", too=" + too + "]";
+		return "ActualFlights [plane=" + plane + ", fromm=" + fromm + ", dAndT=" + dAndT + ", too=" + too + ", start price: "+startPrice+"]";
+	}
+
+	public Integer getStartPrice() {
+		return startPrice;
+	}
+
+	public void setStartPrice(Integer startPrice) {
+		this.startPrice = startPrice;
 	}
 
 }

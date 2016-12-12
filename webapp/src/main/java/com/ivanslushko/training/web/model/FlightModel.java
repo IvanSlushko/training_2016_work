@@ -7,6 +7,7 @@ public class FlightModel {
 	private Integer fromm;
 	private String d_and_t;
 	private Integer too;
+	private Double start_price;
 
 	public Long getId() {
 		return id;
@@ -51,6 +52,14 @@ public class FlightModel {
 	@Override
 	public String toString() {
 		return "FlightModel [id=" + id + ", plane=" + plane + ", from " + fromm + ", date " + d_and_t + ", to " + too
-				+ " ]";
+				+ ", start price:  " + start_price + "$ ]";
+	}
+
+	public Double getStart_price() {
+		return start_price;
+	}
+
+	public void setStart_price(Double start_price) {
+		this.start_price = start_price;
 	}
 }

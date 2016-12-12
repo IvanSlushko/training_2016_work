@@ -30,6 +30,7 @@ public class TicketOnFlightMapper implements RowMapper<TicketOnFlight> {
 		flight.setFromm(rs.getInt("fromm"));
 		flight.setdAndT(rs.getTimestamp("d_and_t"));
 		flight.setToo(rs.getInt("too"));
+		flight.setStartPrice(rs.getInt("start_price"));
 
 		TicketOnFlight ticketOnFlight = new TicketOnFlight();
 

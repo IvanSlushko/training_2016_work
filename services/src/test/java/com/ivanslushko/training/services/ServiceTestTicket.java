@@ -78,11 +78,11 @@ public class ServiceTestTicket {
 		Assert.assertEquals(new Long(id), ticket.getId());
 
 		// ПРЕОБРАЗОВАНИЕ ЦЕНЫ ТУДА И ОБРАТНО
-		System.out.println((double) (ticket.getPrice()) / 100);
-		double a = ((double) (ticket.getPrice()) / 100) + 0.1;
-		System.out.println(a);
-		double b = a * 100;
-		System.out.println(Math.round(b));
+//		System.out.println((double) (ticket.getPrice()) / 100);
+//		double a = ((double) (ticket.getPrice()) / 100) + 0.1;
+//		System.out.println(a);
+//		double b = a * 100;
+//		System.out.println(Math.round(b));
 
 		ticketService.delete(id);
 	}

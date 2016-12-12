@@ -39,7 +39,7 @@ public class FlightDaoDbImpl implements IFlightDao {
 
 	@Override
 	public Long insert(final Flight entity) {
-		final String INSERT_SQL = "insert into flight (plane, fromm, d_and_t, too) values(?,?,?,?)";
+		final String INSERT_SQL = "insert into flight (plane, fromm, d_and_t, too, start_price) values(?,?,?,?,?)";
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		jdbcTemplate.update(new PreparedStatementCreator() {
 			@Override
@@ -50,6 +50,7 @@ public class FlightDaoDbImpl implements IFlightDao {
 				ps.setInt(2, entity.getFromm());
 				ps.setTimestamp(3, entity.getdAndT());
 				ps.setInt(4, entity.getToo());
+				ps.setInt(5, entity.getStartPrice());
 				return ps;
 			}
 		}, keyHolder);
@@ -59,8 +60,10 @@ public class FlightDaoDbImpl implements IFlightDao {
 
 	@Override
 	public Long update(final Flight entity) {
-		jdbcTemplate.update("update flight set plane = ?, fromm = ? , d_and_t = ?, too = ? where id = ?",
-				entity.getPlane(), entity.getFromm(), entity.getdAndT(), entity.getToo(), entity.getId());
+		jdbcTemplate.update(
+				"update flight set plane = ?, fromm = ? , d_and_t = ?, too = ?, start_price = ? where id = ?",
+				entity.getPlane(), entity.getFromm(), entity.getdAndT(), entity.getToo(), entity.getStartPrice(),
+				entity.getId());
 		return entity.getId();
 	}
 
@@ -90,8 +93,9 @@ public class FlightDaoDbImpl implements IFlightDao {
 
 	@Override
 	public List<ActualFlights> actualFlights() {
-		List<ActualFlights> rs = jdbcTemplate.query("SELECT * FROM public.flight where d_and_t>=NOW();", new BeanPropertyRowMapper<ActualFlights>(ActualFlights.class));
+		List<ActualFlights> rs = jdbcTemplate.query("SELECT * FROM public.flight where d_and_t>=NOW();",
+				new BeanPropertyRowMapper<ActualFlights>(ActualFlights.class));
 		return rs;
 	}
-	
+
 }

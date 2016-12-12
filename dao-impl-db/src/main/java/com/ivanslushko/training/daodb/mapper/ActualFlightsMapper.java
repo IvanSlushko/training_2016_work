@@ -18,6 +18,7 @@ public class ActualFlightsMapper implements RowMapper<ActualFlights> {
 		Integer fromm = rs.getInt("fromm");
 		Timestamp date = rs.getTimestamp("d_and_t");
 		Integer too = rs.getInt("too");
+		Integer startPrice = rs.getInt("start_price");
 
 		ActualFlights actualFlights = new ActualFlights();
 
@@ -26,6 +27,7 @@ public class ActualFlightsMapper implements RowMapper<ActualFlights> {
 		actualFlights.setFromm(fromm);
 		actualFlights.setdAndT(date);
 		actualFlights.setToo(too);
+		actualFlights.setStartPrice(startPrice);
 		return actualFlights;
 	}
 

@@ -96,6 +96,7 @@ public class FlightController {
 		e.setFr_city((String) flightFromCity.getFrCity());
 		e.setD_and_t(flightFromCity.getFlight().getdAndT().toString());
 		e.setToo(flightFromCity.getFlight().getToo());
+		e.setStart_price((double)(flightFromCity.getFlight().getStartPrice())/100);
 		return e;
 	}
 
@@ -106,6 +107,7 @@ public class FlightController {
 		e.setFromm(actualFlights.getFromm());
 		e.setD_and_t(actualFlights.getdAndT().toString());
 		e.setToo(actualFlights.getToo());
+		e.setStart_price((double)(actualFlights.getStartPrice())/100);
 		return e;
 	}
 
@@ -116,6 +118,7 @@ public class FlightController {
 		e.setFromm(flight.getFromm());
 		e.setD_and_t(flight.getdAndT().toString());
 		e.setToo(flight.getToo());
+		e.setStart_price((double)(flight.getStartPrice())/100);
 		return e;
 	}
 
@@ -126,6 +129,7 @@ public class FlightController {
 		e.setFromm(flightModel.getFromm());
 		e.setdAndT(Timestamp.valueOf(flightModel.getD_and_t()));
 		e.setToo(flightModel.getToo());
+		e.setStartPrice((int) (flightModel.getStart_price().doubleValue() * 100+0.01));
 		return e;
 	}
 }

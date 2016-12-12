@@ -8,6 +8,7 @@ public class FlightFromCity {
 	public Object Too;
 	public Object FrCity;
 	public Object Plane;
+	public Object startPrice;
 
 	public City getCity() {
 		return city;
@@ -55,6 +56,14 @@ public class FlightFromCity {
 
 	public void setPlane(Object plane) {
 		Plane = plane;
+	}
+
+	public Object getStartPrice() {
+		return startPrice;
+	}
+
+	public void setStartPrice(Object startPrice) {
+		this.startPrice = startPrice;
 	}
 
 }

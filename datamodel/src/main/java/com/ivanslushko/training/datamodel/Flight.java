@@ -8,6 +8,7 @@ public class Flight extends AbstractModel {
 	private Integer fromm;
 	private Timestamp dAndT;
 	private Integer too;
+	private Integer startPrice;
 
 	public Integer getPlane() {
 		return plane;
@@ -44,7 +45,15 @@ public class Flight extends AbstractModel {
 	@Override
 	public String toString() {
 		return "Reys " + getId() + ", plane= " + plane + ", from " + fromm + " city at date " + dAndT + " to " + too
-				+ " city. ";
+				+ " city, " +" start Price: "+startPrice;
+	}
+
+	public Integer getStartPrice() {
+		return startPrice;
+	}
+
+	public void setStartPrice(Integer startPrice) {
+		this.startPrice = startPrice;
 	}
 
 }

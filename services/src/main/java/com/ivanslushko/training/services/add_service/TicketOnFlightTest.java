@@ -22,7 +22,7 @@ public class TicketOnFlightTest {
 	@Test
 	public void ticketOnFlightTest() {
 
-		List<TicketOnFlight> ticketOnFlight = ticketService.ticketOnFlight(4l);
+		List<TicketOnFlight> ticketOnFlight = ticketService.ticketOnFlight(2l);
 
 		System.out.println();
 		System.out.println("Flight " + ticketOnFlight.get(0).getFlNum() + " contains " + ticketOnFlight.size()

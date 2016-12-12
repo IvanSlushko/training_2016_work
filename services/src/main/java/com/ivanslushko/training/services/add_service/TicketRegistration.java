@@ -1,5 +1,7 @@
 package com.ivanslushko.training.services.add_service;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +51,7 @@ public class TicketRegistration {
 		 * starting price parameters to flight
 		 */
 
-		Double price = 2.55;// start price
+		Double price = null;// start price
 		Double priceBag = 6.40;
 		Double priceFirstReg = 1.25;
 		Double priceClass = 1.50; // 1 class
@@ -60,6 +62,7 @@ public class TicketRegistration {
 		List<ActualFlights> actualFlights = flightService.actualFlights();
 		System.out.println("        ActualFlights:");
 		List<Long> ids = new ArrayList<Long>();
+
 		for (int i = 0; i < actualFlights.size(); i++) {
 			City cityFr = cityService.get(Integer.toUnsignedLong((Integer) actualFlights.get(i).getFromm()));
 			City cityTo = cityService.get(Integer.toUnsignedLong((Integer) actualFlights.get(i).getToo()));
@@ -69,7 +72,8 @@ public class TicketRegistration {
 			if (ticketOnFlight.size() < planePassCount.getPassengerCount()) {
 				System.out.println("->   ID:" + actualFlights.get(i).getId() + "   From " + cityFr.getCity_en() + " to "
 						+ cityTo.getCity_en() + " at " + actualFlights.get(i).getdAndT() + "    passenger on board: "
-						+ planePassCount.getPassengerCount() + ",  registered: " + ticketOnFlight.size() + " people.");
+						+ planePassCount.getPassengerCount() + ",  registered: " + ticketOnFlight.size()
+						+ " people, start price: " + ((double) (actualFlights.get(i).getStartPrice()) / 100) + "$");
 				ids.add(actualFlights.get(i).getId());
 			} else {
 				System.out.println("->   ID:" + actualFlights.get(i).getId() + "   From " + cityFr.getCity_en() + " to "
@@ -84,16 +88,17 @@ public class TicketRegistration {
 		 */
 		Long b = null;// fl_num
 		try {
-			scn = new Scanner(System.in);
 			System.out.println("Enter ID of flight: ");
+			scn = new Scanner(System.in);
 			Long a = (long) Double.parseDouble(scn.next());
 			b = a;
 		} catch (Exception e) {
 			System.out.println("Incorrect data entry!");
 			return;
 		}
-
+		Flight flight = flightService.get(b);
 		if (ids.contains(b)) {
+			price = (double) (flight.getStartPrice()) / 100;
 			System.out.println("Ticket price: " + price + "$");
 		} else {
 			System.out.println("Incorrect ID!");
@@ -102,16 +107,8 @@ public class TicketRegistration {
 		/**
 		 * price correction
 		 */
-		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-		Flight flight = flightService.get(b);
-//		System.out.println(flight.getdAndT().getTime());
-//		System.out.println(System.currentTimeMillis());
 
 		Integer remTime = (int) ((flight.getdAndT().getTime() - System.currentTimeMillis()) / 1000 / 60 / 60 / 24);// days
-
-//		System.out.println("              ОСТАЛОСЬ " + remTime + " ДНЕЙ");
-//		System.out.println("             СТАРТОВАЯ " + price);
 
 		if (remTime > 150 && remTime <= 180)// 5-6
 			price *= 1.11;
@@ -126,8 +123,35 @@ public class TicketRegistration {
 		else if (remTime <= 30) // 1
 			price = price * 1.16;
 
-		System.out.println("НА ВЫХОДЕ " + price);
-		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		System.out.println(
+				"After time correction: " + new BigDecimal(price).setScale(2, RoundingMode.UP).doubleValue() + "$");
+
+		Plane plane = planeService.get(Integer.toUnsignedLong(flight.getPlane()));
+		List<TicketOnFlight> tof = ticketService.ticketOnFlight(b);
+		Double percent = (double) (100 / (plane.getPassengerCount()) * tof.size());
+
+		if (percent > 90 && percent <= 100)// 90-100%
+			price *= 1.18;
+		else if (percent > 80 && percent <= 90)// 80-90%
+			price *= 1.18;
+		else if (percent > 70 && percent <= 80)// 70-80%
+			price *= 1.17;
+		else if (percent > 60 && percent <= 70)// 60-70%
+			price *= 1.16;
+		else if (percent > 50 && percent <= 60)// 50-60%
+			price *= 1.15;
+		else if (percent > 40 && percent <= 50)// 40-50%
+			price *= 1.14;
+		else if (percent > 30 && percent <= 40)// 30-40%
+			price *= 1.13;
+		else if (percent > 20 && percent <= 30)// 20-30%
+			price *= 1.12;
+		else if (percent > 10 && percent <= 20)// 10-20%
+			price *= 1.11;
+
+		System.out.println("After plane filling correction: "
+				+ new BigDecimal(price).setScale(2, RoundingMode.UP).doubleValue() + "$");
+
 		/**
 		 * baggage selection
 		 */
@@ -148,7 +172,8 @@ public class TicketRegistration {
 			return;
 		}
 
-		System.out.println("Current ticket price: " + price + "$");
+		System.out.println(
+				"Current ticket price: " + new BigDecimal(price).setScale(2, RoundingMode.UP).doubleValue() + "$");
 		/**
 		 * primary landing and registration selection
 		 */
@@ -169,7 +194,9 @@ public class TicketRegistration {
 			return;
 		}
 
-		System.out.println("Current ticket price: " + price + "$  ");
+		System.out.println(
+				"Current ticket price: " + new BigDecimal(price).setScale(2, RoundingMode.UP).doubleValue() + "$  ");
+
 		/**
 		 * class selection
 		 */
@@ -189,7 +216,8 @@ public class TicketRegistration {
 			return;
 		}
 
-		System.out.println("Current ticket price: " + price + "$");
+		System.out.println(
+				"Current ticket price: " + new BigDecimal(price).setScale(2, RoundingMode.UP).doubleValue() + "$");
 		/**
 		 * registered Passenger or search passenger in base by passport
 		 */
@@ -254,26 +282,22 @@ public class TicketRegistration {
 		 * full info of ticket
 		 */
 		System.out.println();
-		System.out.println("Congratulations, you are registered on flight!");
+		System.out.println("           Congratulations, you registered on flight!");
 
 		Passenger passenger = passengerService.get(passId);
 
 		System.out.println("Passenger: " + passenger.getFullName() + ", birthday: " + passenger.getBirthday()
 				+ ", passport: " + passenger.getPassport());
 
-		System.out.println("           Ticket class: " + clas + ", price: " + price + "$, baggage: " + baggage
+		System.out.println("           Ticket class: " + clas + ", price: "
+				+ new BigDecimal(price).setScale(2, RoundingMode.UP).doubleValue() + "$, baggage: " + baggage
 				+ ", priority boarding and registration: " + firstReg);
 
-		// Flight flight = flightService.get(b);
-
 		City cityFrom = cityService.get(Integer.toUnsignedLong(flight.getFromm()));
-
 		City cityTo = cityService.get(Integer.toUnsignedLong(flight.getToo()));
 
 		System.out.println("           Departs from: " + cityFrom.getCity_en() + " to " + cityTo.getCity_en() + " at "
 				+ flight.getdAndT());
-
-		Plane plane = planeService.get(Integer.toUnsignedLong(flight.getPlane()));
 
 		System.out.println("           Plane : " + plane.getModel() + ", bort number: " + plane.getBortNumber()
 				+ ", capacity of persons on board: " + plane.getPassengerCount());

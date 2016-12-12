@@ -81,8 +81,8 @@ public class TicketController {
 				+ passenger.getPassport());
 		passenger1.add("Class: " + ticket.getClas() + ", price: " + (double) ticket.getPrice() / 100 + "$, baggage: "
 				+ ticket.getBag() + ", priority boarding and registration: " + ticket.getFirst_reg());
-		passenger1.add(
-				"Departs from: " + cityFrom.getCity_en() + " to " + cityTo.getCity_en() + " at " + flight.getdAndT());
+		passenger1.add("Departs from: " + cityFrom.getCity_en() + " to " + cityTo.getCity_en() + " at "
+				+ flight.getdAndT() + "   (start ticket price: " + (double) flight.getStartPrice() / 100 + "$)");
 		passenger1.add(plane.getModel() + ", bort number: " + plane.getBortNumber() + ", capacity of persons on board: "
 				+ plane.getPassengerCount());
 

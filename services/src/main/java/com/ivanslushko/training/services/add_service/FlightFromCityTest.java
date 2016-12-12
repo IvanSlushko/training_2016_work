@@ -31,7 +31,7 @@ public class FlightFromCityTest {
 	@Test
 	public void flightFromCityTest() {
 
-		List<FlightFromCity> flightFromCity = flightService.getFromCity(6l);
+		List<FlightFromCity> flightFromCity = flightService.getFromCity(5l);
 
 		System.out.println();
 		System.out.println(

@@ -18,6 +18,7 @@ public final class FlightMapper implements RowMapper<Flight> {
 		Integer fromm = rs.getInt("fromm");
 		Timestamp date = rs.getTimestamp("d_and_t");
 		Integer too = rs.getInt("too");
+		Integer startPrice = rs.getInt("start_price");
 
 		Flight entity = new Flight();
 
@@ -26,6 +27,7 @@ public final class FlightMapper implements RowMapper<Flight> {
 		entity.setFromm(fromm);
 		entity.setdAndT(date);
 		entity.setToo(too);
+		entity.setStartPrice(startPrice);
 		return entity;
 	}
 }

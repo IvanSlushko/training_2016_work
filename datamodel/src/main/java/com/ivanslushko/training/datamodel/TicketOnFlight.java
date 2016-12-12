@@ -11,6 +11,7 @@ public class TicketOnFlight {
 	public Object Passenger;
 	public Object Clas;	
 	public Object Price;
+	public Object StartPrice;	
 	public Object Bag;
 	public Object First_reg;
 	public Object FlNum;
@@ -110,5 +111,15 @@ public class TicketOnFlight {
 	public void setFirst_reg(Object first_reg) {
 		First_reg = first_reg;
 	}
+
+	public Object getStartPrice() {
+		return StartPrice;
+	}
+
+	public void setStartPrice(Object startPrice) {
+		StartPrice = startPrice;
+	}
+
+	
 
 }
