@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,12 +25,13 @@ import com.ivanslushko.training.services.FlightService;
 import com.ivanslushko.training.services.PassengerService;
 import com.ivanslushko.training.services.PlaneService;
 import com.ivanslushko.training.services.TicketService;
+import com.ivanslushko.training.services.components.UserDataStorage;
 import com.ivanslushko.training.web.model.TicketFullModel;
 import com.ivanslushko.training.web.model.TicketModel;
 import com.ivanslushko.training.web.model.TicketOnFlightModel;
 
 @RestController
-@RequestMapping("/ticket")
+@RequestMapping("/secured")
 public class TicketController {
 
 	@Inject
@@ -42,11 +44,20 @@ public class TicketController {
 	private CityService cityService;
 	@Inject
 	private PlaneService planeService;
+	@Inject
+	private ApplicationContext context;
 
-	@RequestMapping(method = RequestMethod.GET)
+	// Authorization: Basic dmFsaWR1c2VyOnZhbGlkcGFzc3dvcmQ=
+	// /secured/ticket
+
+	/**
+	 * method getAll
+	 */
+	@RequestMapping(value = "/ticket", method = RequestMethod.GET)
 	public ResponseEntity<List<TicketModel>> getAll() {
 		List<Ticket> all = service.getAll();
-
+		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
+		System.out.println("SampleController: " + userDataStorage);
 		List<TicketModel> converted = new ArrayList<>();
 		for (Ticket ticket : all) {
 			converted.add(entity2model(ticket));
@@ -54,10 +65,14 @@ public class TicketController {
 		return new ResponseEntity<List<TicketModel>>(converted, HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/tof/{id}", method = RequestMethod.GET)
+	/**
+	 * method ticket on flight
+	 */
+	@RequestMapping(value = "/ticket/tof/{id}", method = RequestMethod.GET)
 	public ResponseEntity<List<TicketOnFlightModel>> ticketOnFlight(@PathVariable Long id) {
 		List<TicketOnFlight> all = service.ticketOnFlight(id);
-
+		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
+		System.out.println("SampleController: " + userDataStorage);
 		List<TicketOnFlightModel> converted = new ArrayList<>();
 		for (TicketOnFlight ticketOnFlight : all) {
 			converted.add(entity2model(ticketOnFlight));
@@ -65,9 +80,13 @@ public class TicketController {
 		return new ResponseEntity<List<TicketOnFlightModel>>(converted, HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/tfi/{id}", method = RequestMethod.GET)
+	/**
+	 * method ticket full info
+	 */
+	@RequestMapping(value = "/ticket/tfi/{id}", method = RequestMethod.GET)
 	public ResponseEntity<List<TicketFullModel>> ticketFullModel(@PathVariable Long id) {
-
+		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
+		System.out.println("SampleController: " + userDataStorage);
 		Ticket ticket = service.get(id);
 		Passenger passenger = passengerService.get(Integer.toUnsignedLong(ticket.getPassenger()));
 		Flight flight = flightService.get(Integer.toUnsignedLong(ticket.getFlNum()));
@@ -93,20 +112,35 @@ public class TicketController {
 
 	}
 
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
+	/**
+	 * method get by ID
+	 */
+	@RequestMapping(value = "/ticket/{id}", method = RequestMethod.GET)
 	public ResponseEntity<TicketModel> getById(@PathVariable Long id) {
+		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
+		System.out.println("SampleController: " + userDataStorage);
 		Ticket ticket = service.get(id);
 		return new ResponseEntity<TicketModel>(entity2model(ticket), HttpStatus.OK);
 	}
 
-	@RequestMapping(method = RequestMethod.POST)
+	/**
+	 * method create new ticket
+	 */
+	@RequestMapping(value = "/ticket", method = RequestMethod.POST)
 	public ResponseEntity<Void> createNewTicket(@RequestBody TicketModel ticketModel) {
+		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
+		System.out.println("SampleController: " + userDataStorage);
 		service.save(model2entity(ticketModel));
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
 
-	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
+	/**
+	 * method update ticket by ID
+	 */
+	@RequestMapping(value = "/ticket/{id}", method = RequestMethod.POST)
 	public ResponseEntity<Void> updateTicket(@RequestBody TicketModel ticketModel, @PathVariable Long id) {
+		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
+		System.out.println("SampleController: " + userDataStorage);
 		Ticket ticket = model2entity(ticketModel);
 		ticket.setId(id);
 
@@ -114,8 +148,13 @@ public class TicketController {
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+	/**
+	 * method delete ticket by ID
+	 */
+	@RequestMapping(value = "/ticket/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
+		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
+		System.out.println("SampleController: " + userDataStorage);
 		service.delete(id);
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}

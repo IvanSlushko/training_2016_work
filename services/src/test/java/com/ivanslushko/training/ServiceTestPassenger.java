@@ -1,4 +1,4 @@
-package com.ivanslushko.training.services;
+package com.ivanslushko.training;
 
 import java.sql.Date;
 import java.util.List;

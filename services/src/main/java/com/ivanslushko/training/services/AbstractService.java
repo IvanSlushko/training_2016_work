@@ -9,6 +9,7 @@ public interface AbstractService<T> {
 	@Transactional
 	void saveAll(List<T> entiti);
 
+	@Transactional
 	Long save(T entiti);
 
 	Long update(T entiti);

@@ -1,4 +1,6 @@
-23:23:57.700 [qtp2106620844-19] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=45, plane=4, from=3, dateAndTime=2018-11-11T11:11:11.000+0300, to=5, startPrice=254
-23:25:49.759 [qtp2106620844-19] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=46, plane=3, from=1, dateAndTime=2018-11-11T11:11:11.000+0300, to=7, startPrice=254
-23:26:27.267 [qtp2106620844-17] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=47, plane=3, from=1, dateAndTime=2018-11-11T11:11:11.000+0300, to=7, startPrice=255
-23:26:55.193 [qtp2106620844-18] INFO  com.ivanslushko.training.services.impl.FlightServiceImpl - Flight created. id=48, plane=3, from=1, dateAndTime=2018-11-11T11:11:11.000+0300, to=7, startPrice=255
+20:03:44.168 [qtp2106620844-18] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=32, flight_num=9, passenger=4, clas=2, price=3.33, bag=false, first_reg=true
+20:04:16.244 [qtp2106620844-18] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=32
+20:05:56.261 [qtp2106620844-16] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=33, flight_num=9, passenger=4, clas=2, price=3.33, bag=false, first_reg=true
+20:06:49.850 [qtp2106620844-16] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=33
+20:24:23.437 [qtp2106620844-16] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket deleted! id=33
+20:24:55.915 [qtp2106620844-18] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=34, flight_num=9, passenger=4, clas=2, price=3.33, bag=false, first_reg=true

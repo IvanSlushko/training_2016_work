@@ -15,15 +15,20 @@
 			</Policies>
 		</RollingFile>
 
+		<JDBC name="databaseAppender" tableName="logs">
+			<ConnectionFactory
+				class="com.ivanslushko.training.services.add_service.ConnectionFactory"
+				method="getDatabaseConnection" />
+			<Column name="date" isEventTimestamp="true" />
+			<Column name="level" pattern="%level" isUnicode="false" />
+			<Column name="logger" pattern="%logger" isUnicode="false" />
+			<Column name="message" pattern="%message" isUnicode="false" />
+		</JDBC>
 
-
-		<!-- <JDBC name="databaseAppender" tableName="public.log_info"> <ConnectionFactory 
-			class="com.ivanslushko.training.services.ConnectionFactory" method="getDatabaseConnection" 
-			/> <Column name="user_id" literal="LOGGING.APPLICATION_LOG_SEQUENCE.NEXTVAL" 
-			/> <Column name="date" isEventTimestamp="true" /> <Column name="level" pattern="%level" 
-			isUnicode="false"/> <Column name="logger" pattern="%logger" isUnicode="false"/> 
-			<Column name="message" pattern="%message" isUnicode="false"/> </JDBC> -->
-
+	<!-- <SMTP name="mailAppender" smtpProtocol="smtps" smtpPort="465" subject="Test 
+		Log from Java" to="lu813@tut.by" from="lu813@tut.by" smtpHost="smtp.yandex.ru" 
+		smtpUsername="lu813@tut.by" smtpPassword="xyzrfvfcenhf" bufferSize="512"> 
+		</SMTP> -->
 
 	</Appenders>
 
@@ -31,13 +36,16 @@
 
 		<Root level="info">
 			<AppenderRef ref="Console" />
-			<!-- <AppenderRef ref="databaseAppender" level="INFO" /> -->
+			<AppenderRef ref="databaseAppender" />
+			<!--<AppenderRef ref="mailAppender" /> -->
 		</Root>
 
 		<Logger level="info" name="com.ivanslushko.training"
 			additivity="false">
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="RollingFile" />
+			<AppenderRef ref="databaseAppender" />
+			<!-- <AppenderRef ref="mailAppender" /> -->
 		</Logger>
 
 	</Loggers>

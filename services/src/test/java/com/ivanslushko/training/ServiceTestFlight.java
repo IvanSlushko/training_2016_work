@@ -1,4 +1,4 @@
-package com.ivanslushko.training.services;
+package com.ivanslushko.training;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -13,6 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ivanslushko.training.datamodel.Flight;
+import com.ivanslushko.training.services.FlightService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:service-context.xml")
@@ -111,6 +112,6 @@ public class ServiceTestFlight {
 		Assert.assertEquals(flight.getdAndT(), flightFromDb.getdAndT());
 		Assert.assertEquals(flight.getToo(), flightFromDb.getToo());
 		Assert.assertEquals(flight.getStartPrice(), flightFromDb.getStartPrice());
-//		flightService.delete(id);
+		// flightService.delete(id);
 	}
 }
