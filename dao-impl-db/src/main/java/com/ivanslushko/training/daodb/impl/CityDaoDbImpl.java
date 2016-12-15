@@ -70,7 +70,8 @@ public class CityDaoDbImpl implements ICityDao {
 
 	@Override
 	public Long update(final City entity) {
-		jdbcTemplate.update("update city set city_ru = ?,city_en = ?,city_by = ? where id = ?", entity.getCity_ru(),entity.getCity_en(),entity.getCity_by(), entity.getId());
+		jdbcTemplate.update("update city set city_ru = ?,city_en = ?,city_by = ? where id = ?", entity.getCity_ru(),
+				entity.getCity_en(), entity.getCity_by(), entity.getId());
 		return entity.getId();
 
 	}
