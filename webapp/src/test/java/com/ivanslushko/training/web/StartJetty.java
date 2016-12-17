@@ -53,7 +53,6 @@ public class StartJetty {
 		MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
 		MBeanContainer mBeanContainer = new MBeanContainer(mBeanServer);
 		server.addEventListener(mBeanContainer);
-		;
 		server.addBean(mBeanContainer);
 
 		try {

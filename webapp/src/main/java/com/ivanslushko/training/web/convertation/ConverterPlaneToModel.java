@@ -15,7 +15,6 @@ public class ConverterPlaneToModel implements Converter<Plane, PlaneModel> {
 		e.setBort_number(plane.getBortNumber());
 		e.setModel(plane.getModel());
 		e.setPassenger_count(plane.getPassengerCount());
-		System.out.println("CONVERTER  Plane to MODEL active <<<<<<<<<");
 		return e;
 	}
 }

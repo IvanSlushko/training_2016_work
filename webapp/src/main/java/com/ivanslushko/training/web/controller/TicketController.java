@@ -30,6 +30,8 @@ import com.ivanslushko.training.web.model.TicketFullModel;
 import com.ivanslushko.training.web.model.TicketModel;
 import com.ivanslushko.training.web.model.TicketOnFlightModel;
 
+import redis.clients.jedis.Jedis;
+
 @RestController
 @RequestMapping("/secured")
 public class TicketController {
@@ -56,6 +58,11 @@ public class TicketController {
 	@RequestMapping(value = "/ticket", method = RequestMethod.GET)
 	public ResponseEntity<List<TicketModel>> getAll() {
 		List<Ticket> all = service.getAll();
+		
+//		Jedis jedis = new Jedis("localhost");
+//		jedis.set("ticket", "ticketTEST");
+		
+		
 		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
 		System.out.println("SampleController: " + userDataStorage);
 		List<TicketModel> converted = new ArrayList<>();

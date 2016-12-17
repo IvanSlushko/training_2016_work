@@ -13,7 +13,7 @@ import org.apache.commons.io.FileUtils;
 
 import com.ivanslushko.training.datamodel.City;
 
-public class SerializationSample {
+public class SerializationCity {
 	public static void main(String[] args) throws Exception {
 
 		ArrayList<City> cityList = new ArrayList<City>();

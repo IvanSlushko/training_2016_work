@@ -11,13 +11,17 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
-	
-	<dependency>
+
+		<dependency>
 			<groupId>com.ivanslushko.training</groupId>
 			<artifactId>datamodel</artifactId>
 		</dependency>
-	
-	
+		
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+
 	</dependencies>
 
 </project>
