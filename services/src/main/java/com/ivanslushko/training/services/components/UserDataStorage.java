@@ -19,7 +19,7 @@ public class UserDataStorage {
 
     @Override
     public String toString() {
-        return "UserDataStorage [isLoggedIn=" + isLoggedIn + ";hashCode=" + hashCode() + "]";
+        return "UserDataStorage [isLoggedIn=" + isLoggedIn + ";  hashCode=" + hashCode() + "]";
     }
 
 }

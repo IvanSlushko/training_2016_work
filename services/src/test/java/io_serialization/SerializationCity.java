@@ -55,6 +55,7 @@ public class SerializationCity {
 
 	public static List<City> deSerialize(byte[] bytes) throws IOException, ClassNotFoundException {
 		ObjectInputStream in = new ObjectInputStream(new ByteArrayInputStream(bytes));
+		@SuppressWarnings("unchecked")
 		List<City> list = (List<City>) in.readObject();
 		in.close();
 		return list;

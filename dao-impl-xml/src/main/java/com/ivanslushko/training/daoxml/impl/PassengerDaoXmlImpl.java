@@ -93,6 +93,7 @@ public class PassengerDaoXmlImpl implements IPassengerDao {
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	private List<Passenger> readCollection() {
 		return (List<Passenger>) xstream.fromXML(file);
 	}

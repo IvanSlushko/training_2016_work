@@ -1,0 +1,3 @@
+17:19:32.767 [main] INFO  com.ivanslushko.training.ServiceTestLogger - Hello this is an info message
+17:19:32.794 [main] WARN  com.ivanslushko.training.ServiceTestLogger - WARNING LOG to mail
+17:19:32.796 [main] ERROR com.ivanslushko.training.ServiceTestLogger - ERROR LOG to mail

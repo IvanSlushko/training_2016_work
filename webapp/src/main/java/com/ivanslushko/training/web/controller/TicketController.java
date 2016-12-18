@@ -30,7 +30,6 @@ import com.ivanslushko.training.web.model.TicketFullModel;
 import com.ivanslushko.training.web.model.TicketModel;
 import com.ivanslushko.training.web.model.TicketOnFlightModel;
 
-import redis.clients.jedis.Jedis;
 
 @RestController
 @RequestMapping("/secured")
@@ -48,10 +47,10 @@ public class TicketController {
 	private PlaneService planeService;
 	@Inject
 	private ApplicationContext context;
-
+	
 	// Authorization: Basic dmFsaWR1c2VyOnZhbGlkcGFzc3dvcmQ=
 	// /secured/ticket
-
+   
 	/**
 	 * method getAll
 	 */
@@ -59,12 +58,9 @@ public class TicketController {
 	public ResponseEntity<List<TicketModel>> getAll() {
 		List<Ticket> all = service.getAll();
 		
-//		Jedis jedis = new Jedis("localhost");
-//		jedis.set("ticket", "ticketTEST");
-		
-		
 		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
-		System.out.println("SampleController: " + userDataStorage);
+		System.out.println("Secured: " + userDataStorage);
+		
 		List<TicketModel> converted = new ArrayList<>();
 		for (Ticket ticket : all) {
 			converted.add(entity2model(ticket));
@@ -79,7 +75,7 @@ public class TicketController {
 	public ResponseEntity<List<TicketOnFlightModel>> ticketOnFlight(@PathVariable Long id) {
 		List<TicketOnFlight> all = service.ticketOnFlight(id);
 		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
-		System.out.println("SampleController: " + userDataStorage);
+		System.out.println("Secured: " + userDataStorage);
 		List<TicketOnFlightModel> converted = new ArrayList<>();
 		for (TicketOnFlight ticketOnFlight : all) {
 			converted.add(entity2model(ticketOnFlight));
@@ -93,7 +89,7 @@ public class TicketController {
 	@RequestMapping(value = "/ticket/tfi/{id}", method = RequestMethod.GET)
 	public ResponseEntity<List<TicketFullModel>> ticketFullModel(@PathVariable Long id) {
 		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
-		System.out.println("SampleController: " + userDataStorage);
+		System.out.println("Secured: " + userDataStorage);
 		Ticket ticket = service.get(id);
 		Passenger passenger = passengerService.get(Integer.toUnsignedLong(ticket.getPassenger()));
 		Flight flight = flightService.get(Integer.toUnsignedLong(ticket.getFlNum()));
@@ -125,7 +121,7 @@ public class TicketController {
 	@RequestMapping(value = "/ticket/{id}", method = RequestMethod.GET)
 	public ResponseEntity<TicketModel> getById(@PathVariable Long id) {
 		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
-		System.out.println("SampleController: " + userDataStorage);
+		System.out.println("Secured: " + userDataStorage);
 		Ticket ticket = service.get(id);
 		return new ResponseEntity<TicketModel>(entity2model(ticket), HttpStatus.OK);
 	}
@@ -136,7 +132,7 @@ public class TicketController {
 	@RequestMapping(value = "/ticket", method = RequestMethod.POST)
 	public ResponseEntity<Void> createNewTicket(@RequestBody TicketModel ticketModel) {
 		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
-		System.out.println("SampleController: " + userDataStorage);
+		System.out.println("Secured: " + userDataStorage);
 		service.save(model2entity(ticketModel));
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
@@ -147,7 +143,7 @@ public class TicketController {
 	@RequestMapping(value = "/ticket/{id}", method = RequestMethod.POST)
 	public ResponseEntity<Void> updateTicket(@RequestBody TicketModel ticketModel, @PathVariable Long id) {
 		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
-		System.out.println("SampleController: " + userDataStorage);
+		System.out.println("Secured: " + userDataStorage);
 		Ticket ticket = model2entity(ticketModel);
 		ticket.setId(id);
 
@@ -161,7 +157,7 @@ public class TicketController {
 	@RequestMapping(value = "/ticket/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
 		UserDataStorage userDataStorage = context.getBean(UserDataStorage.class);
-		System.out.println("SampleController: " + userDataStorage);
+		System.out.println("Secured: " + userDataStorage);
 		service.delete(id);
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}

@@ -94,6 +94,7 @@ public class CityDaoXmlImpl implements ICityDao {
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	private List<City> readCollection() {
 		return (List<City>) xstream.fromXML(file);
 	}

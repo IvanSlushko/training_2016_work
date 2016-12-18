@@ -92,6 +92,7 @@ public class PlaneDaoXmlImpl implements IPlaneDao {
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	private List<Plane> readCollection() {
 		return (List<Plane>) xstream.fromXML(file);
 	}

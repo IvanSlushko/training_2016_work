@@ -8,6 +8,7 @@ public class Outer implements Serializable {
 
 	private String outerProp;
 
+	@SuppressWarnings("unused")
 	private String newProperty;
 
 	private transient Inner innerObject;

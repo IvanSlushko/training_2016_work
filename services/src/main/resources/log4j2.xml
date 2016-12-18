@@ -28,7 +28,7 @@
 	<!-- <SMTP name="mailAppender" smtpProtocol="smtps" smtpPort="465" subject="Test 
 		Log from Java" to="lu813@tut.by" from="lu813@tut.by" smtpHost="smtp.yandex.ru" 
 		smtpUsername="lu813@tut.by" smtpPassword="xyzrfvfcenhf" bufferSize="512"> 
-		</SMTP> -->
+		</SMTP>  -->
 
 	</Appenders>
 
@@ -37,7 +37,7 @@
 		<Root level="info">
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="databaseAppender" />
-			<!--<AppenderRef ref="mailAppender" /> -->
+		<!-- 	<AppenderRef ref="mailAppender" />  -->
 		</Root>
 
 		<Logger level="info" name="com.ivanslushko.training"
@@ -45,7 +45,7 @@
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="RollingFile" />
 			<AppenderRef ref="databaseAppender" />
-			<!-- <AppenderRef ref="mailAppender" /> -->
+	<!-- <AppenderRef ref="mailAppender" /> -->
 		</Logger>
 
 	</Loggers>

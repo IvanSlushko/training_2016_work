@@ -29,6 +29,16 @@
 					class="com.ivanslushko.training.web.convertation.ConverterPlaneToModel" />
 				<bean
 					class="com.ivanslushko.training.web.convertation.ConverterModelToPlane" />
+				<bean
+					class="com.ivanslushko.training.web.convertation.ConverterCityByToModel" />
+				<bean
+					class="com.ivanslushko.training.web.convertation.ConverterCityEnToModel" />
+				<bean
+					class="com.ivanslushko.training.web.convertation.ConverterCityRuToModel" />
+				<bean
+					class="com.ivanslushko.training.web.convertation.ConverterModelToCity" />
+				<bean
+					class="com.ivanslushko.training.web.convertation.ConverterCityToModel" />	
 			</list>
 		</property>
 	</bean>

@@ -96,6 +96,7 @@ public class FlightDoaXmlImpl implements IFlightDao {
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	private List<Flight> readCollection() {
 		return (List<Flight>) xstream.fromXML(file);
 	}

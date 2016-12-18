@@ -96,6 +96,7 @@ public class TicketDaoXmlImpl implements ITicketDao {
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	private List<Ticket> readCollection() {
 		return (List<Ticket>) xstream.fromXML(file);
 	}

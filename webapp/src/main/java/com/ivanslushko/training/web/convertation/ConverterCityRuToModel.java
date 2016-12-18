@@ -3,14 +3,14 @@ package com.ivanslushko.training.web.convertation;
 import org.springframework.core.convert.converter.Converter;
 
 import com.ivanslushko.training.datamodel.City;
-import com.ivanslushko.training.web.model.CityModel;
+import com.ivanslushko.training.web.model.CityModelRu;
 
-public class ConverterCityRuToModel implements Converter<City, CityModel> {
+public class ConverterCityRuToModel implements Converter<City, CityModelRu> {
 
 	@Override
-	public CityModel convert(City city) {
-		CityModel e = new CityModel();
-		e.setCity_ru(city.getCity_ru());
+	public CityModelRu convert(City city) {
+		CityModelRu e = new CityModelRu();
+		e.setCity(city.getCity_ru());
 		e.setId(city.getId());
 		return e;
 	}

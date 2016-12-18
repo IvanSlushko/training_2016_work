@@ -2,13 +2,13 @@ package com.ivanslushko.training.datamodel;
 
 import java.sql.Timestamp;
 
-public class ActualFlights extends AbstractModel{
-	
+public class ActualFlights extends AbstractModel {
+
 	private Integer plane;
 	private Integer fromm;
 	private Timestamp dAndT;
 	private Integer too;
-	private Integer startPrice;	
+	private Integer startPrice;
 
 	public Integer getPlane() {
 		return plane;
@@ -44,7 +44,8 @@ public class ActualFlights extends AbstractModel{
 
 	@Override
 	public String toString() {
-		return "ActualFlights [plane=" + plane + ", fromm=" + fromm + ", dAndT=" + dAndT + ", too=" + too + ", start price: "+startPrice+"]";
+		return "ActualFlights [plane=" + plane + ", fromm=" + fromm + ", dAndT=" + dAndT + ", too=" + too
+				+ ", start price: " + (double) startPrice / 100 + "$]";
 	}
 
 	public Integer getStartPrice() {

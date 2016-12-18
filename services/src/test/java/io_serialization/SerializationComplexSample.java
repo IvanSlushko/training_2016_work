@@ -51,6 +51,7 @@ public class SerializationComplexSample {
 
 	public static List<Outer> deSerialize(byte[] bytes) throws IOException, ClassNotFoundException {
 		ObjectInputStream in = new ObjectInputStream(new ByteArrayInputStream(bytes));
+		@SuppressWarnings("unchecked")
 		List<Outer> list = (List<Outer>) in.readObject();
 		in.close();
 		return list;
