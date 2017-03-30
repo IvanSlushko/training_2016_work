@@ -24,7 +24,7 @@ public class PassengerSearch {
 	@Test
 	public void byFullName() {
 
-		List<Passenger> passenger = passengerService.findByFullName("Anton Goncharuk");
+		List<Passenger> passenger = passengerService.findByFullName("Anton Goncharu");
 		if (passenger.size() == 0) {
 			System.out.println("This full name not found!");
 		} else {

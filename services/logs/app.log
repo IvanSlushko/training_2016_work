@@ -1,16 +1,11 @@
-17:19:32.767 [main] INFO  com.ivanslushko.training.ServiceTestLogger - Hello this is an info message
-17:19:32.794 [main] WARN  com.ivanslushko.training.ServiceTestLogger - WARNING LOG to mail
-17:19:32.796 [main] ERROR com.ivanslushko.training.ServiceTestLogger - ERROR LOG to mail
-20:13:11.311 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=21, full_name=Yota Last, birthday=2222-01-01T00:00:00.000+0300, passport=JH7778890
-20:13:11.342 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=36, flight_num=4, passenger=21, clas=1, price=6.6, bag=false, first_reg=false
-22:34:08.543 [main] INFO  com.ivanslushko.training.services.impl.PlaneServiceImpl - Passenger created. id=22, full_name=qwerty qqqwww, birthday=2002-01-01T00:00:00.000+0300, passport=JK898921345
-22:34:08.564 [main] INFO  com.ivanslushko.training.services.impl.TicketServiceImpl - Ticket created. id=37, flight_num=4, passenger=22, clas=2, price=5.1, bag=false, first_reg=false
-22:37:42.239 [main] INFO  com.ivanslushko.training.ServiceTestLogger - Hello this is an info message
-22:37:42.264 [main] WARN  com.ivanslushko.training.ServiceTestLogger - WARNING LOG to mail
-22:37:42.266 [main] ERROR com.ivanslushko.training.ServiceTestLogger - ERROR LOG to mail
-22:38:03.023 [main] INFO  com.ivanslushko.training.ServiceTestLogger - Hello this is an info message
-22:38:03.038 [main] WARN  com.ivanslushko.training.ServiceTestLogger - WARNING LOG to mail
-22:38:03.041 [main] ERROR com.ivanslushko.training.ServiceTestLogger - ERROR LOG to mail
-22:38:47.662 [main] INFO  com.ivanslushko.training.ServiceTestLogger - Hello this is an info message
-22:38:47.681 [main] WARN  com.ivanslushko.training.ServiceTestLogger - WARNING LOG to mail
-22:38:47.683 [main] ERROR com.ivanslushko.training.ServiceTestLogger - ERROR LOG to mail
+18:52:08.337 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12177, city_ru=TestCityRu, city_en=TestCityEn, city_by=TestCityBy
+18:52:08.370 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=12177
+18:52:08.383 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12178, city_ru=City_ru0, city_en=City_en0, city_by=City_by0
+18:52:08.387 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12179, city_ru=City_ru1, city_en=City_en1, city_by=City_by1
+18:52:08.392 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12180, city_ru=City_ru2, city_en=City_en2, city_by=City_by2
+18:52:08.400 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12181, city_ru=TestCityLongRu, city_en=TestCityLongEn, city_by=TestCityLongBy
+18:52:08.403 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=12181
+18:52:08.425 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12182, city_ru=TestCityUpdRu, city_en=TestCityUpdEn, city_by=TestCityUpdBy
+18:52:08.432 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=12182
+18:52:08.439 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City created. id=12183, city_ru=TestCityDelRu, city_en=TestCityDelEn, city_by=TestCityDelBy
+18:52:08.441 [main] INFO  com.ivanslushko.training.services.impl.CityServiceImpl - City deleted!!! id=12183
